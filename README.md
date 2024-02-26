@@ -1,2 +1,2 @@
 # lanquill_app
-Lanquill Mobile Application source code
+Lanquill Mobile Application source code.

@@ -138,11 +138,11 @@ WHERE Eip_ID = ?
 var updateIpAddressInEntity = `
 UPDATE sententia.entity e
 SET IP_Address = (
-        SELECT GROUP_CONCAT(IP_Address SEPARATOR '? ') AS IP_Address
+        SELECT GROUP_CONCAT(IP_Address SEPARATOR '%s') AS IP_Address
         FROM sententia.Entity_Ip_Address eip
         WHERE eip.Entity_ID = e.Entity_ID
         GROUP BY Entity_ID
     ),
-    Enable_IP_Login = ?
-WHERE e.Entity_ID = ?
+    Enable_IP_Login = "%s"
+WHERE e.Entity_ID = %d
 `

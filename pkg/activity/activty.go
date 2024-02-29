@@ -561,7 +561,7 @@ func (entityReq EntityToIp) MapEntityToIps() error {
 	var ip string
 
 	err := db.MySqlDB.QueryRow(query, ipdata...).Scan(&ip)
-	if err != nil {
+	if err != nil && err != sql.ErrNoRows {
 		log.Println("ERROR: ", err)
 		return err
 	}

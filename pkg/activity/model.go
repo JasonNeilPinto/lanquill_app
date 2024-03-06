@@ -53,7 +53,7 @@ type LoggedInUsers struct {
 type EntityToIp struct {
 	EntityId  int64    `json:"entityId"`
 	Ip        []string `json:"ip"`
-	IPEnabled bool     `json:"ipEnabled"`
+	IPEnabled string   `json:"ipEnabled"`
 	IsRange   bool     `json:"isRange"`
 }
 

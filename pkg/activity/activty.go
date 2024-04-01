@@ -581,18 +581,16 @@ func (entityReq EntityToIp) MapEntityToIps() error {
 		}
 	}
 
-	stmt, err := db.MySqlDB.Prepare(updateIpAddressInEntity)
+	updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityId)
+
+	stmt, err := db.MySqlDB.Prepare(updateInEntityQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec(
-		seperator,
-		entityReq.IPEnabled,
-		entityReq.EntityId,
-	)
+	row, err := stmt.Exec()
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
@@ -649,6 +647,8 @@ func GetEntityIPAddresses() ([]GetIPAddress, error) {
 
 func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 
+	log.Println(entityReq)
+
 	seperator := func() string {
 		if entityReq.IsRange {
 			return "-"
@@ -681,18 +681,16 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 		return err
 	}
 
-	stmt, err = db.MySqlDB.Prepare(updateIpAddressInEntity)
+	query := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
+
+	stmt, err = db.MySqlDB.Prepare(query)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec(
-		seperator,
-		entityReq.IPEnabled,
-		entityReq.EntityID,
-	)
+	row, err := stmt.Exec()
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
@@ -740,7 +738,9 @@ func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
 		return err
 	}
 
-	stmt, err = db.MySqlDB.Prepare(updateIpAddressInEntity)
+	updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
+
+	stmt, err = db.MySqlDB.Prepare(updateInEntityQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err

@@ -13,12 +13,12 @@ import (
 
 	"github.com/Lanquill/Forge/pkg/activity"
 	"github.com/Lanquill/Forge/pkg/auth"
+	"github.com/Lanquill/Forge/pkg/email"
 	"github.com/Lanquill/Forge/pkg/entity"
 	"github.com/Lanquill/Forge/pkg/questions"
 	"github.com/Lanquill/Forge/pkg/reports"
 	"github.com/Lanquill/Forge/pkg/resp"
 	"github.com/Lanquill/Forge/pkg/user"
-	"github.com/Lanquill/Forge/pkg/email"
 	"github.com/Lanquill/Forge/pkg/utils"
 	"github.com/Lanquill/go-logger"
 	"github.com/bitly/go-simplejson"
@@ -2149,7 +2149,7 @@ func DeleteIPAddress(w http.ResponseWriter, r *http.Request) {
 	err = entityIpReq.DeleteEntityIpAddress()
 	if err != nil {
 
-		if err.Error() == questions.ErrCreateFailure {
+		if err.Error() == questions.ErrDeleteFailure {
 			log.Error("Error: ", zap.Error(err), logger.LogUserId(ctx))
 			jsonData.Set("error", questions.DeleteFailure)
 			resp.SendResponse(w, resp.StatusInvalidRequestBody, jsonData, &ctx)

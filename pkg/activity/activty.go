@@ -707,6 +707,7 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 }
 
 func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
+	log.Println(entityReq)
 
 	seperator := func() string {
 		if entityReq.IsRange {
@@ -747,12 +748,9 @@ func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec(
-		seperator,
-		entityReq.IPEnabled,
-		entityReq.EntityID,
-	)
+	row, err := stmt.Exec()
 	if err != nil {
+
 		log.Println("ERROR: ", err)
 		return err
 	}

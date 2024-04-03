@@ -168,10 +168,10 @@ type EntityIpReq1 struct {
 }
 
 type EntityIpReq struct {
-	EntityID  int64    `json:"entityId"`
-	IPAddress []string `json:"ipAddress"`
-	IPEnabled string   `json:"ipEnabled"`
-	IsRange   bool     `json:"isRange"`
+	EntityID  int64  `json:"entityId"`
+	IPAddress string `json:"ipAddress"`
+	IPEnabled string `json:"ipEnabled"`
+	IsRange   bool   `json:"isRange"`
 }
 
 type GetIPAddress struct {
@@ -179,4 +179,5 @@ type GetIPAddress struct {
 	EntityName      string  `json:"entityName"`
 	EntityIPAddress *string `json:"entityIPAddress"`
 	EnableIPLogin   string  `json:"enableIPLogin"`
+	IPEnabled       bool    `json:"ipEnabled"`
 }

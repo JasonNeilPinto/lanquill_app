@@ -668,6 +668,15 @@ func GetEntityIPAddresses() ([]GetIPAddress, error) {
 			log.Println(err)
 			return nil, err
 		}
+
+		if strings.Contains(*eachIpAddress.EntityIPAddress, "-") {
+			eachIpAddress.IPEnabled = true
+		} else if strings.Contains(*eachIpAddress.EntityIPAddress, ",") {
+			eachIpAddress.IPEnabled = false
+		} else {
+			log.Println(err)
+		}
+
 		entityIPAddress = append(entityIPAddress, eachIpAddress)
 	}
 
@@ -734,14 +743,7 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 	// }
 	// #endregion
 
-	sep := ","
-	if entityReq.IsRange {
-		sep = "-"
-	}
-
-	ipAddresses := strings.Join(entityReq.IPAddress, sep)
-
-	updateQuery := "UPDATE sententia.entity SET IP_Address= ? WHERE Entity_ID=?"
+	updateQuery := "UPDATE sententia.entity SET IP_Address= ?, Enable_IP_Login= ? WHERE Entity_ID=?"
 	stmt, err := db.MySqlDB.Prepare(updateQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
@@ -749,7 +751,7 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec(ipAddresses, entityReq.EntityID)
+	row, err := stmt.Exec(entityReq.IPAddress, entityReq.IPEnabled, entityReq.EntityID)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
@@ -828,7 +830,7 @@ func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
 	// }
 	// #endregion
 
-	query := "UPDATE sententia.entity SET IP_Address= NULL, IP_Enable='False' WHERE Entity_ID=?"
+	query := "UPDATE sententia.entity SET IP_Address=NULL, Enable_IP_Login='False' WHERE Entity_ID=?"
 
 	stmt, err := db.MySqlDB.Prepare(query)
 	if err != nil {

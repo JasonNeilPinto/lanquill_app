@@ -610,7 +610,7 @@ func (entityReq EntityToIp) MapEntityToIps() error {
 
 	ipAddresses := strings.Join(entityReq.Ip, sep)
 
-	updateQuery := "UPDATE sententia.entity SET IP_Address= ? WHERE Entity_ID=?"
+	updateQuery := "UPDATE sententia.entity SET IP_Address= ?, Enable_IP_Login= ? WHERE Entity_ID=?"
 	stmt, err := db.MySqlDB.Prepare(updateQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
@@ -618,7 +618,7 @@ func (entityReq EntityToIp) MapEntityToIps() error {
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec(ipAddresses, entityReq.EntityId)
+	row, err := stmt.Exec(ipAddresses, entityReq.IPEnabled, entityReq.EntityId)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err

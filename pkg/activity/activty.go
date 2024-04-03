@@ -670,9 +670,9 @@ func GetEntityIPAddresses() ([]GetIPAddress, error) {
 		}
 
 		if strings.Contains(*eachIpAddress.EntityIPAddress, "-") {
-			eachIpAddress.IPEnabled = true
+			eachIpAddress.IsRange = true
 		} else if strings.Contains(*eachIpAddress.EntityIPAddress, ",") {
-			eachIpAddress.IPEnabled = false
+			eachIpAddress.IsRange = false
 		} else {
 			log.Println(err)
 		}

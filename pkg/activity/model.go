@@ -179,5 +179,5 @@ type GetIPAddress struct {
 	EntityName      string  `json:"entityName"`
 	EntityIPAddress *string `json:"entityIPAddress"`
 	EnableIPLogin   string  `json:"enableIPLogin"`
-	IPEnabled       bool    `json:"ipEnabled"`
+	IsRange         bool    `json:"isRange"`
 }

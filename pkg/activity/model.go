@@ -159,7 +159,7 @@ type StatusResp struct {
 	} `json:"data"`
 }
 
-type EntityIpReq struct {
+type EntityIpReq1 struct {
 	EipID     int64  `json:"eipId"`
 	EntityID  int64  `json:"entityId"`
 	IPAddress string `json:"ipAddress"`
@@ -167,12 +167,16 @@ type EntityIpReq struct {
 	IsRange   bool   `json:"isRange"`
 }
 
+type EntityIpReq struct {
+	EntityID  int64    `json:"entityId"`
+	IPAddress []string `json:"ipAddress"`
+	IPEnabled string   `json:"ipEnabled"`
+	IsRange   bool     `json:"isRange"`
+}
+
 type GetIPAddress struct {
-	EipID           int64   `json:"eipId"`
 	EntityID        int64   `json:"entityId"`
 	EntityName      string  `json:"entityName"`
-	IPAddress       string  `json:"ipAddress"`
 	EntityIPAddress *string `json:"entityIPAddress"`
 	EnableIPLogin   string  `json:"enableIPLogin"`
-	IsRange         bool    `json:"isRange"`
 }

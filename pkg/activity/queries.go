@@ -101,19 +101,19 @@ var TXN_DETAILS = `SELECT
 						payment_details WHERE order_id= ? `
 
 var getIPAddress = `
-				SELECT eip.Eip_ID, e.Entity_ID, e.Entity_Name, eip.IP_Address, e.IP_Address, e.Enable_IP_Login, eip.IP_Range_Enable
-				FROM sententia.Entity_Ip_Address eip JOIN sententia.entity e 
-				ON eip.Entity_ID = e.Entity_ID`
+				SELECT e.Entity_ID, e.Entity_Name, e.IP_Address, e.Enable_IP_Login
+				FROM sententia.entity e WHERE e.IP_Address IS NOT NULL;
+				`
 
-var updateEntityIpAddress = `
-UPDATE sententia.Entity_Ip_Address 
-SET IP_Address = ?, IP_Range_Enable = ?
-WHERE Eip_ID = ?
-`
-var deleteIpAddress = `
-DELETE FROM sententia.Entity_Ip_Address
-WHERE Eip_ID = ?
-`
+// var updateEntityIpAddress = `
+// UPDATE sententia.Entity_Ip_Address
+// SET IP_Address = ?, IP_Range_Enable = ?
+// WHERE Eip_ID = ?
+// `
+// var deleteIpAddress = `
+// DELETE FROM sententia.Entity_Ip_Address
+// WHERE Eip_ID = ?
+// `
 
 // var updateIpAddressInEntity = `
 // UPDATE sententia.entity e

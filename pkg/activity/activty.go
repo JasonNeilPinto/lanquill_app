@@ -544,61 +544,94 @@ func MostActiveUsersAsPerDocs() ([]MostActiveUsersResp, error) {
 
 func (entityReq EntityToIp) MapEntityToIps() error {
 
-	seperator := func() string {
-		if entityReq.IsRange {
-			return "-"
-		}
-		return ","
-	}()
+	// #region - old map code
+	// seperator := func() string {
+	// 	if entityReq.IsRange {
+	// 		return "-"
+	// 	}
+	// 	return ","
+	// }()
 
-	query := "SELECT IP_Address FROM Entity_Ip_Address WHERE IP_Address IN (" + placeholders(len(entityReq.Ip)) + ")"
+	// query := "SELECT IP_Address FROM Entity_Ip_Address WHERE IP_Address IN (" + placeholders(len(entityReq.Ip)) + ")"
 
-	var ipdata []interface{}
-	for _, ip := range entityReq.Ip {
-		ipdata = append(ipdata, ip)
+	// var ipdata []interface{}
+	// for _, ip := range entityReq.Ip {
+	// 	ipdata = append(ipdata, ip)
+	// }
+
+	// var ip string
+
+	// err := db.MySqlDB.QueryRow(query, ipdata...).Scan(&ip)
+	// if err != nil && err != sql.ErrNoRows {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// if ip != "" {
+
+	// 	return errors.New(questions.ErrIpAddressExists)
+	// }
+
+	// for _, ip := range entityReq.Ip {
+
+	// 	query = "INSERT INTO Entity_Ip_Address (Entity_ID, IP_Address, IP_Range_Enable) VALUES (?, ?, ?)"
+	// 	_, err = db.MySqlDB.Exec(query, entityReq.EntityId, ip, entityReq.IsRange)
+	// 	if err != nil {
+	// 		log.Println("ERROR: ", err)
+	// 		return err
+	// 	}
+	// }
+
+	// updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityId)
+
+	// stmt, err := db.MySqlDB.Prepare(updateInEntityQuery)
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	// defer stmt.Close()
+
+	// row, err := stmt.Exec()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// _, err = row.RowsAffected()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	//#endregion
+	sep := ","
+	if entityReq.IsRange {
+		sep = "-"
 	}
 
-	var ip string
+	ipAddresses := strings.Join(entityReq.Ip, sep)
 
-	err := db.MySqlDB.QueryRow(query, ipdata...).Scan(&ip)
-	if err != nil && err != sql.ErrNoRows {
-		log.Println("ERROR: ", err)
-		return err
-	}
-
-	if ip != "" {
-
-		return errors.New(questions.ErrIpAddressExists)
-	}
-
-	for _, ip := range entityReq.Ip {
-
-		query = "INSERT INTO Entity_Ip_Address (Entity_ID, IP_Address, IP_Range_Enable) VALUES (?, ?, ?)"
-		_, err = db.MySqlDB.Exec(query, entityReq.EntityId, ip, entityReq.IsRange)
-		if err != nil {
-			log.Println("ERROR: ", err)
-			return err
-		}
-	}
-
-	updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityId)
-
-	stmt, err := db.MySqlDB.Prepare(updateInEntityQuery)
+	updateQuery := "UPDATE sententia.entity SET IP_Address= ? WHERE Entity_ID=?"
+	stmt, err := db.MySqlDB.Prepare(updateQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
 	}
 	defer stmt.Close()
 
-	row, err := stmt.Exec()
+	row, err := stmt.Exec(ipAddresses, entityReq.EntityId)
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
 	}
 
-	_, err = row.RowsAffected()
+	rows, err := row.RowsAffected()
 	if err != nil {
 		log.Println("ERROR: ", err)
+		return err
+	}
+
+	if rows == 0 {
+		err := errors.New(questions.ErrCreateFailure)
 		return err
 	}
 
@@ -627,13 +660,10 @@ func GetEntityIPAddresses() ([]GetIPAddress, error) {
 		eachIpAddress := GetIPAddress{}
 
 		if err := rows.Scan(
-			&eachIpAddress.EipID,
 			&eachIpAddress.EntityID,
 			&eachIpAddress.EntityName,
-			&eachIpAddress.IPAddress,
 			&eachIpAddress.EntityIPAddress,
 			&eachIpAddress.EnableIPLogin,
-			&eachIpAddress.IsRange,
 		); err != nil {
 			log.Println(err)
 			return nil, err
@@ -649,28 +679,83 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 
 	log.Println(entityReq)
 
-	seperator := func() string {
-		if entityReq.IsRange {
-			return "-"
-		}
-		return ","
-	}()
+	// #region - old update code
+	// seperator := func() string {
+	// 	if entityReq.IsRange {
+	// 		return "-"
+	// 	}
+	// 	return ","
+	// }()
 
-	stmt, err := db.MySqlDB.Prepare(updateEntityIpAddress)
-	if err != nil {
-		log.Println("ERROR: ", err)
+	// stmt, err := db.MySqlDB.Prepare(updateEntityIpAddress)
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// }
+
+	// result, err := stmt.Exec(
+	// 	entityReq.IPAddress,
+	// 	entityReq.IsRange,
+	// 	entityReq.EipID,
+	// )
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// }
+
+	// rows, err := result.RowsAffected()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// if rows == 0 {
+	// 	err := errors.New(questions.ErrUpdateFailure)
+	// 	return err
+	// }
+
+	// query := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
+
+	// stmt, err = db.MySqlDB.Prepare(query)
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	// defer stmt.Close()
+
+	// row, err := stmt.Exec()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// _, err = row.RowsAffected()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	// #endregion
+
+	sep := ","
+	if entityReq.IsRange {
+		sep = "-"
 	}
 
-	result, err := stmt.Exec(
-		entityReq.IPAddress,
-		entityReq.IsRange,
-		entityReq.EipID,
-	)
+	ipAddresses := strings.Join(entityReq.IPAddress, sep)
+
+	updateQuery := "UPDATE sententia.entity SET IP_Address= ? WHERE Entity_ID=?"
+	stmt, err := db.MySqlDB.Prepare(updateQuery)
 	if err != nil {
 		log.Println("ERROR: ", err)
+		return err
+	}
+	defer stmt.Close()
+
+	row, err := stmt.Exec(ipAddresses, entityReq.EntityID)
+	if err != nil {
+		log.Println("ERROR: ", err)
+		return err
 	}
 
-	rows, err := result.RowsAffected()
+	rows, err := row.RowsAffected()
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
@@ -681,27 +766,6 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 		return err
 	}
 
-	query := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
-
-	stmt, err = db.MySqlDB.Prepare(query)
-	if err != nil {
-		log.Println("ERROR: ", err)
-		return err
-	}
-	defer stmt.Close()
-
-	row, err := stmt.Exec()
-	if err != nil {
-		log.Println("ERROR: ", err)
-		return err
-	}
-
-	_, err = row.RowsAffected()
-	if err != nil {
-		log.Println("ERROR: ", err)
-		return err
-	}
-
 	return nil
 
 }
@@ -709,26 +773,77 @@ func (entityReq EntityIpReq) UpdateEntityIpAddress() error {
 func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
 	log.Println(entityReq)
 
-	seperator := func() string {
-		if entityReq.IsRange {
-			return "-"
-		}
-		return ","
-	}()
+	// #region - old code
 
-	stmt, err := db.MySqlDB.Prepare(deleteIpAddress)
+	// seperator := func() string {
+	// 	if entityReq.IsRange {
+	// 		return "-"
+	// 	}
+	// 	return ","
+	// }()
+
+	// stmt, err := db.MySqlDB.Prepare(deleteIpAddress)
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// }
+
+	// result, err := stmt.Exec(
+	// 	entityReq.EipID,
+	// )
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// }
+
+	// rows, err := result.RowsAffected()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// if rows == 0 {
+	// 	err := errors.New(questions.ErrDeleteFailure)
+	// 	return err
+	// }
+
+	// updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
+
+	// stmt, err = db.MySqlDB.Prepare(updateInEntityQuery)
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	// defer stmt.Close()
+
+	// row, err := stmt.Exec()
+	// if err != nil {
+
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+
+	// _, err = row.RowsAffected()
+	// if err != nil {
+	// 	log.Println("ERROR: ", err)
+	// 	return err
+	// }
+	// #endregion
+
+	query := "UPDATE sententia.entity SET IP_Address= NULL, IP_Enable='False' WHERE Entity_ID=?"
+
+	stmt, err := db.MySqlDB.Prepare(query)
 	if err != nil {
 		log.Println("ERROR: ", err)
+		return err
 	}
+	defer stmt.Close()
 
-	result, err := stmt.Exec(
-		entityReq.EipID,
-	)
+	row, err := stmt.Exec(entityReq.EntityID)
 	if err != nil {
 		log.Println("ERROR: ", err)
+		return err
 	}
 
-	rows, err := result.RowsAffected()
+	rows, err := row.RowsAffected()
 	if err != nil {
 		log.Println("ERROR: ", err)
 		return err
@@ -739,35 +854,13 @@ func (entityReq EntityIpReq) DeleteEntityIpAddress() error {
 		return err
 	}
 
-	updateInEntityQuery := fmt.Sprintf(updateIpAddressInEntity, seperator, entityReq.IPEnabled, entityReq.EntityID)
-
-	stmt, err = db.MySqlDB.Prepare(updateInEntityQuery)
-	if err != nil {
-		log.Println("ERROR: ", err)
-		return err
-	}
-	defer stmt.Close()
-
-	row, err := stmt.Exec()
-	if err != nil {
-
-		log.Println("ERROR: ", err)
-		return err
-	}
-
-	_, err = row.RowsAffected()
-	if err != nil {
-		log.Println("ERROR: ", err)
-		return err
-	}
-
 	return nil
 
 }
 
-func placeholders(n int) string {
-	return "?" + strings.Repeat(", ?", n-1)
-}
+// func placeholders(n int) string {
+// 	return "?" + strings.Repeat(", ?", n-1)
+// }
 
 func getLoggedInUsers() ([]LoggedInUsers, error) {
 

@@ -1,0 +1,13 @@
+.feedback-slider {
+	&__card {
+		padding: 48px 32px;
+	}
+	&__details {
+		margin-top: 32px;
+		margin-bottom: 32px;
+        font-family: $headings-font-family;
+		font-size: 18px;
+		font-weight: 600;
+		color: #233d62;
+	}
+}

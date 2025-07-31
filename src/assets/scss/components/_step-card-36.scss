@@ -1,0 +1,26 @@
+.step-card-36 {
+	border: 0;
+	border-radius: 1rem;
+	&:hover {
+		.step-card-36__title {
+			-webkit-text-fill-color: black;
+		}
+	}
+	&__title {
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: black;
+		-webkit-text-fill-color: white;
+		transition: all 0.3s ease;
+	}
+	.card-body {
+		@include media-breakpoint-up(md) {
+			padding: 48px;
+		}
+	}
+	.card-footer {
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+		text-align: center;
+	}
+}

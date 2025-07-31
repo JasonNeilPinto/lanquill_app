@@ -1,0 +1,20 @@
+.project-gallery {
+	position: relative;
+	isolation: isolate;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 320px;
+		background: linear-gradient(180deg, rgba(250, 250, 250, 0) 14.35%, #fafafa 100%);
+	}
+    &__btn {
+        position: absolute;
+        bottom: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+}

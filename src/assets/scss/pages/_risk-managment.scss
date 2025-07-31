@@ -1,0 +1,639 @@
+// Global
+.ff-risk-pri {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.fs-42 {
+	font-size: clamp(2rem, 2.1875vw + 1rem, 2.62rem);
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fw-800 {
+	font-weight: 800;
+}
+
+.flh-26 {
+	line-height: 26px;
+}
+
+.flh-28 {
+	line-height: 28px;
+}
+
+.flh-44 {
+	line-height: 44px;
+}
+
+.flh-56 {
+	line-height: 56px;
+}
+
+.fch-14 {
+	max-width: 14ch;
+}
+
+.fch-50 {
+	max-width: 50ch;
+}
+
+.risk-title {
+	@media(max-width: 767px) {
+		font-size: 24px;
+		line-height: 42px;
+	}
+}
+
+.risk-gd-text {
+	background: linear-gradient(270deg, #007FFF 26.08%, #FF4D54 116.12%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.risk-highlight-color {
+	background: linear-gradient(270deg, #007FFF -40.1%, #FF4D54 -2.86%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.risk-sub-text {
+	color: $risk-color-1;
+}
+
+.risk-color {
+	color: $dark-un !important;
+}
+
+.risk-color-two {
+	color: $risk-color-2;
+}
+
+.risk-gd-bg {
+	background: linear-gradient(270deg, #007FFF -29.66%, #FF4D54 117.57%);
+}
+
+.risk-bg-color {
+	background-color: $risk-color-1;
+}
+
+.risk-bg-color-two {
+	background-color: $risk-color-3;
+}
+
+.risk-bg-color-three {
+	background-color: $risk-color-4;
+}
+
+.risk-click-btn {
+	width: 88px;
+	height: 88px;
+	right: 0;
+	bottom: 0;
+}
+
+.risk-outline-btn {
+	border: 1px solid $risk-color-1;
+
+	&:hover {
+		background-color: $risk-color-1;
+		color: $white !important;
+	}
+}
+
+.risk-btn-bg {
+	background-color: $risk-color-1;
+}
+
+.risk-btn-hover {
+	&:hover {
+		background-color: $white;
+		color: $risk-color-1;
+	}
+}
+
+.risk-outline-btn-hover {
+	&:hover {
+		background-color: transparent;
+		outline: 1px solid $risk-color-1;
+		color: $risk-color-1;
+	}
+}
+
+.risk-hover-text-white {
+	&:hover {
+		color: $white;
+	}
+}
+
+.rounded-8 {
+	border-radius: 8px;
+}
+
+.risk-border-hover {
+	&:hover {
+		background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,
+			linear-gradient(324.79deg, #007FFF -4.77%, #FF4D54 107.43%) border-box;
+		border: 1px solid transparent !important;
+	}
+}
+
+.risk-border-left {
+	border-left: 1px solid;
+}
+
+.risk-border-color {
+	border-color: #FFFFFF1A;
+}
+
+.risk-gd-border-line {
+	height: 2px;
+	background: linear-gradient(270deg, rgba(0, 25, 60, 0) 1.13%, #4DAAFF 63.18%, rgba(0, 25, 60, 0) 105.56%);
+}
+
+.rounded-12 {
+	border-radius: 12px;
+}
+
+.risk-shadow {
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ptb-40 {
+	padding-top: 40px !important;
+	padding-bottom: 40px !important;
+}
+
+.pr-50 {
+	padding-right: 50px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+// Global
+
+// Hero
+.rm-hero {
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-image: url("../img/risk_managment/hero_overlay.png");
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: top center;
+		top: 0;
+		left: 0;
+
+		@media(max-width: 1759px) {
+			background-image: none;
+			background-color: $risk-color-3;
+		}
+	}
+
+	.hero-shape {
+		top: -115px;
+		left: -233px;
+
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.rm-hero-title {
+	text-indent: 45px;
+
+	@media(max-width: 1399px) {
+		text-indent: 0;
+		font-size: clamp(2rem, 3.0vw + 1rem, 4.5rem);
+	}
+
+	.text-ind {
+		display: inline-block;
+		text-indent: 140px;
+
+		@media(max-width: 1399px) {
+			text-indent: 0;
+		}
+	}
+}
+
+.risk-customer-area {
+	@media(max-width: 1399px) {
+		margin-top: 30px;
+	}
+
+	@media(max-width: 991px) {
+		margin-bottom: 30px;
+	}
+}
+
+.risk-customer-logo-wrapper {
+	@media(max-width: 1199px) {
+		gap: 20px !important;
+		;
+	}
+}
+
+.risk-customer-logo {
+	transition: .5s;
+	opacity: .5;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.risk-social {
+	position: absolute;
+	right: -230px;
+	bottom: 160px;
+
+	@media(max-width: 1759px) {
+		right: -165px;
+	}
+
+	@media(max-width: 1619px) {
+		right: -115px;
+	}
+
+	@media(max-width: 1499px) {
+		right: -70px;
+	}
+
+	@media(max-width: 1023px) {
+		display: none !important;
+	}
+
+	a {
+		color: $white;
+		font-weight: 700;
+		opacity: .5;
+		transform: rotate(-90deg);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+// Hero
+
+// Info Card 
+.rm-info-card-area {
+	h2 {
+		@media(max-width: 991px) {
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+.risk-info-card {
+	h5 {
+		span {
+			position: relative;
+			display: inline-block;
+			height: 2px;
+			width: 54px;
+			margin-right: 12px;
+			top: -5px;
+		}
+	}
+
+	&:hover {
+		h5 {
+			span.risk-bg-color {
+				background: linear-gradient(270deg, #007FFF -29.66%, #FF4D54 117.57%);
+			}
+		}
+	}
+}
+
+// Info Card 
+
+// Service
+
+.rm-service-area {
+	.pr-40 {
+		@media(max-width: 1399px) {
+			padding-right: 0;
+		}
+	}
+
+	.rm-service-img {
+		@media(max-width: 991px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.s-one {
+		top: 25px;
+		right: 55px;
+		opacity: 0.4;
+
+		@media(max-width: 1399px) {
+			right: 0;
+		}
+
+		@media(max-width: 1199px) {
+			display: none;
+		}
+	}
+
+	.s-two {
+		top: 0;
+		left: 31px;
+
+		@media(max-width: 1600px) {
+			display: none;
+		}
+	}
+
+	.s-three {
+		top: 0;
+		right: 0;
+
+		@media(max-width: 1600px) {
+			display: none;
+		}
+	}
+}
+
+.risk-service-count {
+	width: 30px;
+	height: 30px;
+	background: linear-gradient($risk-color-3, $risk-color-3) padding-box,
+		linear-gradient(324.79deg, #007FFF -4.77%, #FF4D54 107.43%) border-box;
+	border: 1px solid transparent !important;
+}
+
+.risk-counter-item {
+	h3 {
+		@media(max-width: 1399px) {
+			font-size: 38px;
+		}
+	}
+
+	@media(max-width: 991px) {
+		padding-left: 0;
+		border: 0;
+	}
+}
+
+// Service
+
+// Service Content
+.rm-service-content-area {
+	@media(max-width: 991px) {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+
+	.s-one {
+		right: 0;
+		bottom: auto;
+
+		@media(max-width: 991px) {
+			display: none;
+		}
+	}
+}
+
+.rm-service-content-area-two {
+	@media(max-width: 991px) {
+		padding-bottom: 60px;
+	}
+}
+
+// Service Content
+
+// Cta
+.rm-cta-area {
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-image: url("../img/risk_managment/cta_bg_overlay.png");
+		background-repeat: no-repeat;
+		background-position: right center;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.risk-cta-img {
+	left: 0;
+	top: -35px;
+
+	@media(max-width: 991px) {
+		display: none;
+	}
+}
+
+// Cta
+
+// Contact
+.risk-contact-form-bg {
+	padding: 32px;
+	padding-bottom: 42px;
+
+	@media(max-width: 991px) {
+		margin-top: 40px;
+	}
+
+	@media(max-width: 399px) {
+		padding: 15px;
+	}
+
+	.s-one {
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.rm-contact-area {
+	.s-two {
+		bottom: -275px;
+		right: 0;
+	}
+
+	.pl-50 {
+		@media(max-width: 1199px) {
+			padding-left: 0;
+		}
+	}
+}
+
+.risk-form-box {
+	padding: 40px 32px;
+
+	@media(max-width: 399px) {
+		padding: 20px;
+	}
+}
+
+.risk-input {
+	border-radius: 4px;
+
+	&::placeholder {
+		color: $risk-color-5;
+		font-family: "Plus Jakarta Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+// Contact
+
+// Testimonial
+.risk-slider__controls {
+	.risk-slider__pagination {
+		margin-top: 50px;
+		display: flex;
+		gap: 8px;
+		justify-content: center;
+
+		span {
+			background: $dark-un;
+			width: 8px;
+			height: 8px;
+			border-radius: 50px;
+
+			&.swiper-pagination-bullet-active {
+				width: 18px;
+				background: linear-gradient(270deg, #007FFF -29.66%, #FF4D54 117.57%);
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+.rm-testimonial-area {
+	@media(max-width: 991px) {
+		padding-top: 0;
+	}
+
+	.s-one {
+		right: 0;
+		bottom: 0;
+	}
+
+	.text-end {
+		@media(max-width: 991px) {
+			text-align: left !important;
+			margin-top: 10px;
+		}
+	}
+
+	.risk-bg-color-three {
+		@media(max-width: 991px) {
+			padding: 20px;
+			padding-top: 30px;
+		}
+	}
+}
+
+// Testimonial
+
+// Blog
+.rm-blog-area {
+	.text-center {
+		P {
+			@media(max-width: 767px) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// Blog
+
+// Footer
+
+.rm-footer-top {
+	padding-top: 170px;
+	padding-bottom: 150px;
+
+	@media(max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/risk_managment/footer_overlay.png);
+		z-index: -1;
+		background-repeat: no-repeat;
+		background-position: top center;
+		top: 0;
+		left: 0;
+
+		@media(max-width: 1759px) {
+			background-image: none;
+			background-color: $risk-color-3;
+		}
+	}
+
+	.footer-nav-list li a,
+	.footer-single-col p {
+		color: $white;
+		opacity: 1;
+	}
+
+	.ca-two-newsletter-form .form-control {
+		background-color: $white;
+	}
+
+	.ca-two-newsletter-form .btn {
+		background: linear-gradient(270deg, #007FFF -29.66%, #FF4D54 117.57%);
+		border: 0;
+
+		&::after {
+			filter: invert(1);
+		}
+	}
+
+	.footer-social-list {
+		li {
+			a {
+				&:hover {
+					background: linear-gradient(270deg, #007FFF -29.66%, #FF4D54 117.57%);
+					color: $white !important;
+					border: 0;
+				}
+			}
+		}
+	}
+
+	.footer-single-col {
+		@media(max-width: 1199px) {
+			margin-bottom: 20px;
+		}
+
+		h3 {
+			@media(max-width: 1199px) {
+				margin-bottom: 0px;
+			}
+		}
+
+		&.pl-40 {
+			@media(max-width: 1199px) {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+// Footer

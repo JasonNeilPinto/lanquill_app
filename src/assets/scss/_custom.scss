@@ -1,0 +1,49 @@
+$custom-1: #f8f9fa;
+$custom-2: #ffe1d7;
+
+/* Home 1 */
+.icon-box span {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 22px;
+}
+/* Home 1 */
+
+// Home 8
+.appTwoReviewSwiper-Controller {
+    .swiper-button-prev {
+        left: -20px;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 14px;
+    }
+}
+// Home 8
+
+// Home 15
+.single-speaker {
+    background: $white;
+}
+// Home 15
+
+// Bg
+.bg-light-subtle ,
+.bg-light {
+    background: $custom-1;
+}
+.bg-danger-subtle {
+    background: $custom-2;
+}
+
+// Bg
+
+// Other
+.z-3 {
+    z-index: 3;
+}
+// home -38
+.ca-accordion.home-38 .accordion-button::after {
+    display: none;
+}

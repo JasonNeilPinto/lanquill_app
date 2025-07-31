@@ -1,0 +1,19 @@
+.cta-card {
+  border-radius: 1rem;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  &--1 {
+    background-image: url(../img/cta-card-bg-1.png);
+  }
+  &--2 {
+    background-image: url(../img/cta-card-bg-2.png);
+  }
+  &__content {
+    padding: 40px 20px 0;
+    @include media-breakpoint-up(sm) {
+      padding: 60px 48px 0;
+    }
+  }
+}

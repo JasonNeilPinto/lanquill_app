@@ -1,3 +1,0 @@
-// Global constants
-
-package constants

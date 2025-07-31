@@ -1,0 +1,15 @@
+.home-36 {
+	background-color: $gray-50;
+	z-index: 1;
+}
+[data-bs-theme="dark"] {
+	.home-36 {
+		background-color: #1a1b1b;
+	}
+	.about-title {
+		color: #fff;
+	}
+    .feature-description {
+        color: #1a1b1b;
+    }
+}

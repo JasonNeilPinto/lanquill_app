@@ -1,0 +1,392 @@
+// Global
+.fs-30 {
+    font-size: 30px;
+}
+
+.ail-title {
+    @media(max-width: 767px) {
+        font-size: 30px;
+    }
+}
+
+.ail-body-color {
+    color: $crm-secondary;
+}
+
+.ail-highlighted-text {
+    background: $ail-gd-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ail-gd-bg {
+    background: $ail-gd-color;
+}
+
+.ail-gd-bg-2 {
+    background: $ail-gd-bg;
+}
+
+.ail-gd-bg-3 {
+    background: $ail-gd-bg-2;
+}
+
+.ail-main-bg {
+    background-color: $ail-brand-color;
+}
+
+.ail-op-bg {
+    background-color: $ail-op-color;
+}
+
+.bg-sky-blue {
+    background-color: $sky-blue;
+}
+
+.white-50-bg {
+    background-color: $white-50;
+}
+
+.dark-bg-hover{
+    &:hover {
+        background: $ail-dark-hover;
+    }
+}
+
+.ail-sub-title {
+    padding: 5px 20px;
+    span {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+    }
+}
+
+.mt-5-ov {
+    margin-top: 5px;
+}
+// Global
+
+// Hero
+.ail-hero-area {
+    background-image: url("../img/ail_home/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media(max-width: 399px) {
+        padding-top: 20px;
+    }
+    .text-center {
+        p {
+            @media(max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.ail-hero-img {
+    margin-bottom: -145px;
+}
+// Hero
+
+// Tab
+.ail-feature-tab {
+    li {
+        width: 24%;
+        @media(max-width: 1399px) {
+            width: auto;
+        }
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 2px solid $crm-placeholder;
+            padding: 0;
+            padding-bottom: 10px;
+            p {
+                color: $black;
+                font-size: 20px;
+                font-family: $font-family-monospace;
+                font-weight: 600;
+                margin-bottom: 0;
+                transition: .8s;
+            }
+            .active {
+                display: none;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                width: 35%;
+                height: 100%;
+                border-bottom: 2px solid $dark-un;
+                left: 0;
+                bottom: -2px;
+                display: none;
+            }
+            &:hover , &.active {
+                p {
+                    background: $ail-gd-color;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .active {
+                    display: block;
+                }
+                img {
+                    display: none;
+                }
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.ail-tab-con_list {
+    li {
+        margin-top: 10px;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $dark-new-2;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: 1.5px solid $dark-new-2;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.ail-ft-content {
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/ail_home/tab_overlay.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+        inset: 0;
+        z-index: -1;
+    }
+}
+
+.ail-feature-area {
+    .text-end {
+        @media(max-width: 991px) {
+            text-align: left !important;
+        }
+    }
+}
+
+.ail-tab-con {
+    @media(max-width: 991px) {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    h3 {
+        @media(max-width: 767px) {
+           font-size: 24px;
+        }
+    }
+}
+
+.ail-ft-content {
+    @media(max-width: 767px) {
+        padding: 20px !important;
+    }
+}
+// Tab
+
+// Info Card
+.ail-info-card-area {
+    background-image: url("../img/ail_home/card_overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.ail-card-item {
+    // background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,linear-gradient(324.79deg, #ff076657 -4.77%, #ff7e5d80 107.43%) border-box;
+    // border: 1px solid rgba(0,0,0,0) !important;
+    border: 1px solid $ail-br-clr;
+    transition: .8s;
+    span {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        flex-shrink: 0;
+    }
+    a {
+        &:hover {
+            background: $ail-gd-color;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &:hover {
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,linear-gradient(324.79deg, #FF3E81 -4.77%, #4706FF 107.43%) border-box;
+        border: 1px solid rgba(0,0,0,0) !important;
+    }
+}
+// Info Card
+
+// Work
+.ail-step-sub-title {
+    span {
+        width: 40px;
+        height: 1px;
+    }
+}
+
+.ail-work-area {
+    .fs-36 {
+        @media(max-width: 1199px) {
+            font-size: 28px;
+        }
+    }
+    .mt-50 {
+        .row {
+            @media(max-width: 991px) {
+                flex-direction: column-reverse;
+            }
+            .pl-40 {
+                @media(max-width: 991px) {
+                    padding-left: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .mt-40 {
+        .ail-main-bg {
+            @media(max-width: 767px) {
+                padding: 20px !important;
+            }
+        }
+    }
+}
+
+.ail-work__content {
+    .fch-40 {
+        @media(max-width: 991px) {
+            max-width: inherit;
+        }
+    }
+}
+// Work
+
+// Feedback
+.ail-feedback-area {
+    background-image: url("../img/ail_home/card_overlay.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+// Feedback
+
+// Price
+.ail-price-item {
+    border: 1px solid $ail-br-clr;
+    transition: .8s;
+    &:hover {
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,linear-gradient(324.79deg, #FF3E81 -4.77%, #4706FF 107.43%) border-box;
+        border: 1px solid rgba(0,0,0,0) !important;
+    }
+    .btn {
+        &:hover {
+            background-color: inherit;
+            background: $ail-gd-color;
+            color: $white;
+        }
+    }
+    .ail-popular {
+        background: $sc-primary-gradient;
+        padding: 4px 12px;
+        border-radius: 5px;
+    }
+    &.popular {
+        background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,linear-gradient(324.79deg, #FF3E81 -4.77%, #4706FF 107.43%) border-box;
+        border: 1px solid rgba(0,0,0,0) !important;
+        .btn {
+            background-color: inherit;
+            background: $ail-gd-color;
+            color: $white;
+        }
+    }
+    @media(max-width: 399px) {
+        padding: 30px !important;
+    }
+}
+// Price
+
+// Cta
+.ail-cta-wrapper {
+    background: linear-gradient($ail-brand-color, $ail-brand-color) padding-box,linear-gradient(324.79deg, #FF3E81 -4.77%, #4706FF 107.43%) border-box;
+    border: 1px solid rgba(0,0,0,0) !important;
+    @media(max-width: 399px) {
+        padding: 30px !important;
+    }
+    img {
+        @media(max-width: 991px) {
+            margin-top: 30px;
+        }
+    }
+}
+// Cta
+
+// Footer
+.aih-footer.ail-footer {
+    &::after {
+        display: none;
+    }
+    .footer-social-list {
+        li {
+            a {
+                &:hover {
+                    background-color: inherit !important;
+                    background: $ail-gd-color !important;
+                    color: $white !important;
+                    border: 0;
+                }
+            }
+        }
+    }
+    .footer-nav-list {
+        li {
+            a {
+                &:hover {
+                  color:  $hd-secondary;
+                }
+            }
+        }
+    }
+    .ca-two-newsletter-form {
+        .btn {
+            background-color: inherit;
+            background: $ail-gd-color;
+            border: 0;
+            &::after {
+                filter: invert(1);
+            }
+        }
+    }
+    .rm-footer-bottom {
+        p {
+            a {
+                color: $hd-secondary;
+            }
+        }
+    }
+}
+// Footer

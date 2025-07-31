@@ -1,0 +1,23 @@
+.hero-36 {
+  padding-top: 180px;
+  position: relative;
+  isolation: isolate;
+  background-color: #181818;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    background-image: url(../img/hero-36-shape.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &__important {
+    background-color: #fff250;
+    color: #181818;
+  }
+}

@@ -1,0 +1,259 @@
+// Global
+.pay-gw-gg-bg {
+    background-image: url(../img/home_34/gg-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pay-body-color {
+    background-color: $pay-body-color;
+}
+
+.pay-op-body-color {
+    background-color: $pay-op-body-color;
+}
+
+.pay-bg-color {
+    background-color: $pay-gw-color;
+}
+
+.pay-bg-two {
+    background-color: $pay-gw-bg;
+}
+
+.pay-gw-color {
+    color: $pay-gw-color;
+}
+
+.pay-card-icon-wpreer {
+    .shape-1 {
+        right: -15px;
+        bottom: -15px;
+    }
+}
+
+.pay-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: $white;
+}
+
+.pay-gw-hero-title {
+    span {
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.pay-gw-title {
+    @media(max-width: 767px) {
+        font-size: 24px;
+    }
+}
+
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+
+.btn.pay-bg-color {
+    &:hover {
+        background-color: $black;
+    }
+}
+// Global
+
+// Hero
+.pay-gw-hero-area {
+    .shape-1 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-60%);
+        @media(max-width: 1199px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/home_34/hero-bg-overlay.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        inset: 0;
+        z-index: -2;
+    }
+}
+
+.pay-gw-hero-img-box {
+    .logo-1 {
+        @media(max-width: 1199px) {
+            display: none;
+        }
+    }
+}
+// Hero
+
+// Payment Tools
+.pay-gw-payment-tools-area {
+    .shape-1 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-55%);
+        @media(max-width: 1399px) {
+            display: none;
+        }
+    }
+    .pt-60 {
+        @media(max-width: 767px) {
+            padding-top: 30px !important;
+        }
+    }
+}
+
+.pay-gw-payment-item {
+    &:hover {
+        background-color: $pay-gw-color !important;
+        .pay-card-icon {
+            background-color: $dg-warning-color; 
+        }
+        h4 , p {
+            color: $white;
+        }
+    }
+}
+// Payment Tools
+
+// Faq
+.pay-gw-faq {
+    @media(max-width: 991px) {
+        padding-top: 0;
+    }
+    .accordion-item {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $accent;
+        border-radius: 0;
+        margin-bottom: 0;
+        padding-block: 25px;
+        .accordion-header {
+            .accordion-button {
+                background-color: transparent;
+                border: 0;
+                color: $white;
+                padding: 0;
+                .pay-faq-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 12px;
+                    background-color: $white;
+                }
+                &::after {
+                    background-color: transparent;
+                    color: $white;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+                &[aria-expanded="true"] {
+                    .pay-faq-icon {
+                        background-color: $dg-warning-color;
+                        img {
+                            filter: brightness(3.5);
+                        }
+                    }
+                    &::after {
+                        background-color: transparent;
+                        padding-bottom: 13px;
+                        filter: invert(4);
+                    }
+                }
+                span {
+                    @media(max-width: 767px) {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .accordion-body {
+            color: $white;
+            padding: 0;
+            padding-top: 20px;
+        }
+        
+    }
+    .ca-accordion .accordion-item:not(:first-of-type) {
+        border: 0;
+        border-bottom: 1px solid $accent;
+    }
+}
+.pay-gw-faq-content {
+    @media(max-width: 767px) {
+        padding-bottom: 0;
+    }
+}
+// Faq
+
+// Card
+.pay-gw-card-item {
+    transition: .8s;
+    &:hover {
+        background-color: $pay-gw-color;
+        .pay-card-icon {
+            background-color: $dg-warning-color; 
+            img {
+                filter: invert(1) contrast(3.5);
+            }
+        }
+        h5 , p {
+            color: $white;
+        }
+    }
+}
+// Card
+
+// Feedback
+.risk-slider__controls{
+    &.pay-gw {
+        .risk-slider__pagination span.swiper-pagination-bullet-active {
+            background: $pay-gw-color;
+        }
+    }
+}
+
+.rm-testimonial-area.pay-gw-style {
+    .s-one {
+        top: 0;
+    }
+}
+// Feedback
+
+// Faq
+.aiwt-faq.pay-gw-style {
+    .accordion-item .accordion-header button[aria-expanded=true] {
+        background-color: $pay-gw-color;
+    }
+}
+// Faq
+
+// Footer
+.aiart-footer.pay-gw-style {
+    .ca-two-newsletter-form .btn {
+        background: $pay-gw-color;
+    }
+    .footer-social-list li a:hover {
+        background: $pay-gw-color;
+    }
+} 
+// Footer

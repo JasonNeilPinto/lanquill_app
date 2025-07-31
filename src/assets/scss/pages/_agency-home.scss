@@ -1,0 +1,223 @@
+// Hero //
+.ah-bg {
+    background-color: $des-a-clr-2;
+}
+
+.ah-bg-2 {
+    background-color: $ah-color;
+}
+
+.ah-bg-3 {
+    background-color: $ah-color-2;
+}
+
+.ah-bg-4 {
+    background-color: $ah-color-3;
+}
+
+.agency-home-hero {
+    .hero_shape {
+        @media (max-width: 767px) {
+            display: none;
+         }
+    }
+} 
+
+.agency-home-hero.pt-160 {
+    @media (max-width: 1199px) {
+       padding-top: 80px;
+    }
+}
+
+.agency-home-hero__content__title {
+    @media (max-width: 1199px) {
+        text-align: center;
+        font-size: 56px;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 991px) {
+        font-size: 48px;
+    }
+    @media (max-width: 767px) {
+        font-size: 38px;
+    }
+    @media (max-width: 575px) {
+        font-size: 32px;
+    }
+}
+
+.agency-home-hero__des {
+    color: $github;
+}
+
+.agency-home-hero__img-box {
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.agency-home-hero__bottom-content {
+    @media (max-width: 1199px) {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+.design-agency-two-hero__btn-box {
+    @media (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+
+.ah-conunter-title {
+    font-size: clamp(1.98rem, 2.526vw + 1rem, 3rem);
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.ah-counter-des {
+    color: $dg-text-color;
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.agency-home-hero__img-box {
+    .agency-home-hero__img-box__img {
+        margin-left: -60px;
+    }
+}
+// Hero //
+
+// how its works //
+.bg-style-1 {
+    background-color: $ah-color-4;
+}
+.bg-style-2 {
+    background-color: $ah-color-5;
+}
+.bg-style-3 {
+    background-color:$ah-color-6;
+}
+
+.ah-style {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    &.fix {
+        svg {
+            margin-right: -10px;
+            margin-bottom: -10px;
+        }
+    }
+}
+
+.ah-text-outline {
+    color: rgb(102 114 251 / 99%);
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px rgb(102 114 251 / 99%);
+}
+// how its works //
+
+// Service //
+.ah-service {
+    position: relative;
+    z-index: 2;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/agency-home/service_bg2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+// Service //
+
+// Integration //
+.digi-integration.ah-bg-2 {
+    padding-top: 265px;
+    margin-top: -215px;
+}
+
+.ah-outline-btn {
+    color: $ah-color-7;
+    border: 1px solid $ah-color-7;
+}
+// Integration //
+
+// News //
+.btn-bg-white {
+    color: $ah-color-7;
+    background-color: $white;
+    box-shadow: 14px 14px 56px 0px #21266A1A;
+    font-weight: 600;
+
+}
+
+.text-pink-2 {
+    color: $hd-primary !important;
+}
+
+.red-hover {
+    &:hover {
+        background-color: $ah-color-8;
+        color: $white !important;
+    }
+}
+// News //
+
+// Faq //
+.accordion-active-bg {
+    .accordion-item {
+        &.active {
+            background-color: $hd-light-bg;
+            .accordion-header {
+                a {
+                    color: $github;
+                }
+            }
+        }
+        .accordion-header {
+            a {
+                &:hover {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
+// Faq //
+
+// Blog //
+.border-radius-remove {
+    border-radius: 0;
+}
+
+.ah-blog-cet-bg {
+    background-color: $ah-color-9;
+}
+
+.ah-blog-cet-bg-2 {
+    background-color: $ah-color-10;
+}
+.ah-blog-cet-bg-3 {
+    background-color: $hd-secondary;
+}
+// Blog //
+
+// Newsletter //
+.ah-input-bg {
+    background-color:$dg-meta-color;
+}
+// Newsletter //
+

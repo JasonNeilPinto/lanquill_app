@@ -1,0 +1,17 @@
+.pricing-section {
+  position: relative;
+  isolation: isolate;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    background-image: url(../img/team-section-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}

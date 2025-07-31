@@ -1,0 +1,644 @@
+//For dark version
+
+[data-bs-theme="dark"] {
+
+	//dark and light mood
+	.tt-theme-light {
+		display: none;
+	}
+
+	.tt-theme-dark {
+		display: block;
+	}
+
+	//header
+	.navbar-light .navbar-brand img.logo-white,
+	.navbar-dark.sticky-header.affix .navbar-brand img.logo-white {
+		display: block;
+	}
+
+	.navbar-dark.sticky-header.affix .navbar-brand img.logo-color,
+	.navbar-dark .navbar-brand img.logo-color,
+	.navbar-light .navbar-brand img.logo-color,
+	.dg-hero-section .hero-curve.left,
+	.dg-hero-section .hero-curve.right,
+	.pf-curve.left,
+	.pf-curve.right,
+	.tm-curve.left,
+	.tm-curve.right,
+	.ct-curve.left,
+	.ct-curve.right,
+	.sc-cta-section,
+	.dat-section-after::after {
+		display: none !important;
+	}
+
+	.dropdown-grid-item a:hover,
+	.ins-contact-form .ins-input-field label,
+	.dg-portfolio-section,
+	.dg-feedback-section,
+	.bgc-white-50p,
+	.it-company-footer,
+	.aih-price-area {
+		background: $gray-900;
+	}
+
+	.main-menu li.nav-item .dropdown-menu:before,
+	.dg-pricing-column .dg-pricing-amount ,
+	.risk-bg-color-two,
+	.risk-bg-color-three,
+	.it-company-bg-two, 
+	.aiart-price-wrapper::after {
+		background-color: $gray-800 !important;
+	}
+
+	.navbar-light .main-menu li a.nav-link,
+	.navbar-light .action-btns a.btn-link,
+	.navbar-dark.sticky-header.affix .main-menu li a.nav-link,
+	.navbar-dark.sticky-header.affix .action-btns a.btn-link ,
+	.ail-tab-con_list li p,
+	.ail-tab-con_list li i {
+		color: $gray-300 !important;
+	}
+
+	//  background
+	.bg-white,
+	.navbar-light.sticky-header.affix,
+	.navbar-dark.sticky-header.affix,
+	.payment-counter-bg,
+	.hd-pricing-section,
+	.ins-hero-section,
+	.ins-brands,
+	.bgc-white,
+	.bg-design-agency-about,
+	.design-agency-two-hero {
+		background-color: $black !important;
+	}
+
+	.ins-hero-section .ins-hero-curve {
+		display: none;
+	}
+
+	.ins-brands {
+		padding: 30px;
+		border-radius: 6px;
+	}
+
+	.bg-gradient,
+	.event-hero {
+		background: linear-gradient(90deg, $gray-900, darken($primary, 45%)) !important;
+	}
+
+	.ins-contact-section::before {
+		background: linear-gradient(95.5deg, rgb(17 24 39), rgb(17 24 38 / 98%));
+	}
+
+	.payment-news-letter {
+		background: linear-gradient(0deg, $gray-800 13.3%, rgba(255, 255, 255, 0) 100%);
+	}
+
+	.process-card:hover,
+	.dg-feedback-bg,
+	.ah-bg-3,
+	.ah-bg-4,
+	.hd-pricing-single {
+		background-color: $gray-800 !important;
+	}
+
+	.two-bg-dark-light,
+	.hd-hero-section {
+		background-image: -webkit-gradient(linear,
+				left top,
+				right top,
+				color-stop(40%, $dark),
+				color-stop(0, $gray-900));
+		background-image: linear-gradient(90deg, $dark 40%, $gray-900 0);
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		.two-bg-dark-light {
+			background: $gray-900;
+		}
+	}
+
+	.process-icon-2:after,
+	.mk-sf-item,
+	.mk-app-single,
+	.mk-partner-item,
+	.hd-accordion .accordion-item,
+	.sponsor-logo-bg .logo,
+	.sc-team-filter-nav li a {
+		border-color: $gray-800 !important;
+	}
+
+	.mk-partners-list .mk-partner-item:hover,
+	.up-coming-event,
+	.event-about,
+	.ev-price,
+	.bgc-background,
+	.ca-digital-service,
+	.sc-service-card,
+	.dat-bg.style-dark,
+	.pay-gw-hero-area {
+		background: $gray-800 !important;
+	}
+
+	.dat-bg,
+	.ah-bg,
+	.ah-bg-2,
+	.ai-wt-body-bg,
+	.ail-main-bg.aiart,
+	.pay-body-color {
+		background-color: $gray-900;
+	}
+
+	.bg-light-subtle.style-dark  {
+		background-color: $gray-700 !important;
+	}
+
+	//  color
+	body {
+		color: $gray-400;
+	}
+
+	.bg-white h1,
+	.bg-white h2,
+	.bg-white h3,
+	.bg-white h4,
+	.bg-white h5,
+	.bg-white h6,
+	.bg-light h1,
+	.bg-light h2,
+	.bg-light h3,
+	.bg-light h4,
+	.bg-light h5,
+	.bg-light h6 {
+		color: $gray-100;
+	}
+
+	.clr-text {
+		color: $gray-100;
+	}
+
+	.dat-about-btn,
+	.sc-pricing-switch button {
+		color: $gray-500;
+	}
+
+	.sc-pricing-switch button.active {
+		color: $white;
+	}
+
+	//  form
+	.form-control:focus,
+	.hd-faq-section.ah-bg .hd-faq-wrapper .accordion-item ,
+	.ail-ft-content,
+	.ail-work-area .ail-main-bg ,
+	.ai-wt-body-bg-2,
+	.ai-wt-enc-slider-item {
+		background-color: $gray-800 !important;
+	}
+
+	.bg-dark input.form-control,
+	.bg-gradient input.form-control,
+	.newsletter-form input.form-control,
+	.crm-service-box {
+		border-color: $gray-600;
+	}
+
+	.register-form,
+	.hero-subscribe-form {
+
+		input.form-control,
+		textarea.form-control {
+			border-color: $gray-800 !important;
+		}
+	}
+
+	//  pricing
+	.dg-pricing-section .dg-pricing-column,
+	.dg-blog-section .dg-blog-card,
+	.risk-testimonial-item.pay-bg-two {
+		background-color: $gray-700 !important;
+	}
+
+	//  testimonial
+	.appTwoReviewSwiper-Controller .swiper-button-prev,
+	.appTwoReviewSwiper-Controller .swiper-button-next,
+	.dg-pricing-section .da-price,
+	.agency-home-hero__des {
+		color: $gray-300 !important;
+	}
+
+	.testimonial-tab-menu.nav-pills .nav-link.active,
+	.connected-app-single:hover,
+	.appTwoReviewSwiper-Controller .swiper-button-prev,
+	.appTwoReviewSwiper-Controller .swiper-button-next,
+	.swiper-nav-control .swiper-button-next,
+	.swiper-nav-control .swiper-button-prev,
+	.single-article {
+		background-color: $gray-900 !important;
+		border-color: $gray-800 !important;
+	}
+	
+
+	// Home 27
+	.ca-two-main {
+		background: $white;
+		position: relative;
+		z-index: 1;
+	}
+
+	.ca-two-bg-hover-two {
+		&:hover {
+			background: linear-gradient(99deg, #2ACE93 7.76%, #9CE842 100%);
+			border-color: transparent;
+		}
+	}
+
+	.ca-two-hero svg path,
+	.ca-two-portfolio-post-area svg path,
+	.ca-two-tesimonial-area svg path,
+	.ca-two-tesimonial-area rect {
+		fill-opacity: 1;
+		fill: $dark-new-1;
+	}
+
+	.ca-two-info-card-area .ca-two-subtitle,
+	.ca-two-portfolio-post-area .ca-two-title,
+	.ca-two-tesimonial-area .ca-two-title {
+		color: $white;
+
+		span {
+			background-color: $white!important;
+		}
+
+		.counter {
+			background-color: transparent !important;
+		}
+	}
+
+	.ca-two-hover-bg:hover {
+		background-color: $github;
+
+		.ca-two-info-icon {
+			filter: invert(1);
+		}
+
+		h5,
+		p {
+			color: $white;
+		}
+	}
+
+	.ca-two-mission-img {
+		filter: invert(1);
+	}
+
+	.ca-two-pf-posts .ca-two-bg-five {
+		background-color: $dark-new-1;
+
+		&:hover {
+			color: $white;
+
+			span {
+				background-color: $white;
+			}
+		}
+	}
+
+	.ca-two-call-btn .call-btn {
+		background-color: transparent !important;
+	}
+
+	.ca-two-pf-img {
+		filter: brightness(0.9);
+	}
+
+	.ca-two-product-item {
+		&.bg-white {
+			background-color: inherit !important;
+		}
+
+		h5 {
+			color: $dark-new-1;
+		}
+
+		&:hover {
+			background-color: $dark-new-1 !important;
+
+			h5 {
+				color: $white;
+			}
+		}
+	}
+
+	.ca-two-price-item {
+		.bg-white {
+			background-color: $white !important;
+		}
+
+		.ca-two-bg-hover:hover {
+			border-color: transparent;
+			background: linear-gradient(99deg, #2ACE93 7.76%, #9CE842 100%);
+			color: $white;
+		}
+	}
+
+	.ca-two-ss-area,
+	.ca-two-footer {
+		background: linear-gradient(99deg, #2ACE93 7.76%, #9CE842 100%);
+	}
+
+	@media(max-width: 1850px) {
+
+		.ca-two-portfolio-post-area,
+		.ca-two-hero,
+		.ca-two-tesimonial-area {
+			background-color: $dark-new-1;
+		}
+
+		.ca-two-portfolio-post-area .ca-two-subtitle,
+		.ca-two-tesimonial-area .ca-two-subtitle {
+			color: $white;
+		}
+
+		.ca-two-info-card-area .ca-two-subtitle {
+			color: $dark-new-1;
+
+			span {
+				background-color: $dark-new-1 !important;
+			}
+		}
+	}
+
+	@media(max-width: 1699px) {
+		.ca-two-footer {
+			background: $dark-new-1 !important;
+		}
+	}
+
+	// Home 27
+
+	// Home 28
+	.risk-outline-btn,
+	.risk-color-two,
+	.rm-footer-bottom .risk-color,
+	.rm-info-card-area .text-center .risk-color,
+	.risk-title,
+	.it-company-footer .footer-single-col h3, .footer-single-col .h3,
+	.it-company-footer .rm-footer-top .footer-single-col li a,
+	.it-company-footer .rm-footer-top .footer-single-col p,
+	.aiwt-title,
+	.ai-wt-info-card h4 ,
+	.ai-wt-info-card .text-black ,
+	.ai-wt-tab-nav .text-black,
+	.ai-wt-testi-item .text-black,
+	.ai-wt-enc-card .text-black,
+	.ai-wt-enhanced-content h3.text-black,
+	.ai-wt-price-item .text-black ,
+	.ail-main-bg.aiart .text-black ,
+	.aiart-footer .footer-nav-list li a, 
+	.aiart-footer .footer-single-col p ,
+	.aiart-footer .it-company-color,
+	.pay-gw-payment-item p {
+		color: $white !important;
+	}
+
+	.risk-contact-form .risk-color-two,
+	.risk-info-card .risk-color-two,
+	.risk-blog .risk-color-two ,
+	.it-company-footer .rm-footer-top .footer-single-col .footer-social-list li a {
+		color: $dark-un !important;
+	}
+
+	.rm-footer-top .footer-social-list a,
+	.risk-blog,
+	.risk-form-box,
+	.risk-info-card,
+	.aih-info-card-item,
+	.aih-faq-area .accordion-item,
+	.aih-faq-area .accordion-item .accordion-button,
+	.ail-card-item {
+		background-color: $white !important;
+	}
+
+	.rm-hero::after,
+	.rm-footer-top::after {
+		filter: brightness(0.1);
+	}
+
+	.rm-service-area .s-two {
+		filter: grayscale(1);
+	}
+
+	// Home 28
+
+	// Home 29
+	.it-company-hero-area .it-company-color,
+	.it-company-title,
+	.it-company-social-area p,
+	.it-company-feature .it-company-color,
+	.aih-title,
+	.aih-color-three,
+	.aih-color-two,
+	.aih-color-five,
+	.rm-testimonial-info .risk-color,
+	.it-company-footer .rm-footer-bottom p,
+	.it-company-footer .rm-footer-bottom p a,
+	.ail-hero-title,
+	.ail-hero-area p,
+	.ail-title,
+	.ail-feature-tab .nav-link p,
+	.ail-tab-con h3,
+	.ail-step-sub-title p,
+	.ail-work-area h3,
+	.ail-work__content p,
+	.ail-work-area h6.text-black,
+	.aih-testimonial-item h6,
+	.ail-price-item h5 ,
+	.pay-gw-color{
+		color: $white !important;
+	}
+
+	.it-company-service-area .it-company-title,
+	.it-company-team-area .it-company-title,
+	.it-company-faq-area .it-company-title,
+	.aih-faq-area .custom-accordion .accordion-body,
+	.aih-price-area .aih-title {
+		color: $github;
+	}
+
+	.it-company-service-area::after {
+		filter: invert(1);
+    	opacity: .9;
+	}
+
+	.it-company-team-area::after,
+	.it-company-footer::after {
+		filter: brightness(0.0);
+	}
+
+	.it-company-faq-area .ca-accordion .accordion-body {
+		padding-bottom: 15px;
+	}
+
+	.it-company-faq-area .ca-accordion .accordion-item {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	// Home 29
+
+	// Home 30
+	.aih-info-card-item .aih-color-two,
+	.aih-btn.aih-color-two,
+	.it-company-faq-area .ca-accordion .accordion-body ,
+	.nav-link.active .ai-wt-tab-nav .text-black ,
+	.nav-link:hover .ai-wt-tab-nav .text-black  {
+		color: $dark-new-2 !important;
+	}
+
+	.aih-testimonial-img {
+		border-color: $gray-900;
+
+		&::before {
+			background-image: radial-gradient(circle at 0 0, transparent 1rem, $gray-900 0.5rem);
+		}
+	}
+
+	.aih-faq-area .custom-accordion .accordion-button::before,
+	.aih-portfolio-area .qty-portfolio__arrow {
+		background-color: $gray-900;
+	}
+
+	.aih-portfolio-area .qty-portfolio__arrow {
+		border-color: $gray-900;
+	}
+
+	.digtal-marketing-logo.ah-bg .aih-shape svg path,
+	.digtal-marketing-logo.ah-bg .aih-shape-two svg path {
+		fill: $gray-900;
+	}
+
+	.aih-portfolio-area .qty-portfolio__arrow::before,
+	.aih-portfolio-area .qty-portfolio__arrow::after {
+		background-image: radial-gradient(circle at 0 0, transparent 1rem, $gray-900 0.5rem);
+	}
+
+	.aih-price-area::after {
+		display: none;
+	}
+
+	// Home 30
+
+	@media (min-width: 1200px) {
+
+		.ca-design-section__title-top,
+		.ca-design-section__title {
+			color: $gray-100
+		}
+	}
+
+	.ah-service::after {
+		opacity: 0.2;
+	}
+
+	.ah-service .ah-outline-btn {
+		border-color: $white;
+	}
+
+	// Home 31
+	.ail-hero-area ,
+	.ail-info-card-area,
+	.ail-feedback-area {
+		background-image: none;
+	}
+
+	.ail-feature-tab .nav-link img {
+		filter: invert(1);
+	}
+
+	.ail-feature-tab .nav-link img.active {
+		filter: inherit;
+	}
+
+	.ail-ft-content::after {
+		display: none;
+	}
+
+	.ail-tab-con_list li span {
+		border-color: $white-50;
+	}
+	
+	.ail-sub-title.bg-white {
+		background-color: $dg-meta-color !important;
+	}
+
+	.ail-step-sub-title .bg-black,
+	.wt-cta-wrapper .bg-white {
+		background-color: $white !important;
+	}
+
+	.ail-price-item.popular h5,
+	.ail-price-item:hover h5 {
+		color: $dark !important;
+	}
+
+	.ail-cta-wrapper {
+		background: $gray-800;
+	}
+
+	.btn.ail-gd-bg:hover {
+		background: $gray-700;
+	}
+
+	// Home 34
+	.pay-gw-hero-area::after {
+		display: none;
+	}
+
+	.pay-gw-gg-bg {
+		background-image: none;
+		background-color: $gray-800;
+	}
+
+	// Home 37
+	.marketplace-agency {
+		.text-black {
+			color: $white !important;
+		}
+	}
+
+	.ma-dark-card {
+		&:hover {
+			background-color: $white !important;
+		}
+	}
+
+	.ma-form-wrapper {
+		.text-black {
+			color: $white !important;
+		}
+		.ma-form {
+			background-color: $black !important;
+		}
+	}
+	.ma-faq {
+		.tab-content {
+			.text-black {
+				color: $white !important;
+			}
+		}
+	}
+	.ma-logo {
+		.text-black {
+			color: $white !important;
+		}
+		.scroller-x {
+			li img {
+				filter: invert(1);
+			}
+		}
+	}
+}
+

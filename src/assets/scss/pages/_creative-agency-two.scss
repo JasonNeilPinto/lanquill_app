@@ -1,0 +1,914 @@
+// Global
+.ff-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.ff-dmsans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.fs-72 {
+    font-size: clamp(2rem, 3.75vw + 1rem, 4.5rem);
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.flh-18 {
+    line-height: 18px;
+}
+
+.flh-24 {
+    line-height: 24px;
+}
+
+.flh-48 {
+    line-height: 48px;
+}
+
+.fch-55 {
+    max-width: 55ch;
+}
+
+.ca-two-body-clr {
+    color: $dg-text-color;
+}
+
+.ca-two-body-clr-two {
+    color: $dark-new-3;
+}
+
+.ca-two-body-clr-three {
+    color: $dg-border-color;
+}
+
+.ca-two-bg {
+    background-color: $dg-border-color;
+}
+
+.ca-two-bg-two {
+    background-color: $ca-two-clr;
+}
+
+.ca-two-bg-three {
+    background: linear-gradient(180deg, $dg-border-color -209.91%, rgba(215, 215, 215, 0.00) 100%);
+}
+
+.ca-two-bg-four {
+    background: $dg-text-color;
+}
+
+.ca-two-bg-five {
+    background: $ca-two-clr-two;
+}
+
+.ca-two-bg-six {
+    background: $ca-two-clr-three;
+}
+
+.ca-two-bg-seven {
+    background: $dark-new-1;
+}
+
+.ca-two-bg-hover {
+    &:hover {
+        background-color: $white !important;
+        border-color: $white;
+    }
+}
+
+.ca-two-bg-hover-two {
+    &:hover {
+        background-color: $ca-two-clr-four !important;
+        border-color: $ca-two-clr-four;
+    }
+}
+
+.ca-two-bg-hover-three {
+    &:hover {
+        background-color: $ca-two-clr-three !important;
+        border-color: $ca-two-clr-three;
+    }
+}
+
+.ca-two-border {
+    border: 1px solid !important;
+}
+
+.ca-two-border-two {
+    border: 2px solid;
+}
+
+.ca-two-border-color {
+    border-color: $dg-border-color !important;
+}
+
+.ca-two-border-color-two {
+    border-color: $dg-text-color;
+}
+
+.ca-two-border-top {
+    border-top: 1px solid $dg-border-color;
+}
+
+.ca-two-dotted-top-border {
+    border-top: 1px dotted;
+}
+
+.ca-two-dotted-left-border {
+    border-left: 1px dotted;
+}
+
+.rounded-16 {
+    border-radius: 16px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
+
+.pr-15 {
+    padding-right: 15px;
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.ptb-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pr-20 {
+    padding-right: 20px !important;
+}
+
+.ca-two-pt-10 {
+    padding-top: 10px;
+}
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+.pt-40 {
+    padding-top: 40px !important;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.ch-pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-30 {
+    padding-bottom: 30px !important;
+}
+
+.pb-250 {
+    padding-bottom: 250px;
+}
+
+.pb-330 {
+    padding-bottom: 330px;
+}
+
+.ch-mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mb-85 {
+    margin-bottom: 85px;
+}
+
+.ca-two-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+
+    &.two {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    span {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50px;
+        margin-right: 6px;
+    }
+}
+
+.ca-two-arrow-btn {
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+}
+
+.ca-two-call-btn {
+    .call-btn {
+        width: 54px;
+        height: 54px;
+        border-radius: 50px;
+        border: 15px solid $dark-new-3;
+
+        svg {
+            background-color: $white;
+        }
+    }
+}
+
+.ca-two-hover-bg {
+    &:hover {
+        background-color: $ca-two-clr-two;
+    }
+}
+
+.ca-two-border-hover {
+    &:hover {
+        border-right: 1px solid $dg-text-color;
+    }
+}
+
+.ca-border-hover-color {
+    &:hover {
+        div {
+            border-color: $ca-two-clr !important;
+        }
+    }
+}
+
+.ca-two-title {
+    @media(max-width: 767px) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+// Global
+
+// Header
+.ins-header {
+    &.ca-two-header {
+        position: fixed;
+        top: 65px;
+    }
+}
+
+.ca-two-top-feature {
+    padding: 20px 10px;
+
+    .ca-two-top-slider  {
+        a {
+            padding: 2px 10px;
+            border-radius: 4px;
+            &:hover {
+                background-color: $dark-new-1;
+                color: $white;
+            }
+        }
+    }
+}
+
+// Header
+
+// Hero
+.ca-two-hero {
+    @media(max-width: 1850px) {
+        background-color: $ca-two-clr-two;
+        padding-bottom: 115px;
+    }
+
+    @media(max-width: 991px) {
+        padding-bottom: 60px;
+        padding-top: 100px;
+    }
+
+    svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @media(max-width: 1850px) {
+            display: none;
+        }
+    }
+
+    .one {
+        top: 60px;
+        right: 250px;
+
+        @media(max-width: 1199px) {
+            display: none;
+        }
+    }
+}
+
+.ca-two-hero-img {
+    margin-top: -115px;
+
+    @media(max-width: 1199px) {
+        margin-top: -60px;
+    }
+
+    @media(max-width: 767px) {
+        margin-top: 0;
+    }
+}
+
+.ca-two-hero-content {
+    @media(max-width: 991px) {
+        display: inline-block !important;
+    }
+
+    p {
+        @media(max-width: 991px) {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+
+// Hero
+
+// Info Card
+.ca-two-info-card-area {
+    margin-top: -175px;
+
+    @media(max-width: 1850px) {
+        margin-top: 0;
+        padding-top: 115px;
+    }
+
+    @media(max-width: 991px) {
+        padding-top: 60px;
+    }
+
+    .ca-two-subtitle {
+        margin-left: 18px;
+
+        @media(max-width: 1850px) {
+            margin-left: 0;
+        }
+    }
+
+    .ca-two-year {
+        margin-right: -70px;
+        margin-top: -20px;
+
+        @media(max-width: 1850px) {
+            margin-top: 0;
+            margin-right: 0;
+        }
+
+        @media(max-width: 1199px) {
+            text-align: left !important;
+        }
+    }
+
+    .ca-two-title {
+        @media(max-width: 1850px) {
+            margin-top: 25px;
+            padding-right: 0;
+        }
+    }
+}
+
+.ca-two-info-cards {
+    @media(max-width:991px) {
+        margin-top: 0 !important;
+    }
+}
+
+.ca-two-info-card {
+    transition: .8s;
+
+    @media(max-width: 399px) {
+        padding: 10px !important;
+        padding-top: 20px !important;
+    }
+
+    .gap-8 {
+        @media(max-width: 399px) {
+            gap: 15px !important;
+        }
+    }
+
+    .ca-two-arrow-btn {
+        @media(max-width: 399px) {
+            margin-top: 20px;
+        }
+    }
+
+    &:hover {
+        .ca-two-arrow-btn {
+            background-color: $dark-new-3;
+
+            span {
+                color: $white !important;
+            }
+        }
+    }
+}
+
+// Info Card
+
+// Mission
+.ca-two-mission-area {
+    .ca-two-title {
+        @media(max-width: 767px) {
+            padding-right: 0;
+        }
+    }
+}
+
+.ca-two-mission-img {
+    @media(max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+}
+
+// Mission
+
+// Portfolio Post
+.ca-two-portfolio-post-area {
+    @media(max-width: 1850px) {
+        background-color: $ca-two-clr-two;
+        padding-bottom: 120px;
+        padding-top: 115px;
+    }
+
+    @media(max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .text-end {
+        @media(max-width: 1199px) {
+            text-align: left !important;
+        }
+    }
+
+    .ca-two-title {
+        @media(max-width: 767px) {
+            padding-right: 0;
+        }
+    }
+}
+
+.ca-two-portfolio-post-area {
+    svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @media(max-width: 1850px) {
+            display: none;
+        }
+    }
+
+    .pfp-shape {
+        left: 20px;
+        top: 285px;
+
+        @media(max-width: 1850px) {
+            display: none;
+        }
+    }
+
+    .shape-two {
+        left: -155px;
+        top: 328px;
+
+        @media(max-width: 1650px) {
+            display: none;
+        }
+    }
+
+    .ca-two-subtitle {
+        margin-left: 15px;
+
+        @media(max-width: 1850px) {
+            margin-left: 0;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.ca-two-pf-cet {
+    top: 0;
+    right: 50px;
+    padding: 5px 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    &:hover {
+        color: $dark-new-3;
+
+        span {
+            background-color: $dark-new-3;
+        }
+    }
+}
+
+// Portfolio Post
+
+// Info Card Lg
+.ca-two-info-card-lg-area {
+    @media(max-width: 1850px) {
+        padding-top: 115px;
+    }
+
+    @media(max-width: 991px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .ca-two-title {
+        @media(max-width: 991px) {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+// Info Card Lg
+
+// Portfolio Two
+.ca-two-portfolio-area {
+    @media(max-width: 991px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .pl-40 {
+        @media(max-width: 991px) {
+            padding-left: 0;
+            margin-top: 40px;
+        }
+    }
+
+    .ca-two-btn-area {
+        @media(max-width: 434px) {
+            flex-wrap: wrap;
+            gap: 20px !important;
+            margin-top: 30px;
+        }
+    }
+}
+
+// Portfolio Two
+
+// Product
+.ca-two-product-item {
+    @media(max-width: 767px) {
+        margin-top: 0 !important;
+    }
+
+    &:hover {
+        background-color: $dark-new-3 !important;
+
+        h5 {
+            color: $white;
+        }
+
+        .ca-two-product-img {
+            filter: brightness(3);
+        }
+    }
+}
+
+.ca-two-product-slider {
+    padding-left: 20px;
+    margin-right: -100px;
+
+    @media(max-width: 1599px) {
+        margin-right: 0;
+    }
+
+    @media(max-width: 767px) {
+        padding-left: 0;
+    }
+}
+
+// Product
+
+// Testimonial
+.ca-two-min-testimonial {
+    height: 550px !important;
+
+    @media(max-width: 1199px) {
+        height: 600px !important;
+    }
+
+    @media(max-width: 991px) {
+        margin-top: 30px;
+    }
+
+    @media(max-width: 418px) {
+        height: 740px !important;
+    }
+
+}
+
+.ca-two-tesimonial-area {
+    @media(max-width: 1850px) {
+        background-color: $ca-two-clr-two;
+    }
+
+    svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @media(max-width: 1850px) {
+            display: none;
+        }
+    }
+
+    .ca-two-subtitle {
+        margin-top: -123px;
+        margin-left: 20px;
+
+        @media(max-width: 1850px) {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.ca-two-counter-area {
+    .gap-20 {
+        @media(max-width: 414px) {
+            gap: 30px !important;
+        }
+
+        @media(max-width: 337px) {
+            gap: 12px !important;
+        }
+
+        .pl-50 {
+            @media(max-width: 414px) {
+                padding-left: 25px;
+            }
+        }
+    }
+}
+
+// Testimonial
+
+// Price
+
+.ca-two-price-area {
+    .ca-two-title {
+        padding-right: 0;
+    }
+}
+
+.ca-two-price-item {
+    transition: .8s;
+
+    .ca-two-pf-cet {
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+
+    &:hover {
+        background-color: $dark-new-1;
+
+        .ca-two-pf-cet {
+            color: $dark-new-1;
+
+            span {
+                background-color: $dark-new-1;
+            }
+        }
+
+        .ca-two-price {
+            color: $white !important;
+        }
+
+        .btn {
+            background-color: $white;
+            color: $dark-new-1;
+        }
+
+        li {
+            color: $white;
+        }
+    }
+}
+
+.ca-two-price-list {
+    li {
+        span {
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+// Price
+
+// Service
+.ca-two-ss-area {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+
+    @media(max-width: 1399px) {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}
+
+// Service
+
+// Footer
+.ca-two-footer-area {
+    padding-top: 175px;
+    border-bottom: 1px solid $ca-two-clr-four;
+
+    @media(max-width: 1699px) {
+        padding-top: 110px;
+    }
+
+    @media(max-width: 991px) {
+        padding-top: 40px;
+    }
+
+    .ca-two-call-btn {
+        .call-btn {
+            border-color: $ca-two-clr-three;
+        }
+
+        &:hover {
+            .call-btn {
+                border-color: $ca-two-clr-three !important;
+            }
+        }
+    }
+
+    .footer-nav-list {
+        li {
+            a {
+                color: $white;
+                opacity: .9;
+            }
+        }
+    }
+
+    .footer-single-col {
+        @media(max-width: 1199px) {
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+        p {
+            opacity: .9;
+        }
+
+        h3 {
+            @media(max-width: 991px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.ca-two-footer {
+    @media(max-width: 1699px) {
+        background-color: $dark-new-1;
+    }
+
+    .footer-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @media(max-width: 1699px) {
+            display: none;
+        }
+    }
+}
+
+.ca-two-newsletter-form {
+    @media(max-width: 991px) {
+        margin-top: 15px;
+    }
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid $dg-text-color;
+
+        &::placeholder {
+            font-weight: 600;
+        }
+    }
+
+    .btn {
+        position: relative;
+        width: 52px;
+        height: 48px;
+        background-color: $white;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/creative-agency-2/newsletter.png");
+            background-repeat: no-repeat;
+            background-size: 45%;
+            background-position: center;
+            left: 0;
+            top: 2px;
+        }
+    }
+}
+
+.ca-two-footer-bottom {
+    margin-top: -20px;
+
+    .mt-50 {
+        @media(max-width: 991px) {
+            margin-top: 25px;
+        }
+    }
+
+    .text-center {
+        .ca-two-body-clr-two {
+            @media(max-width: 1699px) {
+                color: $white;
+                opacity: .9;
+            }
+        }
+    }
+
+    ul {
+        li {
+            a {
+                &:hover {
+                    background-color: $white;
+                    border-color: $white;
+                    color: $dark-new-3;
+                }
+            }
+        }
+    }
+}
+
+// Footer

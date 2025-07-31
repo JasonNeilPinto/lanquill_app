@@ -1,0 +1,201 @@
+.home-40-brand-bg {
+    background-color: $home-40-brand-bg;
+}
+
+.fs_90 {
+    font-size: 90px;
+    @media(max-width: 991px) {
+        font-size: 60px;
+    }
+}
+// Hero
+.hero_40 {
+    background-image: url("../img/home_40/hero_bg_40.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero_slider_card {
+    background: $hero_slider_card_40;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25) inset;
+    backdrop-filter: blur(6px);
+}
+
+.risk-slider__controls.hero_40_slider_controls {
+    .risk-slider__pagination {
+        span {
+            background: $white;
+            border-radius: 0;
+            width: 12px;
+            height: 5px;
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                width: 26px;
+                background: $ma-warning;
+            }
+        }
+    }
+}
+// Hero
+
+// Radio Input
+.select-img__input {
+    display: none;
+}
+.select-color {
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 4px 15px;
+    border: 1px solid $gray-300;
+    border-radius: .25rem;
+    background-color: $white;
+}
+.select-img__input:checked~.select-color {
+    border: 1px solid $black;
+    background-color: $black;
+    color: $white ;
+    span {
+        color: $white;
+    }
+}
+// Radio Input
+
+// Work
+.work_40_area {
+    position: relative;
+    z-index: 2;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/home_40/work_bg.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right;
+        z-index: -1;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+// Work
+
+// Feedback 40
+.feedback_wrapper_40 {
+    max-height: 665px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 280px;
+        background: linear-gradient(183.05deg, rgba(251, 239, 231, 0) -16.18%, #FBEFE7 96.77%);
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+    }
+}
+// Feedback 40
+
+// Tab
+.job-tabs.style_40 {
+    .nav .nav-item .nav-link::after {
+        background-color: $ma-warning;
+    }
+}
+// Tab
+
+// Blog
+.blog_40_item {
+    &:hover {
+        .bg-dark {
+            background-color: $ma-warning !important;
+        }
+    }
+}
+// Blog
+
+// Goal
+.goal_item {
+    padding: 35px;
+    .icon-box i {
+        transition: .5s;
+    }
+    &:hover {
+        .icon-box i {
+            background-color: $ma-warning !important;
+        }
+    }
+}
+// Goal
+
+// Volunteer Form
+.volunteer_form {
+    padding: 35px;
+    position: relative;
+    z-index: 2;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $ma-warning;
+        top: -70px;
+        left: -70px;
+        z-index: -2;
+        opacity: .1;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 16px;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+// Volunteer Form
+
+// Faq
+.ca-accordion.home-38.style_40 {
+    .accordion-button {
+        &::after {
+            font-size: 13px;
+        }
+    }
+    .accordion-button[aria-expanded=true]::after {
+        background-color: $ma-warning;
+    }
+}
+// Faq
+
+// Footer
+.footer-40 .footer-social-list li a {
+    border-radius: 50%;
+    &:hover {
+        background: $ma-warning;
+        border-color: $ma-warning;
+    }
+}
+// Footer

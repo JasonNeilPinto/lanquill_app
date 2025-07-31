@@ -1,0 +1,23 @@
+.twitter-card {
+    border: 1px solid #313030;
+    border-radius: 16px;
+    background-color: #191A1D;
+    .card-body {
+        padding: 24px;
+    }
+    &__user {
+        font-size: 14px;
+        color: #E9E9E9;
+        &-sub {
+            font-size: 12px;
+            color: #696969;
+        }
+    }
+    &__msg {
+        color: #78787A;
+    }
+    &__time {
+        font-size: 12px;
+        color: #505967;
+    }
+}

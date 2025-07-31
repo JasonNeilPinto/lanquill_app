@@ -1,0 +1,20 @@
+.achievement-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	&__heading {
+		padding-bottom: 60px;
+	}
+}
+.achievement-circle {
+	display: grid;
+	place-content: center;
+    padding: 1.5rem;
+	aspect-ratio: 1/1;
+	border: 1px solid $dg-placeholder-color;
+    border-radius: 50%;
+    &__title {
+        display: block;
+        font-weight: 700;
+        color: $dark-new-1;
+    }
+}

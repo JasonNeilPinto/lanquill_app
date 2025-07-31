@@ -1,0 +1,310 @@
+import React from "react";
+import {
+  BiServer,
+  BiNews,
+  BiDetail,
+  BiRocket,
+  BiPaperPlane,
+  BiHelpCircle,
+  BiLogIn,
+  BiUser,
+  BiError,
+} from "react-icons/bi";
+import { HiOutlineAcademicCap } from "react-icons/hi";
+import { BsHeadset } from "react-icons/bs";
+import { FaLaptopCode, FaRegClock, FaRegTrashAlt } from "react-icons/fa";
+
+const navCompanyLinks = [
+  {
+    title: "Contact Us",
+    icon: <BiLogIn />,
+    href: "/contact-us",
+  },
+  {
+    title: "Service Single",
+    icon: <BiServer />,
+    href: "/single-service",
+  },
+  {
+    title: "Our Latest News",
+    icon: <BiNews />,
+    href: "/blogs",
+  },
+  {
+    title: "News Details",
+    icon: <BiDetail />,
+    href: "/blog-single",
+  },
+  {
+    title: "Career",
+    icon: <HiOutlineAcademicCap />,
+    href: "/career",
+  },
+  {
+    title: "Career Single",
+    icon: <HiOutlineAcademicCap />,
+    href: "/career-single",
+  },
+  {
+    title: "Integrations",
+    icon: <BiRocket />,
+    href: "/integrations",
+  },
+  {
+    title: "Integrations Single",
+    icon: <BiPaperPlane />,
+    href: "/integration-single",
+  },
+];
+
+const navCompanyPage = [
+  {
+    title: "Help Center",
+    icon: <BiHelpCircle />,
+    href: "/help-center",
+  },
+  {
+    title: "Help Details",
+    icon: <BsHeadset />,
+    href: "/help-center-single",
+  },
+  {
+    title: "Request for Demo",
+    icon: <FaLaptopCode />,
+    href: "/request-demo",
+  },
+  {
+    title: "User Login",
+    icon: <BiLogIn />,
+    href: "/login",
+  },
+  {
+    title: "User SignUp",
+    icon: <BiUser />,
+    href: "/register",
+  },
+  {
+    title: "Recovery Account",
+    icon: <FaRegTrashAlt />,
+    href: "/password-reset",
+  },
+  {
+    title: "404 Page",
+    icon: <BiError />,
+    href: "/404",
+  },
+  {
+    title: "Coming Soon",
+    icon: <FaRegClock />,
+    href: "/coming-soon",
+  },
+];
+
+const offcanvasMenuData = [
+  {
+    title: "Sass Company 1",
+    info: "It's for SaaS Software Company",
+    href: "/",
+  },
+  {
+    title: "Sass Company 2",
+    info: " Modern Sass agency",
+    href: "/home-sass-two",
+  },
+  {
+    title: "Desktop App",
+    info: "Web Software Company",
+    href: "/home-desktop-app",
+  },
+
+  {
+    title: "App Landing",
+    info: " App and Software Landing",
+    href: "/home-app-landing",
+  },
+  {
+    title: "Software Application",
+    info: "IT solutions and SaaS Application",
+    href: "/home-soft-app",
+  },
+  {
+    title: "Startup Agency",
+    info: "Different type of Agency",
+    href: "/home-startup",
+  },
+  {
+    title: "Data Analysis",
+    info: " Software & Data Analysis",
+    href: "/home-data-analysis",
+  },
+  {
+    title: "App Landing Two",
+    info: "Software & Data Analysis",
+    href: "/app-landing-two",
+  },
+  {
+    title: "IT Solution",
+    info: "IT solution and sass application",
+    href: "/home-nine",
+  },
+  {
+    title: "Cyber Security",
+    info: "Cyber security landing page",
+    href: "/home-ten",
+  },
+  {
+    title: "Crypto Currency",
+    info: "Crypto Currency landing page",
+    href: "/home-eleven",
+  },
+  {
+    title: "Game Solutions",
+    info: "Game Server landing page",
+    href: "/home-twelve",
+  },
+  {
+    title: "Payment Gateway",
+    info: "Payment Gateway landing page",
+    href: "/home-thirteen",
+  },
+  {
+    title: "Digital Marketing",
+    info: "Digital Marketing landing page",
+    href: "/home-fourteen",
+  },
+  {
+    title: "Conference & Event",
+    info: "Conference & Event landing",
+    href: "/home-fifteen",
+  },
+
+  {
+    title: "Quiety Insurance",
+    info: "Quiety Landing Page",
+    href: "/quiety-insurance",
+  },
+
+  {
+    title: "Sass Marketing",
+    info: "Sass Marketing landing",
+    href: "/sass-marketing",
+  },
+  {
+    title: "CRM Home",
+    info: "Customer Relationshif",
+    href: "/crm-home",
+  },
+  {
+    title: "Help Desk",
+    info: "Help desk home",
+    href: "/help-desk",
+  },
+  {
+    title: "Digital Agency",
+    info: "Digital Agency home",
+    href: "/digital-agency",
+  },
+
+  {
+    title: "Software Company",
+    info: "Software Company Home",
+    href: "/software-company",
+  },
+  {
+    title: "Creative Agency",
+    info: "Creative Agency Landing One",
+    href: "/creative-agency-one",
+  },
+  {
+    title: "Digital Marketing Agency",
+    info: "Digital Marketing Agency Landing",
+    href: "/digital-marketing-agency",
+  },
+  {
+    title: "Design Agency",
+    info: "Disign Agency Home One",
+    href: "/design-agency-one",
+  },
+  {
+    title: "Design Agency",
+    info: "Disign Agency Home Two",
+    href: "/design-agency-two",
+  },
+  {
+    title: "Agency Home",
+    info: "Agency Home new",
+    href: "/agency-home-new",
+  },
+  {
+    title: "Creative Agency Two",
+    info: "Creative Agency Landing Two",
+    href: "/creative-agency-two",
+  },
+  {
+    title: "Risk Managment",
+    info: "Risk Managment home",
+    href: "/risk-managment",
+  },
+  {
+    title: "It Company",
+    info: "It Company Home",
+    href: "/it-company",
+  },
+  {
+    title: "Ai Home",
+    info: "Ai Company Home",
+    href: "/ai-company",
+  },
+  {
+    title: "Ai Content Generator",
+    info: "Sass Content Generator",
+    href: "/ai-content-generator",
+  },
+  {
+    title: "Ai SAAS Content Generator",
+    info: "Ai SAAS Content Marketing",
+    href: "/ai-content-marketing",
+  },
+  {
+    title: "Ai Image Generation SAAS",
+    info: "Ai Image Generation SAAS",
+    href: "/ai-image-generation",
+  },
+  {
+    title: "Payment Gateway",
+    info: "Payment Gateway New",
+    href: "/payment-gateway-new",
+  },
+  {
+    title: "Corporate Agency",
+    info: "Corporate Agency",
+    href: "/corporate-agency",
+  },
+  {
+    title: "Creative Agency",
+    info: "Creative Agency New",
+    href: "/creative-agency-new",
+  },
+  {
+    title: "Marketplace Agency",
+    info: "Marketplace Agency",
+    href: "/marketplace-agency",
+  },
+  {
+    title: "Job Finder",
+    info: "Job Finder New",
+    href: "/job-finder",
+  },
+  {
+    title: "Job Finder 2",
+    info: "Job Finder New",
+    href: "/job-finder-2",
+  },
+  {
+    title: "Charity",
+    info: "Charity home",
+    href: "/charity",
+  },
+];
+
+export { navCompanyLinks, navCompanyPage, offcanvasMenuData };

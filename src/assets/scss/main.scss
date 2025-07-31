@@ -1,0 +1,113 @@
+/*================
+ Template Name: Quiety - Software Technology & IT Solutions Saas HTML Template
+ Description: Quiety creative Saas, software technology, Saas agency & business Bootstrap 5 Html template. It is best and famous software company and Saas website template.
+ Version: 1.0
+ Author: https://themeforest.net/user/themetags
+=======================*/
+
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+
+// 2. Vendors
+@import 'vendors/swiper-bundle.min';
+// @import 'vendors/fontawesome-all.min';
+@import 'vendors/flaticon_quiety';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import 'vendors/aos';
+@import 'vendors/magnific-popup';
+
+// 3. Base stuff
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/preloader';
+@import 'layout/sections';
+
+// 5. Components
+@import 'components/type';
+@import 'components/preloader';
+@import 'components/background';
+@import 'components/link';
+@import 'components/animated-shapes';
+@import 'components/promo';
+@import 'components/call-to-action';
+@import 'components/hero';
+@import 'components/about';
+@import 'components/customers';
+@import 'components/pricing';
+@import 'components/features';
+@import 'components/faq';
+@import 'components/support';
+@import 'components/team';
+@import 'components/blog';
+@import 'components/integration';
+@import 'components/forms';
+@import 'components/testimonial';
+@import 'components/buttons';
+@import 'components/color';
+@import 'components/work-process';
+@import 'components/service-card';
+@import 'components/project-gallery';
+@import 'components/cta-card';
+@import 'components/feedback-slider';
+@import 'components/step-card-36';
+@import 'components/team-card-36';
+@import 'components/template-nav';
+@import 'components/twitter-card';
+@import 'components/price-card-36';
+
+// 6. Page-specific or demos styles
+@import 'pages/home';
+@import 'pages/cta-section';
+@import 'pages/it-solutions';
+@import 'pages/cyber-security';
+@import 'pages/crypto';
+@import 'pages/game-solution';
+@import 'pages/payment-getway';
+@import 'pages/digital-marketing';
+@import 'pages/conference';
+@import 'pages/insurance';
+@import 'pages/sass-marketing';
+@import 'pages/crm';
+@import 'pages/help-desk';
+@import 'pages/digital-agency';
+@import 'pages/software-company';
+@import 'pages/creative-agency';
+@import 'pages/design-agency';
+@import 'pages/agency-home';
+@import 'pages/creative-agency-two';
+@import 'pages/risk-managment';
+@import 'pages/it-company';
+@import 'pages/ai-home';
+@import 'pages/ail-home';
+@import 'pages/ai-wt-home';
+@import 'pages/ai-art-home';
+@import 'pages/home-34';
+@import 'pages/hero-35';
+@import 'pages/achievement-section';
+@import 'pages/service-section';
+@import 'pages/hero-36';
+@import 'pages/team-section';
+@import 'pages/feedback-section';
+@import 'pages/pricing-section';
+@import 'pages/home-35';
+@import 'pages/home-36';
+@import 'pages/home-37';
+@import 'pages/home-38';
+@import 'pages/home-39';
+@import 'pages/home-40';
+
+// Custom
+@import 'custom';
+
+
+// 7. Themes
+@import 'themes/default';
+@import 'themes/dark';

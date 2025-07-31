@@ -1,0 +1,267 @@
+.home-38-title {
+    @media(max-width: 767px) {
+        font-size: 28px;
+    }
+}
+
+.mt-n-8 {
+    margin-top: -8px;
+}
+
+.fs_8 {
+    font-size: 8px;
+}
+
+.fs_6 {
+    font-size: 6px;
+}
+
+.fch-16 {
+    max-width: 16ch;
+}
+
+// Color
+.home-38-color-brand {
+    color: $home-38-brand;
+}
+
+.home-38-color-brand-900 {
+    color: $home-38-brand-900 !important;
+}
+// Color
+
+// Bg
+.home-38-bg {
+    background: $home-38;
+}
+
+.home-38-bg-brand {
+    background: $home-38-brand;
+}
+
+.home-38-bg-brand-20 {
+    background: rgba(211, 193, 248, 0.20);
+}
+
+// Bg
+
+// Btn
+.btn-38-style {
+    display: flex;
+    align-items: center;
+    .btn {
+        &:hover {
+            background-color: $home-38-brand;
+        }
+    }
+    .hover-style {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        .arrow-style {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            transition: .5s;
+            &:nth-child(1) {
+                transform: translate(-350%, 50%);
+            }
+        } 
+    }
+    &:hover {
+        .arrow-style {
+            &:nth-child(1) {
+                transform: translate(-50% , -50%);
+            }
+            &:nth-child(2) {
+                transform: translate(135%, -270%);
+            }
+        }
+    }
+    &.sm {
+        .hover-style {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+.btn-38-outline {
+    border: 1px solid $home-38-brand;
+    transition: .5s;
+    &:hover {
+        background-color: $home-38-brand;
+    }
+}
+// Btn
+
+// Hero
+.hero_38_wrapper {
+    background-image: url(../img/home_38/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/home_38/hero_bg_overlay.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        inset: 0;
+        z-index: -1;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.digi-newsletter.home-38 {
+    .digi-news-form .digi-news-button {
+        background: $home-38-brand;
+        padding-block: 10px;
+        right: 3px;
+        top: 3.5px;
+    }
+} 
+// Hero
+
+// Payment
+.payment_wrapper {
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/home_38/hero_bg_overlay.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        inset: 0;
+        z-index: -1;
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+}
+// Payment
+
+// Feedback
+.feedback-38-wrapper {
+    background-image: url(../img/home_38/feedback-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.feedback-38-slider-wrapper {
+    margin-right: -625px;
+    @media(max-width: 1199px){
+        margin-right: 0;
+    }
+}
+
+.home-38-slider-nav {
+    margin-top: 0;
+    width: 64px;
+    height: 64px;
+    padding: 20px;
+    border-radius: 50%;
+    background: $white;
+    position: inherit;
+    transition: .8;
+    &::after {
+        display: none;
+    }
+    &:hover {
+        background: $home-38-brand;
+    }
+}
+// Feedback
+
+// Hire
+.job-tab {
+    .service-tabs .nav-pills .nav-link {
+        color: $black;
+        padding-bottom: 0;
+        padding-inline: 15px;
+        margin-right: 0 !important;
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -2px;
+            height: 2px;
+            width: 100%;
+            background-color: $secondary;
+            left: 0;
+        }
+        &.active {
+            color: $home-38-brand-900;
+            &::after {
+                background-color: $home-38-brand-900;
+            }
+        }
+    }
+}
+
+.hire-tag {
+    &:hover {
+        color: $black !important;
+        border-color: $home-38-brand !important;
+        background: $home-38-brand !important;
+    }
+}
+// Hire
+
+// Faq
+.ca-accordion.home-38 {
+    .accordion-item {
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        border-bottom: 1px solid $secondary;
+        margin-bottom: 0;
+    }
+    .accordion-button {
+        font-size: 16px;
+        font-weight: 500;
+        background-color: transparent;
+        padding-inline: 0;
+        &::after {
+            width: 25px;
+            height: 25px;
+            background-color: $white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1px;
+            padding-inline: 13px;
+        }
+        &[aria-expanded="true"] {
+           &::after {
+                padding-top: 0;
+                padding-bottom: 10px;
+                background-color: $home-38-brand;
+                color: $white;
+           }
+        }
+    }
+    .accordion-body {
+        padding-inline: 0;
+    }
+}
+// Faq
+
+// Footer
+.footer-38 {
+    .footer-social-list li a {
+        &:hover {
+            background: $home-38-brand-900;
+            border-color: $home-38-brand-900;
+        }
+    }
+    .footer-nav-list li a {
+        font-weight: 400;
+    }
+}
+// Footer

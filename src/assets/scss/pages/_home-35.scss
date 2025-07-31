@@ -1,0 +1,21 @@
+.home-35 {
+    background-color: $gray-50;
+    z-index: 1;
+}
+
+[data-bs-theme="dark"] {
+    .home-35 {
+		background-color: #1a1b1b;
+        @media (min-width: 1200px) {
+            .header-35 .navbar {
+                background-color: #0c0800;
+            }
+        }
+        .heading-text {
+            color: #fff;
+        }
+        .text-inherit {
+            color: #0c0800;
+        }
+	}
+}

@@ -1,0 +1,15 @@
+.template-nav {
+    border-bottom: 1px solid #EEEBFE;
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        border-radius: 0;
+        font-family: $headings-font-family;
+        font-weight: 500;
+        color: #334155;
+        &.active {
+            background-color: transparent;
+            color: #334155;
+            border-bottom: 2px solid #334155;
+        }
+    }
+}

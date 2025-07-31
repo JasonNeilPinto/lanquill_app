@@ -1,0 +1,444 @@
+.bg-design-agency {
+    background-color: $des-a-clr;
+}
+
+.bg-design-agency-about {
+    background-color: $des-a-clr-2;
+}
+
+.design-agency-hero__title {
+    font-size: clamp(2.97rem, 5.417vw + 1rem, 4.5rem);
+    @media (max-width: 767px) {
+        font-size: 50px;
+    }
+    @media (max-width: 414px) {
+        font-size: 38px;
+    }
+    @media (max-width: 375px) {
+        font-size: 58px;
+        padding: 0 20px;
+    }
+    @media (max-width: 320px) {
+        font-size: 28px;
+        padding: 0;
+    }
+    &.title-2 {
+        font-size: clamp(2.97rem, 3.91vw + 1rem, 3.5rem);
+        @media (max-width: 767px) {
+            font-size: 40px;
+            margin-bottom: 40px !important;
+        }
+        @media (max-width: 414px) {
+            font-size: 32px;
+        }
+        @media (max-width: 320px) {
+            font-size: 22px;
+        }
+    }
+    span {
+        img {
+            margin-top: -10px;
+        }
+    }
+}
+
+.padding-top-large {
+    padding-block-start: 285px; 
+    @media (max-width: 414px) {
+        padding-block-start: 190px; 
+    }
+}
+
+.padding-top-large-2 {
+    padding-block-start: 245px; 
+    @media (max-width: 991px) {
+        padding-block-start: 195px;
+    }
+}
+
+.showcase-custom {
+    height: 100%;
+    object-fit: cover;
+}
+
+.bgds {
+    background-color: $crm-secondary;
+}
+
+.da-price {
+    color: $hd-dark;
+    &:hover {
+        color: $hd-dark;
+    }
+}
+
+.dg-text-color {
+    color: $dg-text-color;
+    &:hover {
+        color: $des-a-clr-3;
+    }
+}
+
+.dg-bg-color {
+    background-color: $dg-meta-color;
+}
+
+.dg-blog-btn-text {
+    color:$crm-placeholder;
+    &:hover {
+        color: $des-a-clr-3;
+    }
+}
+
+// Hero
+.design-agency-hero {
+    padding-top: clamp(3.5rem + 88px,13.631vw + 1rem,8rem + 88px);
+    .design-agency-hero__img-box {
+        .design-agency-hero__img {
+            z-index: 2;
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
+        }
+        .shape {
+            right: -15px;
+            top: -50px;
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+        .shape_two {
+            left: -15px;
+            top: 25px;
+            @media (max-width: 1399px) {
+                display: none;
+            }
+        }
+    }
+    .shape_one {
+        right: 0;
+        bottom: 310px;
+    }
+    .shape_three {
+        left: 105px;
+        top: 350px;
+        @media (max-width: 1530px) {
+            display: none;
+        }
+    }
+    .shape_four {
+        left: 60px;
+        top: 150px;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .shape_five {
+        top: 400px;
+        right: 80px;
+        z-index: 2;
+        @media (max-width: 1440px) {
+            display: none;
+        }
+    }
+    .shape_six {
+        top: 225px;
+        right: 285px;
+        @media (max-width: 1399px) {
+            display: none;
+        }
+    }
+    .shape_seven {
+        top: 110px;
+        right: 47px;
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
+}
+// Hero
+
+// About
+.dg-about-section-2 {
+    margin-top: -190px;
+    @media (max-width: 414px) {
+        margin-top: -135px;
+    }
+}
+// About
+
+// Service
+.sc-service-section.pt-200 {
+    @media (max-width: 991px) {
+        padding-top: 70px;
+    }
+}
+// Service
+
+// Design Showcase
+.section-space.bg-design-agency-about {
+    padding-bottom: 60px;
+    .shape_one {
+        top: 70px;
+        right: 35px;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .shape_two {
+        bottom: 160px;
+        right: 50px;
+    }
+    .shape_three {
+        left: 60px;
+        top: 340px;
+        @media (max-width: 1600px) {
+            display: none;
+        }
+    }
+    .shape_four {
+        bottom: -110px;
+        left: 60px;
+        @media (max-width: 1650px) {
+            display: none;
+        }
+    }
+}
+// Design Showcase
+
+// Price
+.dg-pricing-section.bg-design-agency-about .triangle-circle {
+    top: 0;
+}
+// Price
+
+// Feedback
+.sc-feedback-section.dg-feedback-bg  {
+    margin-top: -195px;}
+.dg-feedback-bg {
+    background-color: $des-a-clr-4;
+}
+// Feedback
+
+// Blog
+.dg-blog-section {
+    .badge {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 15px;
+    }
+}
+// Blog
+
+///
+// Design Agency Two Home //
+///
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.pt-160 {
+    padding-top: 160px;
+    @media (max-width: 991px) {
+        padding-top: 100px;
+    }
+}
+
+.dat-bg {
+    background-color: $des-a-clr-5;
+}
+
+.btn-dat-one {
+    background-color: $des-a-clr-main;
+    &:hover {
+        background-color: $dark-new-2;
+        color: $white;
+    }
+}
+
+.btn-dat-two {
+    background-color: $des-a-clr-main;
+    &:hover {
+        background-color: rgba(255,17,17,.1254901961);
+        color: $des-a-clr-main !important;
+    }
+}
+
+.price-dat-btn {
+    background-color: #ff111120;
+    color: $des-a-clr-main;
+    &:hover {
+        background-color: $des-a-clr-main;
+        color: $white;
+    }
+}
+
+.fw-6 {
+    font-weight: 600 !important;
+}
+
+.mk-pricing-control.style-two li a.active {
+    background-color: $des-a-clr-main;
+    color: $white;
+}
+
+.watch-now-btn-dat {
+    font-family: "Poppins",sans-serif;
+    color: $dark-new-2;
+    font-size: 16px;
+    font-weight: 600;
+    i {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $dark-new-2;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    &:hover {
+        color: $des-a-clr-main;
+        i {
+            background-color: $des-a-clr-main;
+            
+        }
+    }
+}
+
+// Hero //
+.design-agency-two-hero {
+    z-index: 2;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/design-agency/two/hero_long_shape.png");
+        top: 110px;
+        left: 0;
+        background-repeat: no-repeat;
+        z-index: -1;
+        @media (max-width: 1399px) {
+            display: none;
+        }
+    }
+    .section-shape {
+        .one {
+            top: 185px;
+            left: 75px;
+            z-index: 2;
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+        .two {
+            top: -35px;
+            left: -56px;
+            @media (max-width: 1199px) {
+                display: none;
+            }
+        }
+    }
+}
+.design-agency-two-hero__title {
+    font-size: clamp(2.00rem,3.91vw + 1rem,3.5rem);
+    line-height: 1.5;
+}
+
+.design-agency-two-hero__bottom-content {
+    @media (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.design-agency-two-hero__bottom-content__icon {
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    border-radius: 50%;
+}
+
+.design-agency-two-hero__bottom-content__title {
+    color: $dark-new-2;
+    font-size: clamp(1.0rem, 1.684vw + 1rem, 2rem);
+    font-weight: 700;
+    line-height: 40px;
+    @media (max-width: 991px) {
+       text-align: center;
+    }
+}
+
+.dat-user-text {
+    color: $des-a-clr-main;
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.design-agency-two-hero__bottom-img {
+    .main-img {
+        margin-left: -270px;
+        @media (max-width: 991px) {
+           margin-left: 0;
+           width: 100%;
+         }
+    }
+    .hero-two {
+        right: -90px;
+        top: -73px;
+        z-index: 2;
+        @media (max-width: 991px) {
+            display: none;
+         }
+    }
+    .hero-three {
+        bottom: 55px;
+        right: -140px;
+        @media (max-width: 991px) {
+            display: none;
+         }
+    }
+    .hero-four {
+        top: -83px;
+        right: -15px;
+        @media (max-width: 991px) {
+            display: none;
+         }
+    }
+}
+// Hero //
+
+// About //
+.dat-about-btn {
+    color: $crm-secondary;
+    &:hover {
+        color: $des-a-clr-3;
+    }
+}
+
+.dat-section-after {
+    z-index: 2;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/design-agency/two/sec_bg_overlay.png");
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+}
+// About //
+
+// Design Agency Two Home //

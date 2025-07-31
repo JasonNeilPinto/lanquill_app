@@ -1,0 +1,22 @@
+.team-card-36 {
+  position: relative;
+  isolation: isolate;
+  &:hover {
+    .team-card-36__img {
+      background-color: #fff250;
+    }
+  }
+  &__img {
+    background-color: #191a1d;
+    mask-image: url(/team-shape.png);
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: all 0.3s ease;
+  }
+  &__content {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+  }
+}

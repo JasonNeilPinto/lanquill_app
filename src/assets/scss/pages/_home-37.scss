@@ -1,0 +1,222 @@
+// Global
+.ma-warning-text {
+    color: $ma-warning !important;
+}
+
+.ma-warning-bg {
+    background-color: $ma-warning;
+}
+
+.ma-bg-2 {
+    background-color: $ma-color-2;
+}
+
+.ma-white-gd {
+    background: $ma-white-gd;
+}
+
+.ma-warning-gd {
+    background: $ma-warning-gd;
+}
+
+.fch-65 {
+    max-width: 65ch;
+}
+
+.fch-30 {
+    max-width: 30ch;
+}
+ .ch-1 {
+    height: 1px;
+ }
+// Global
+
+// Hero
+.marketplace-agency {
+    background-image: url(/home_37/noise-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media(max-width: 1199px) {
+        padding-top: 120px;
+    }
+    @media(max-width: 767px) {
+        padding-top: 100px;
+    }
+    .mb-40 {
+        @media(max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+    .crm-fd-slide-control-wrapper {
+        top: -200px;
+    }
+}
+
+.ma-hero-slide-content {
+    left: 0;
+    top: 0;
+    transition: 500ms all ease;
+    transition-delay: 0.3s;
+    opacity: 0;
+    @media(max-width: 1199px) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @media(max-width: 767px) {
+        width: 75%;
+    }
+    .icon-box {
+        position: absolute; 
+        bottom: -25px;
+    }
+}
+
+.ma-hero-slider {
+    .swiper-slide-active {
+        .ma-hero-slide-content {
+            transform: translateY(-50%);
+            top: 50%;
+            opacity: 1;
+            @media(max-width: 1199px) {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            @media(max-width: 767px) {
+                width: 75%;
+            }
+        }
+    }
+}
+
+.ma-hero-slide-img {
+    min-height: 400px;
+}
+// Hero
+
+// Card
+.ca-card-title {
+    position: sticky;
+    top: 85px;
+    left: 0;
+}
+// Card
+
+// Dark Card
+.ma-sm-btn {
+    width: 28px;
+    height: 28px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.ma-dark-card {
+    transition: .5s;
+    &:hover {
+        background-color: $white !important;
+        .text-white {
+            color: $dark !important;
+        }
+        .ma-sm-btn {
+            background-color: $ma-warning !important;
+            color: $white !important;
+        }
+    }
+}
+// Dark Card
+
+// Feedback
+.ma-feedback-item {
+    transition: .5s;
+    &:hover {
+        background-color: $dark !important;
+        .text-dark {
+            color: $white !important;
+        }
+        .author-info {
+            h6 , small {
+                color: $white !important;
+            }
+        }
+    }
+}
+
+.aiart-post-slider.ma-style {
+    .aiart-slider-nav:hover {
+        background: $ma-warning !important;
+    }
+}
+// Feedback
+
+// Contact
+.ma-contact {
+    background-image: url(../img/home_37/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media(max-width: 991px) {
+        background-image: none;
+        background-color: $ma-color-2;
+    } 
+}
+
+.contact-benefit {
+    max-width: 400px;
+}
+
+.ma-form {
+    margin-top: -15px;
+}
+
+.ma-form-wrapper {
+    right: 0;
+    top: 0px;
+    @media(max-width: 991px) {
+        position: inherit !important;
+    }
+}
+
+.ma-contact-img {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+// Contact
+
+// Faq
+.ma-faq {
+    @media(max-width: 991px) {
+        padding-top: 60px;
+    }
+}
+.ca-tab {
+    .nav-link {
+        padding: 2px 0;
+        color: $body-color;
+        font-weight: 500;
+        position: relative;
+        margin-left: 15px;
+        &::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $body-color;
+            left: -15px;
+            top: 13px;
+        }
+        &.active {
+            background-color: transparent;
+            color: $ma-warning;
+            &::before {
+                background-color: $ma-warning;
+            }
+        }
+    }
+}
+// Faq

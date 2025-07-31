@@ -1,0 +1,290 @@
+.bg-brand-39 {
+    background-color: $home-39-brand;
+   }
+   
+   .bg-brand-39-2 {
+    background-color: $home-39-brand-2;
+   }
+   
+   .bg-brand-39-3 {
+    background-color: $home-39-brand-3;
+   }
+   
+   .text-brand-39-2 {
+    color: $home-39-brand-2 !important;
+   }
+   
+   .fch-20 {
+       max-width: 20ch;
+   }
+   
+   // Hero
+   .hero_39 {
+       position: relative;
+       z-index: 2;
+       .btn-38-style {
+           position: absolute;
+           right: 0;
+           bottom: 0;
+           .hover-style {
+               width: 88px;
+               height: 88px;
+           }
+       }
+       .shape {
+           position: absolute;
+           left: -60px;
+           top: -35px;
+       }
+       .shape_2 {
+           position: absolute;
+           top: -60px;
+           right: -45px;
+       }
+       &::after {
+           position: absolute;
+           content: "";
+           background-image: url(../img/home_39/hero_bg.png);
+           inset: 0;
+           background-repeat: no-repeat;
+           background-size: auto;
+           background-position: top center;
+           z-index: -1;
+           opacity: .3;
+       }
+   }
+   .search_39 {
+       width: 602px;
+       @media(max-width: 767px) {
+           width: 100%;
+       }
+       .search_form_39 {
+           position: relative;
+           overflow: hidden;
+           padding: 1px;
+           .form-control {
+               background-color: #354a3f;
+               position: relative;
+               z-index: 3;
+               border: 0 !important;
+               &:focus {
+                   border-color: transparent;
+               }
+           }
+           .content {
+               position: absolute;
+               right: 6px;
+               top: 6px;
+               z-index: 4;
+               select {
+                   background-color: #354a3f;
+                   border: 0;
+                   outline: 0;
+               }
+           }
+           .form_btn {
+               border: 0;
+               width: 48px;
+               height: 48px;
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+           }
+           &::after {
+               position: absolute;
+               content: "";
+               width: 100%;
+               height: 100%;
+               background: linear-gradient(89.79deg, #C2F53D 6.32%, rgba(125, 125, 125, 0.1) 34.88%);
+               left: 0;
+               top: 0;
+               animation: rotate39 5s linear infinite;
+           }
+       }
+   }
+   
+   @keyframes rotate39 {
+       0% {
+           transform: rotate(0);
+       }
+       100% {
+           transform: rotate(360deg);
+       }
+   }
+   
+   .tag_39 {
+       &:hover {
+           background-color: #354a3f;
+       }
+   }
+   // Hero
+   
+   // Job Tab
+   .job-tabs {
+       .nav {
+           padding-left: 30px;
+           border-left: 1px solid $gray-200;
+           .nav-item {
+               .nav-link {
+                   width: 100%;
+                   padding-inline: 0;
+                   border-radius: 0;
+                   padding-block: 16px;
+                   text-align: left;
+                   background-color: transparent;
+                   border-bottom: 1px solid $gray-200;
+                   position: relative;
+                   &::after {
+                       position: absolute;
+                       content: "";
+                       height: 100%;
+                       width: 2px;
+                       background-color: $home-39-brand-2;
+                       top: 0;
+                       left: -31px;
+                       opacity: 0;
+                   }
+                   .tab_sub_content {
+                       display: none !important;
+                   }
+                   &.active {
+                       .tab_sub_content {
+                           display: inline-block !important;
+                       }
+                       &::after {
+                           opacity: 1;
+                       }
+                   }
+               }
+               &:last-child {
+                   .nav-link {
+                       border-bottom: 0;
+                   }
+               }
+           }
+       }
+   }
+   
+   .tab_39_card {
+       .content {
+           position: absolute;
+           left: 0;
+           bottom: 0;
+       }
+       .shape_1 {
+           right: -1px;
+           bottom: -1px;
+       }
+       .shape_2 {
+           top: -1px;
+           left: -1px;
+       }
+   }
+   // Job Tab
+   
+   // Counter
+   .counter_39 {
+       position: relative;
+       &::after {
+           position: absolute;
+           content: "";
+           width: 2px;
+           height: 48px;
+           background-color: $gray-200;
+           top: 50%;
+           left: 100%;
+           transform: translateY(-50%);
+           @media(max-width: 1199px) {
+               width: 0;
+           }
+       }
+       &.last {
+           &::after {
+               display: none;
+           }
+       }
+   }
+   // Counter
+   
+   // Job Circulars
+   .tag_39.job {
+       &:hover {
+           color: $white !important;
+       }
+   }
+   
+   .jc_card {
+       &:hover {
+           box-shadow: 0px 15px 15px -4.709px rgba(0, 0, 0, 0.08) !important;
+           .btn {
+               background-color: $home-39-brand-2 !important;
+               color: $black !important;
+           }
+       }
+   }
+   // Job Circulars
+   
+   // Team
+   .team_thumb {
+       transition: .5s;
+   }
+   .team_39_item {
+       &:hover {
+           .team_thumb {
+               border-radius: 50%;
+           }
+       }
+   }
+   
+   .team_39  {
+       margin-right: -480px;
+       @media(max-width: 991px) {
+           margin-right: 0;
+       }
+   }
+   // Team
+   
+   // Feedback
+   .feedback_39_slider {
+       margin-right: -100px;
+       @media(max-width: 991px) {
+           margin-right: 0;
+       }
+       .home-38-slider-nav {
+           width: 48px;
+           height: 48px;
+           background-color: $gray-200;
+           &:hover {
+               background-color: $home-39-brand-2;
+           }
+       }
+   }
+   // Feedback
+   
+   // Faq
+   .ca-accordion.home-38.style_39 {
+       .accordion-button[aria-expanded=true]::after {
+           background-color: $home-39-brand-2;
+           color: $dark;
+       }
+   }
+   // Faq
+   
+   // Footer
+   .footer-39 {
+       .footer-nav-list li a {
+           font-weight: 400;
+           color: $dark;
+       }
+       .footer-social-list li a {
+           &:hover {
+               background-color: $dark;
+               border: $dark;
+           }
+       }
+       .logo-white {
+           display: none;
+       }
+   }
+   // Footer

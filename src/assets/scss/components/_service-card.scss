@@ -1,0 +1,16 @@
+.service-card {
+	border-radius: 8px;
+	@include media-breakpoint-up(md) {
+		padding: 40px 24px;
+	}
+}
+.service-card-36 {
+	padding: 40px 24px;
+	border: 1px solid #313030;
+	border-radius: 10px;
+	background-color: #191a1d;
+	transition: all .3s ease;
+	&:hover {
+		border: 1px solid #FFF250;
+	}
+}

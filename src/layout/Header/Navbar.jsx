@@ -49,9 +49,9 @@ const Navbar = ({
             <Link to="/">
               {scroll > headerTop || !navDark || itCompany ? (
                 <img
-                  width={113}
-                  height={36}
-                  src="/img/logo-color.png"
+                  width={120}
+                  height={40}
+                  src="/img/logo-na.png"
                   alt="logo"
                   className="img-fluid logo-color"
                 />

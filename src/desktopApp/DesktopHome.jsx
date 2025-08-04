@@ -11,8 +11,6 @@ const DesktopHome = () => {
             "url('/img/shape/dot-dot-wave-shape.svg')no-repeat bottom center",
         }}
       >
-        <span className="dg-hero-circle-1 dg-circle-style-1 position-absolute z--1 rounded-circle"></span>
-
         <div className="container">
           <div className="row align-items-center justify-content-lg-between">
             <div className="col-xl-5 col-lg-5">
@@ -25,43 +23,6 @@ const DesktopHome = () => {
                   desc="   Proactively coordinate quality quality vectors vis-a-vis
                   supply chains client-centric web services."
                 />
-                <div className="hero-subscribe-form-wrap pt-4 position-relative m-auto m-xl-0 d-none d-md-block d-lg-block d-xl-block">
-                  <form
-                    id="subscribe-form"
-                    name="email-form"
-                    className="hero-subscribe-form d-block d-lg-flex d-md-flex"
-                  >
-                    <input
-                      type="email"
-                      className="form-control me-2"
-                      name="Email"
-                      data-name="Email"
-                      placeholder="Enter Your Email Address"
-                      id="email-address"
-                      required=""
-                    />
-                    <input
-                      type="submit"
-                      value="Subscribe"
-                      data-wait="Please wait..."
-                      className="btn btn-primary mt-3 mt-lg-0 mt-md-0"
-                    />
-                  </form>
-                  <ul className="nav subscribe-feature-list mt-3">
-                    <li className="nav-item">
-                      <span className="ms-0">
-                        <i className="far fa-check-circle text-primary me-2"></i>
-                        Free 14-day trial
-                      </span>
-                    </li>
-                    <li className="nav-item">
-                      <span>
-                        <i className="far fa-check-circle text-primary me-2"></i>
-                        No credit card required
-                      </span>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 mt-4 mt-xl-0">

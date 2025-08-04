@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "bootstrap/dist/js/bootstrap.bundle";
 import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./components/themes/HomePage";
+import About from "./components/pages/services/About";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<About />} />
         </Routes>
       </Router>
     </>

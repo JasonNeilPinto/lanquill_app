@@ -15,6 +15,7 @@ import CyberFaq from "../faqs/CyberFaq";
 import CyberBlog from "../blogs/CyberBlog";
 import FooterTwo from "../../layout/Footer/FooterTwo";
 import DesktopHome from "../../desktopApp/DesktopHome";
+import Products from "../products/Products";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <CyberAbout />
       <CyberService />
       <CyberCta />
+      <Products />
       <CyberVideoPromo />
       <PriceFour />
       <CyberStore />

@@ -307,4 +307,42 @@ const offcanvasMenuData = [
   },
 ];
 
-export { navCompanyLinks, navCompanyPage, offcanvasMenuData };
+const TestimonialData = [
+  {
+    authorImg: "/img/testimonial/1.jpg",
+    authorName: "Mr.Rupan Oberoi",
+    authorTitle: "Founder and CEO at Amaara Herbs",
+    quoteTitle: "The Best Template You Got to Have it!",
+    authorQuote:
+      "Globally network long-term high-impact schemas vis-a-vis distinctive e-commerce cross-media than ethical",
+  },
+  {
+    id: 2,
+    authorImg: "/img/testimonial/2.jpg",
+    authorName: "Joan Dho",
+    authorTitle: "Founder and CTO",
+    quoteTitle: "Best Template for SAAS Company!",
+    authorQuote:
+      "Dynamically create innovative core competencies with effective best practices promote innovative infrastructures.",
+  },
+  {
+    id: 3,
+    authorImg: "/img/testimonial/3.jpg",
+    authorName: "Ranu Mondal",
+    authorTitle: "Lead Developer",
+    quoteTitle: "It is undeniably good!",
+    authorQuote:
+      "Rapidiously supply client-centric e-markets and maintainable processes progressively engineer",
+  },
+  {
+    id: 4,
+    authorImg: "/img/testimonial/4.jpg",
+    authorName: "Mr.Rupan Oberoi",
+    authorTitle: "Founder and CEO at Amaara Herbs",
+    quoteTitle: "The Best Template You Got to Have it!",
+    authorQuote:
+      "Globally network long-term high-impact schemas vis-a-vis distinctive e-commerce cross-media than ethical",
+  },
+];
+
+export { navCompanyLinks, navCompanyPage, offcanvasMenuData, TestimonialData };

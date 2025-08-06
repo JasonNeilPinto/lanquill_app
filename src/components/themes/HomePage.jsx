@@ -28,10 +28,10 @@ const HomePage = () => {
       <CyberCta />
       <Products />
       <CyberVideoPromo />
-      <PriceFour />
-      <CyberStore />
+      {/* <PriceFour /> */}
+      {/* <CyberStore /> */}
       <TestimonialFour />
-      <CyberFaq />
+      {/* <CyberFaq /> */}
       <CyberBlog />
       <FooterTwo />
     </Layout>

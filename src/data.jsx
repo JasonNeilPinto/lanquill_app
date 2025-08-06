@@ -14,6 +14,75 @@ import { HiOutlineAcademicCap } from "react-icons/hi";
 import { BsHeadset } from "react-icons/bs";
 import { FaLaptopCode, FaRegClock, FaRegTrashAlt } from "react-icons/fa";
 
+const navServiceLinks = [
+  {
+    title: "Data Analytics",
+    href: "/services/data-analytics",
+    icon: <i className="fas fa-chart-line"></i>,
+  },
+  {
+    title: "Cyber Security",
+    href: "/services/cyber-security",
+    icon: <i className="fas fa-shield-alt"></i>,
+  },
+  {
+    title: "Cloud Services",
+    href: "/services/applied-ai",
+    icon: <i className="fas fa-cloud"></i>,
+  },
+  {
+    title: "Applied AI",
+    href: "/services/applied-ai",
+    icon: <i className="fas fa-brain"></i>,
+  },
+  {
+    title: "Security testing",
+    href: "/services/cloud-services",
+    icon: <i className="fas fa-bug"></i>,
+  },
+  {
+    title: "Web Security",
+    href: "/services/pramitihr-ai",
+    icon: <i className="fas fa-shield-alt"></i>,
+  },
+];
+
+const navInsightsLinks = [
+  {
+    title: "Blog",
+    href: "/BlogPage",
+    icon: <i className="fas fa-blog"></i>,
+  },
+  {
+    title: "Newsletter",
+    href: "/insights/newsletter",
+    icon: <i className="fas fa-envelope"></i>,
+  },
+  {
+    title: "Care Study",
+    href: "/insights/case-study",
+    icon: <i className="fas fa-book"></i>,
+  },
+];
+
+const navProductsLinks = [
+  {
+    title: "PramitiHR",
+    href: "#pramitihr",
+    icon: <i className="fas fa-code"></i>,
+  },
+  {
+    title: "Lanquill",
+    href: "#lanquill",
+    icon: <i className="fas fa-code"></i>,
+  },
+  {
+    title: "Gen AI",
+    href: "#genAI",
+    icon: <i className="fas fa-robot"></i>,
+  },
+];
+
 const navCompanyLinks = [
   {
     title: "Contact Us",
@@ -345,4 +414,12 @@ const TestimonialData = [
   },
 ];
 
-export { navCompanyLinks, navCompanyPage, offcanvasMenuData, TestimonialData };
+export {
+  navCompanyLinks,
+  navCompanyPage,
+  offcanvasMenuData,
+  TestimonialData,
+  navServiceLinks,
+  navInsightsLinks,
+  navProductsLinks,
+};

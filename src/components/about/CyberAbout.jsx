@@ -23,11 +23,11 @@ const CyberAbout = () => {
                   <div className="pe-2">
                     <div className="cyber-about-count-box d-md-flex bg-white p-4 mt-3">
                       <div className="pe-3">
-                        <h2>20+</h2>
+                        <h2>170+</h2>
                       </div>
                       <div>
-                        <h5 className="h6">Years Experience</h5>
-                        <p className="mb-0">We Just Big Achived</p>
+                        <h5 className="h6">Finished Projects</h5>
+                        <p className="mb-0">Started in 2015</p>
                       </div>
                     </div>
                   </div>
@@ -38,11 +38,10 @@ const CyberAbout = () => {
           <div className="col-lg-6">
             <div className="pt-5">
               <div className="section-heading mb-5">
-                <h5 className="h6 text-primary">About Quiety</h5>
-                <h2>We’re Advanced Cyber Security Provider</h2>
+                <h5 className="h6 text-primary">About Us</h5>
+                <h2>Trusted by 50+ Happy Customers Worldwide</h2>
                 <p>
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet Velit officia consequat duis enim velit mollit.
+                  Our technology and domain experts help you achieve success
                 </p>
               </div>
               <div className="row">
@@ -51,10 +50,11 @@ const CyberAbout = () => {
                     <div className="cyber-about-icon">
                       <i className="far fa-hand-receiving"></i>
                     </div>
-                    <h5 className="h-6">Success Project</h5>
+                    <h5 className="h-6">Who We Are</h5>
                     <p>
-                      If you use this is regularly keephosting bandwidth bill
-                      nostrud amet.
+                      We are a multinational IT consulting and delivery services
+                      organization, specializing in building innovative
+                      solutions with new-age technologies.
                     </p>
                     <Link
                       to="/about-us"
@@ -69,10 +69,11 @@ const CyberAbout = () => {
                     <div className="cyber-about-icon">
                       <i className="far fa-users"></i>
                     </div>
-                    <h5 className="h-6">Team Consultancy</h5>
+                    <h5 className="h-6">Why choose us</h5>
                     <p>
-                      If you use this si regularly keephosting bandwidth bill
-                      nostrud amet.
+                      We are agile, detail-oriented, and experienced in driving
+                      digital and Gen AI transformation, cybersecurity, and
+                      analytics.
                     </p>
                     <Link
                       to="/about-us"

@@ -36,8 +36,8 @@ const CyberBlog = () => {
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-12">
             <div className="section-heading text-center">
-              <h4 className="text-primary h5">Recent Post</h4>
-              <h2>Read our News & Articles</h2>
+              <h4 className="text-primary h5">Recent Insights</h4>
+              <h2>Read our Blogs & Articles</h2>
               <p>
                 Assertively maximize cost effective methods of iterate team
                 driven manufactured products through equity invested via

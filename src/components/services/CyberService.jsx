@@ -20,15 +20,20 @@ const CyberService = () => {
         </div>
         <div className="row">
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-list"></i>
+                <i className="fas fa-chart-line"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Disaster Planning</h3>
+                <h3 className="h5">Data & Analytics:</h3>
                 <p>
-                  Randomised words which don&apos;t look even passage of Lorem
-                  Ipsum. You need to be Lorem Ipsum randomised even .
+                  Transform your data into insights with seamless integration,
+                  scalable storage, and smart dashboards.
                 </p>
               </div>
               <Link
@@ -40,15 +45,21 @@ const CyberService = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-cloud"></i>
+                <i className="fas fa-shield-alt"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Cloud Security</h3>
+                <h3 className="h5">Cyber Security:</h3>
                 <p>
-                  Randomised words which don&apos;t look even passage of Lorem
-                  Ipsum. You need to be Lorem Ipsum randomised even .
+                  Comprehensive cybersecurity with compliance, threat
+                  intelligence, and DevSecOps for secure, scalable
+                  infrastructure.
                 </p>
               </div>
               <Link
@@ -60,15 +71,21 @@ const CyberService = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-database"></i>
+                <i className="fas fa-cloud"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Database Security</h3>
+                <h3 className="h5">Cloud Services: </h3>
                 <p>
-                  Randomised words which don&apos;t look even passage of Lorem
-                  Ipsum. You need to be Lorem Ipsum randomised even .
+                  Modernize applications, streamline cloud strategies, and
+                  optimize costs with tailored multi-cloud, hybrid cloud, and
+                  cloud migration solutions.
                 </p>
               </div>
               <Link
@@ -80,15 +97,20 @@ const CyberService = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-door-closed"></i>
+                <i className="fas fa-brain"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Locker Security</h3>
+                <h3 className="h5">Applied AI:</h3>
                 <p>
-                  Randomised words which don&apos;t look even passage of Lorem
-                  Ipsum. You need to be Lorem Ipsum randomised even .
+                  Leverage generative AI and machine learning to streamline
+                  operations and drive data-driven decisions.
                 </p>
               </div>
               <Link
@@ -100,15 +122,21 @@ const CyberService = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-shield-check"></i>
+                <i className="fas fa-bug"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Data Security</h3>
+                <h3 className="h5">Security testing: </h3>
                 <p>
-                  Randomised words which don&apos;t look even passage of Lorem
-                  Ipsum. You need to be Lorem Ipsum randomised even .
+                  Detect vulnerabilities early with security testing services
+                  like penetration testing, compliance checks, red teaming and
+                  risk assessment—built to protect and scale.
                 </p>
               </div>
               <Link
@@ -120,9 +148,14 @@ const CyberService = () => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="cyber-single-service bg-white rounded-custom mb-30">
+            <div
+              className="cyber-single-service bg-white rounded-custom mb-30"
+              style={{
+                minHeight: "350px",
+              }}
+            >
               <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="far fa-server"></i>
+                <i className="fas fa-shield-alt"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Web Security</h3>

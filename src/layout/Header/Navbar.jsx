@@ -3,7 +3,13 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import OffCanvasMenu from "./OffCanvasMenu";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
-import { navCompanyLinks, navCompanyPage } from "../../data";
+import {
+  navCompanyLinks,
+  navCompanyPage,
+  navServiceLinks,
+  navInsightsLinks,
+  navProductsLinks,
+} from "../../data";
 const Navbar = ({
   navDark,
   insurance,
@@ -49,8 +55,8 @@ const Navbar = ({
             <Link to="/">
               {scroll > headerTop || !navDark || itCompany ? (
                 <img
-                  width={120}
-                  height={40}
+                  width={113}
+                  height={36}
                   src="/img/logo-na.png"
                   alt="logo"
                   className="img-fluid logo-color"
@@ -86,21 +92,68 @@ const Navbar = ({
                     Home
                   </Link>
                 </li>
-                <li>
-                  <Link to="/about-us" className="nav-link">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" className="nav-link">
-                    Services
-                  </Link>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Products
+                  </a>
+                  <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                    <div className="dropdown-grid rounded-custom width-full">
+                      <div className="dropdown-grid-item">
+                        <h6 className="drop-heading">Our Services</h6>
+                        {navProductsLinks.map((navLink, i) => (
+                          <div key={i + 1}>
+                            <Link
+                              to={navLink.href}
+                              className="dropdown-link px-0"
+                            >
+                              <span className="me-2">{navLink.icon}</span>
+                              <span className="drop-title mb-0">
+                                {navLink.title}
+                              </span>
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </li>
 
-                <li>
-                  <Link to="/pricing" className="nav-link">
-                    Pricing
-                  </Link>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
+                    <div className="dropdown-grid rounded-custom width-full">
+                      <div className="dropdown-grid-item">
+                        <h6 className="drop-heading">Our Services</h6>
+                        {navServiceLinks.map((navLink, i) => (
+                          <div key={i + 1}>
+                            <Link
+                              to={navLink.href}
+                              className="dropdown-link px-0"
+                            >
+                              <span className="me-2">{navLink.icon}</span>
+                              <span className="drop-title mb-0">
+                                {navLink.title}
+                              </span>
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -110,13 +163,13 @@ const Navbar = ({
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Company
+                    Resources
                   </a>
                   <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div className="dropdown-grid rounded-custom width-full">
                       <div className="dropdown-grid-item">
-                        <h6 className="drop-heading">Useful Links</h6>
-                        {navCompanyLinks.map((navLink, i) => (
+                        <h6 className="drop-heading">Resources</h6>
+                        {navInsightsLinks.map((navLink, i) => (
                           <div key={i + 1}>
                             <Link
                               to={navLink.href}
@@ -124,20 +177,7 @@ const Navbar = ({
                             >
                               <span className="me-2">{navLink.icon}</span>
                               <span className="drop-title mb-0">
-                                {navLink.title}{" "}
-                              </span>
-                            </Link>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="dropdown-grid-item radius-right-side bg-light">
-                        <h6 className="drop-heading">Utility Pages</h6>
-                        {navCompanyPage.map((navPage, i) => (
-                          <div key={i + 1}>
-                            <Link to={navPage.href} className="dropdown-link">
-                              <span className="me-2">{navPage.icon}</span>
-                              <span className="drop-title mb-0">
-                                {navPage.title}{" "}
+                                {navLink.title}
                               </span>
                             </Link>
                           </div>
@@ -146,23 +186,22 @@ const Navbar = ({
                     </div>
                   </div>
                 </li>
+                <li>
+                  <Link to="/about-us" className="nav-link">
+                    About
+                  </Link>
+                </li>
               </ul>
             </div>
 
             <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
               <Link
-                to="/login"
-                className="btn btn-link text-decoration-none me-2"
-              >
-                Sign In
-              </Link>
-              <Link
-                to="/request-demo"
+                to="/contact-us"
                 className={
                   insurance ? "ins-btn ins-primary-btn" : "btn btn-primary"
                 }
               >
-                Get Started
+                Contact Us
               </Link>
             </div>
 

@@ -8,14 +8,11 @@ import CyberAbout from "../about/CyberAbout";
 import CyberService from "../services/CyberService";
 import CyberCta from "../cta/CyberCta";
 import CyberVideoPromo from "../promo/CyberVideoPromo";
-import PriceFour from "../prices/PriceFour";
-import CyberStore from "../others/CyberStore";
 import TestimonialFour from "../testimonials/TestimonialFour";
-import CyberFaq from "../faqs/CyberFaq";
-import CyberBlog from "../blogs/CyberBlog";
 import FooterTwo from "../../layout/Footer/FooterTwo";
 import DesktopHome from "../../desktopApp/DesktopHome";
 import Products from "../products/Products";
+import BlogItems from "../blogs/BlogItem";
 
 const HomePage = () => {
   return (
@@ -32,7 +29,7 @@ const HomePage = () => {
       {/* <CyberStore /> */}
       <TestimonialFour />
       {/* <CyberFaq /> */}
-      <CyberBlog />
+      <BlogItems />
       <FooterTwo />
     </Layout>
   );

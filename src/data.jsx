@@ -27,7 +27,7 @@ const navServiceLinks = [
   },
   {
     title: "Cloud Services",
-    href: "/services/applied-ai",
+    href: "/services/cloud-services",
     icon: <i className="fas fa-cloud"></i>,
   },
   {
@@ -37,12 +37,12 @@ const navServiceLinks = [
   },
   {
     title: "Security testing",
-    href: "/services/cloud-services",
+    href: "/services/security-testing",
     icon: <i className="fas fa-bug"></i>,
   },
   {
-    title: "Web Security",
-    href: "/services/pramitihr-ai",
+    title: "Managed Services",
+    href: "/services/managed-services",
     icon: <i className="fas fa-shield-alt"></i>,
   },
 ];
@@ -414,6 +414,13 @@ const TestimonialData = [
   },
 ];
 
+const blogContent = [
+  {
+    title: "",
+    subtitle: "",
+    image: "/img/blog/blog-1.jpg",
+  },
+];
 export {
   navCompanyLinks,
   navCompanyPage,
@@ -422,4 +429,5 @@ export {
   navServiceLinks,
   navInsightsLinks,
   navProductsLinks,
+  blogContent,
 };

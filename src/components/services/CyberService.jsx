@@ -158,7 +158,7 @@ const CyberService = () => {
                 <i className="fas fa-shield-alt"></i>
               </div>
               <div className="cyber feature-info-wrap">
-                <h3 className="h5">Web Security</h3>
+                <h3 className="h5">Managed Services</h3>
                 <p>
                   Randomised words which don&apos;t look even passage of Lorem
                   Ipsum. You need to be Lorem Ipsum randomised even .

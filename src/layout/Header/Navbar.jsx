@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import OffCanvasMenu from "./OffCanvasMenu";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import {
-  navCompanyLinks,
-  navCompanyPage,
   navServiceLinks,
   navInsightsLinks,
   navProductsLinks,
@@ -57,7 +55,7 @@ const Navbar = ({
                 <img
                   width={113}
                   height={36}
-                  src="/img/logo-na.png"
+                  src="/img/logo-na-white.png"
                   alt="logo"
                   className="img-fluid logo-color"
                 />
@@ -65,7 +63,7 @@ const Navbar = ({
                 <img
                   width={113}
                   height={36}
-                  src="/img/logo-na-white.png"
+                  src="/img/logo-na.png"
                   alt="logo"
                   className="img-fluid logo-white"
                 />

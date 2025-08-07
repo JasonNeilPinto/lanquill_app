@@ -15810,6 +15810,10 @@ h4 {
   padding: 100px 0;
 }
 
+.ptb-80 {
+  padding: 80px 0;
+}
+
 .pl-100 {
   padding-left: 100px;
 }
@@ -18547,6 +18551,18 @@ a:hover,
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-grid-ms {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   transition: all 0.3s ease-in-out;
 }
@@ -22890,19 +22906,8 @@ li.setup-process-item:not(:last-child):before {
 }
 
 .payment-feature-mockup img {
+  border-radius: 25px;
   z-index: 5;
-}
-
-.payment-feature-mockup::before {
-  content: "";
-  position: absolute;
-  left: 10%;
-  right: 0;
-  width: 565px;
-  height: 565px;
-  background: linear-gradient(255.07deg, #f97956 -2.38%, #ff4579 102.02%);
-  border-radius: 50%;
-  z-index: -3;
 }
 
 .payment-feture-shape .shape-one {
@@ -26783,7 +26788,7 @@ span.mk-subtitle {
 }
 .dg-blog-card h5:hover,
 .dg-blog-card .h5:hover {
-  color: #ef3d3d;
+  color: #5caccb;
 }
 .dg-blog-card:hover {
   box-shadow: 14.3045px 23.8408px 66.7541px rgba(2, 0, 91, 0.1);
@@ -43889,7 +43894,7 @@ span.mk-subtitle {
   color: #666666;
 }
 .dg-text-color:hover {
-  color: #ef3d3d;
+  color: #5caccb;
 }
 
 .dg-bg-color {
@@ -43900,7 +43905,7 @@ span.mk-subtitle {
   color: #d7d7d7;
 }
 .dg-blog-btn-text:hover {
-  color: #ef3d3d;
+  color: #5caccb;
 }
 
 .design-agency-hero {

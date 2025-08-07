@@ -11,7 +11,7 @@ const FooterTwo = () => {
               <div className="">
                 <div className="footer-single-col mb-4">
                   <img
-                    src="/img/logo-white.png"
+                    src="/img/logo-na.png"
                     alt="logo"
                     className="img-fluid logo-white"
                   />

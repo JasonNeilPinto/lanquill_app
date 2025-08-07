@@ -68,17 +68,17 @@ const navInsightsLinks = [
 const navProductsLinks = [
   {
     title: "PramitiHR",
-    href: "#pramitihr",
+    href: "/#pramitihr",
     icon: <i className="fas fa-code"></i>,
   },
   {
     title: "Lanquill",
-    href: "#lanquill",
+    href: "/#lanquill",
     icon: <i className="fas fa-code"></i>,
   },
   {
     title: "Gen AI",
-    href: "#genAI",
+    href: "/#genAI",
     icon: <i className="fas fa-robot"></i>,
   },
 ];

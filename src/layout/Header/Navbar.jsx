@@ -109,6 +109,34 @@ const Navbar = ({
                             <Link
                               to={navLink.href}
                               className="dropdown-link px-0"
+                              onClick={(e) => {
+                                if (window.location.pathname === "/") {
+                                  e.preventDefault();
+
+                                  const hash = navLink.href.startsWith("#")
+                                    ? navLink.href
+                                    : `#${navLink.href.split("#")[1]}`;
+
+                                  // Scroll to section
+                                  const section =
+                                    document.querySelector("#div-products");
+                                  if (section) {
+                                    section.scrollIntoView({
+                                      behavior: "smooth",
+                                    });
+                                  }
+
+                                  // Activate the tab
+                                  const tabBtn = document.querySelector(
+                                    `a[href="${hash}"]`
+                                  );
+                                  if (tabBtn instanceof HTMLElement)
+                                    tabBtn.click();
+
+                                  // Update URL hash
+                                  window.history.pushState(null, "", hash);
+                                }
+                              }}
                             >
                               <span className="me-2">{navLink.icon}</span>
                               <span className="drop-title mb-0">

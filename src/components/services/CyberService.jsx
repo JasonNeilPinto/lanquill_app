@@ -26,8 +26,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-chart-line"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-chart-line"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Data & Analytics:</h3>
@@ -51,8 +51,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-shield-alt"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-shield-alt"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Cyber Security:</h3>
@@ -77,8 +77,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-cloud"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-cloud"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Cloud Services: </h3>
@@ -103,8 +103,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-brain"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-brain"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Applied AI:</h3>
@@ -128,8 +128,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-bug"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-bug"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Security testing: </h3>
@@ -154,8 +154,8 @@ const CyberService = () => {
                 minHeight: "350px",
               }}
             >
-              <div className="feature-icon pb-5 rounded bg-primary-soft text-primary mb-4">
-                <i className="fas fa-shield-alt"></i>
+              <div className="feature-icon pb-5 rounded bg-primary-soft text-white mb-4">
+                <i className="far fa-shield-alt"></i>
               </div>
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Managed Services</h3>

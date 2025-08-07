@@ -48,7 +48,7 @@ const CyberAbout = () => {
                 <div className="col-lg-6">
                   <div className="bg-white cyber-about-box mb-30 mb-lg-0">
                     <div className="cyber-about-icon">
-                      <i className="far fa-hand-receiving"></i>
+                      <i className="fal fa-hand-receiving"></i>
                     </div>
                     <h5 className="h-6">Who We Are</h5>
                     <p>
@@ -67,7 +67,7 @@ const CyberAbout = () => {
                 <div className="col-lg-6">
                   <div className="bg-white cyber-about-box">
                     <div className="cyber-about-icon">
-                      <i className="far fa-users"></i>
+                      <i className="fal fa-users"></i>
                     </div>
                     <h5 className="h-6">Why choose us</h5>
                     <p>

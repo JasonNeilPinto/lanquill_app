@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../../layout/Layout";
 import PageMeta from "../common/PageMeta";
 import Navbar from "../../layout/Header/Navbar";
@@ -15,6 +15,23 @@ import Products from "../products/Products";
 import BlogItems from "../blogs/BlogItem";
 
 const HomePage = () => {
+  
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const scrollAndActivate = () => {
+        const section = document.querySelector("#div-products");
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+
+        const tabBtn = document.querySelector(`a[href="${hash}"]`);
+        if (tabBtn instanceof HTMLElement) tabBtn.click();
+      };
+
+      // Small timeout to wait for DOM to load
+      setTimeout(scrollAndActivate, 200);
+    }
+  }, []);
+
   return (
     <Layout>
       <PageMeta title="Netanalytiks" />

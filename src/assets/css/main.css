@@ -16757,7 +16757,7 @@ dd {
 }
 
 .bg-primary-soft {
-  background-color: rgba(23, 92, 255, 0.2);
+  background: linear-gradient(287.85deg, #007DAF 0%, #63AFCE 95.32%);
 }
 
 .bg-primary-light {

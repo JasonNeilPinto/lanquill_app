@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "../../components/blogs/ProfileCard";
+import SideBar from "./SideBar";
 
 const Ecommerce = () => {
   return (
@@ -21,7 +22,7 @@ const Ecommerce = () => {
                   e-commerce platform against potential data breaches.
                 </p>
 
-                <div className="blog-details-info mt-5">
+                <div className="blog-details-info mt-5 " id="Understanding">
                   <h3 className="h5">
                     Understanding the Stakes: Examples of E-commerce Data
                     Breaches
@@ -57,7 +58,7 @@ const Ecommerce = () => {
                   </ul>
                 </div>
 
-                <div className="blog-details-info mt-5 ">
+                <div className="blog-details-info mt-5 " id="cybersecurity">
                   <h3 className="h5">
                     Cybersecurity Best Practices for E-commerce CTOs
                   </h3>
@@ -221,6 +222,26 @@ const Ecommerce = () => {
                   { icon: "fab fa-twitter", link: "#" },
                   { icon: "fab fa-github", link: "#" },
                   { icon: "fab fa-facebook-f", link: "#" },
+                ]}
+              />
+              <SideBar
+                menu={[
+                  {
+                    id: "#Understanding",
+                    label: "Understanding the Stakes",
+                  },
+                  {
+                    id: "#cybersecurity",
+                    label: "Cybersecurity Best Practices for E-commerce CTOs",
+                  },
+                  // {
+                  //   id: "Encrypt Data in Transit and at Rest",
+                  //   label: "Encrypt Data in Transit and at Rest",
+                  // },
+                  // {
+                  //   id: "Encrypt Data in Transit and at Rest",
+                  //   label: "Encrypt Data in Transit and at Rest",
+                  // },
                 ]}
               />
             </div>

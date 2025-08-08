@@ -77,7 +77,7 @@ const BlogGrid = () => {
                   <div className="article-category mb-4 d-block">
                     <Link
                       to="#"
-                      className="d-inline-block text-dark badge bg-danger-soft"
+                      className="d-inline-block text-dark badge bg-primary-soft"
                     >
                       Blog
                     </Link>
@@ -133,7 +133,7 @@ const BlogGrid = () => {
                   <div className="article-category mb-4 d-block">
                     <Link
                       to="#"
-                      className="d-inline-block text-dark badge bg-warning-soft"
+                      className="d-inline-block text-dark badge bg-primary-soft"
                     >
                       Blogs
                     </Link>
@@ -239,7 +239,7 @@ const BlogGrid = () => {
                   <div className="article-category mb-4 d-block">
                     <Link
                       to="#"
-                      className="d-inline-block text-dark badge bg-danger-soft"
+                      className="d-inline-block text-dark badge bg-primary-soft"
                     >
                       Blog
                     </Link>
@@ -250,10 +250,16 @@ const BlogGrid = () => {
                     </h2>
                   </Link>
                   <p className="limit-2-line-text">
-                    Society is fragmenting into two parallel realities. In one
-                    reality, you have infinite upside and opportunity. In the
-                    other reality, you’ll continue to see the gap between your
-                    standard of living and those at the top grow more and more.
+                    The advent of artificial intelligence (AI) is heralding a
+                    new era of transformation across various industries, and the
+                    legal sector is no exception. Generative AI, a subset of AI
+                    that focuses on creating new content and ideas, is poised to
+                    revolutionize the way legal services are delivered,
+                    fundamentally altering the traditional landscape of the
+                    legal profession. This blog explores how generative AI will
+                    affect the legal industry, from enhancing efficiency and
+                    reducing costs to posing ethical challenges and reshaping
+                    the roles of legal professionals.
                   </p>
 
                   <Link to="#">
@@ -351,7 +357,7 @@ const BlogGrid = () => {
                   <div className="article-category mb-4 d-block">
                     <Link
                       to="#"
-                      className="d-inline-block text-dark badge bg-warning-soft"
+                      className="d-inline-block text-dark badge bg-primary-soft"
                     >
                       Blog
                     </Link>
@@ -407,7 +413,7 @@ const BlogGrid = () => {
                   <div className="article-category mb-4 d-block">
                     <Link
                       to="#"
-                      className="d-inline-block text-dark badge bg-danger-soft"
+                      className="d-inline-block text-dark badge bg-primary-soft"
                     >
                       Blog
                     </Link>

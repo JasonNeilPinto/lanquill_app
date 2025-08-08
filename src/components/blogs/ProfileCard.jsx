@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProfileCard = ({ name, role, description, logos }) => {
   return (
     <>
-      <div className="author-wrap text-center bg-light p-5  rounded-custom mt-5 mt-lg-0">
+      <div className="author-wrap text-center bg-light p-5  rounded-custom mt-5 mt-lg-0 mb-3">
         <img
           src="/img/team/team-2.jpg"
           alt="author"

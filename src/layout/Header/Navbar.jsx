@@ -244,7 +244,7 @@ const Navbar = ({
                   <img
                     width={121}
                     height={36}
-                    src="/img/logo-color.png"
+                    src="/img/logo-na-white.png"
                     alt="logo"
                     className="img-fluid ps-2"
                   />

@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "../../components/blogs/ProfileCard";
+import SideBar from "./SideBar";
 
 const BlogDetailsSecond = () => {
   return (
@@ -55,7 +56,7 @@ const BlogDetailsSecond = () => {
                   for HR leaders and recruiters.{" "}
                 </p>
 
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #1">
                   <h3 className="h5">Trend #1 </h3>
                   <img
                     src="/img/blog/trend1.png"
@@ -93,7 +94,7 @@ const BlogDetailsSecond = () => {
                 </div>
                 {/*  */}
 
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #2">
                   <h3 className="h5">Trend #2</h3>
                   <img
                     src="/img/blog/trend2.png"
@@ -130,7 +131,7 @@ const BlogDetailsSecond = () => {
                   />
                 </div>
                 {/*  */}
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #3">
                   <h3 className="h5">Trend #3 </h3>
                   <img
                     src="/img/blog/trend3.png"
@@ -166,7 +167,7 @@ const BlogDetailsSecond = () => {
                   />
                 </div>
                 {/*  */}
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #4">
                   <h3 className="h5">Trend #4 </h3>
                   <img
                     src="/img/blog/trend4.png"
@@ -202,7 +203,7 @@ const BlogDetailsSecond = () => {
                   />
                 </div>
                 {/*  */}
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #5">
                   <h3 className="h5">Trend #5 </h3>
                   <img
                     src="/img/blog/trend5.png"
@@ -238,7 +239,7 @@ const BlogDetailsSecond = () => {
                   />
                 </div>
                 {/*  */}
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Trend #6">
                   <h3 className="h5">Trend #6 </h3>
                   <img
                     src="/img/blog/trend6.png"
@@ -282,7 +283,7 @@ const BlogDetailsSecond = () => {
                 {/*  */}
 
                 {/* Conclusion */}
-                <div className="job-details-info mt-2">
+                <div className="job-details-info mt-4" id="Conclusion">
                   <h3 className="h5">Conclusion</h3>
                   <blockquote className="bg-white custom-shadow p-5 mt-2 rounded-custom border-4 border-primary border-top">
                     <p className="text-muted">
@@ -294,10 +295,8 @@ const BlogDetailsSecond = () => {
                       can build resilient teams prepared for the future. HR
                       leaders and recruiters must stay ahead of these trends to
                       attract and retain top talent in a rapidly changing world.
-                      <i className="fas fa-quote-right ms-2 text-primary"></i>
                     </p>
                     <p className="text-muted">
-                      <i className="fas fa-quote-left me-2 text-primary"></i>{" "}
                       Are you interested in how we might assist in developing
                       your talent strategy for 2025?
                       <i className="fas fa-quote-right ms-2 text-primary"></i>
@@ -309,7 +308,7 @@ const BlogDetailsSecond = () => {
                     alt="apply"
                   />
                 </div>
-                <div className="job-details-info mt-5 mb-2">
+                <div className="job-details-info mt-5 mb-2" id="FAQ">
                   <h3 className="h5 mb-4">FAQs</h3>
                   <div className="accordion" id="faqAccordion">
                     <div className="accordion-item">
@@ -517,6 +516,43 @@ const BlogDetailsSecond = () => {
                   { icon: "fab fa-linkedin-in", link: "#" },
                   { icon: "fab fa-instagram", link: "#" },
                   { icon: "fab fa-facebook-f", link: "#" },
+                ]}
+              />
+              <SideBar
+                menu={[
+                  {
+                    id: "#Trend #1",
+                    label: "Trend #1",
+                  },
+                  {
+                    id: "#Trend #2",
+                    label: "Trend #2",
+                  },
+                  {
+                    id: "#Trend #3",
+                    label: "Trend #3",
+                  },
+                  {
+                    id: "#Trend #4",
+                    label: "Trend #4",
+                  },
+                  {
+                    id: "#Trend #5",
+                    label: "Trend #5",
+                  },
+                  {
+                    id: "#Trend #6",
+                    label: "Trend #6",
+                  },
+
+                  {
+                    id: "#Conclusion",
+                    label: "Conclusion",
+                  },
+                  {
+                    id: "#FAQ",
+                    label: "FAQ",
+                  },
                 ]}
               />
             </div>

@@ -59,7 +59,7 @@ const navInsightsLinks = [
     icon: <i className="fas fa-envelope"></i>,
   },
   {
-    title: "Care Study",
+    title: "Case Study",
     href: "/insights/case-study",
     icon: <i className="fas fa-book"></i>,
   },

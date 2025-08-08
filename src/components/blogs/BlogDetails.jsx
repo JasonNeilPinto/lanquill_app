@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileCard from "../../components/blogs/ProfileCard";
+import SideBar from "./SideBar";
 
 const BlogDetails = () => {
   return (
@@ -28,7 +29,10 @@ const BlogDetails = () => {
                   everything you need to know to get started. experiences.
                 </p>
 
-                <div className="job-details-info mt-5">
+                <div
+                  className="job-details-info mt-5"
+                  id="What is IT Outsourcing"
+                >
                   <h3 className="h5">What is IT Outsourcing?</h3>
                   <p>
                     IT outsourcing involves hiring a third-party service
@@ -40,7 +44,10 @@ const BlogDetails = () => {
                   </p>
                 </div>
 
-                <div className="job-details-info mt-5">
+                <div
+                  className="job-details-info mt-5"
+                  id="Why Outsource IT Services in Bangalore"
+                >
                   <h3 className="h5">
                     Why Outsource IT Services in Bangalore?
                   </h3>
@@ -127,7 +134,10 @@ const BlogDetails = () => {
                   </ol>
                 </div>
 
-                <div className="job-details-info mt-5">
+                <div
+                  className="job-details-info mt-5"
+                  id="Types of IT Outsourcing Servicess"
+                >
                   <h3 className="h5">Types of IT Outsourcing Servicess</h3>
                   <p>
                     When outsourcing IT services, businesses can choose from a
@@ -382,7 +392,10 @@ const BlogDetails = () => {
                 </div>
 
                 {/* tejas new */}
-                <div className="job-details-info mt-5">
+                <div
+                  className="job-details-info mt-5"
+                  id="How to Choose the Right IT Outsourcing Partner"
+                >
                   <h3 className="h5">
                     How to Choose the Right IT Outsourcing Partner
                   </h3>
@@ -426,7 +439,10 @@ const BlogDetails = () => {
                 </div>
 
                 {/* tejad end  */}
-                <div className="job-details-info mt-5">
+                <div
+                  className="job-details-info mt-5"
+                  id="Steps to Get Started with IT Outsourcing"
+                >
                   {/* Section: Steps to Get Started */}
                   <h3 className="h5 mb-4">
                     Steps to Get Started with IT Outsourcing
@@ -457,7 +473,10 @@ const BlogDetails = () => {
                   </ol>
 
                   {/* Section: Common Challenges */}
-                  <h3 className="h5 mb-4">
+                  <h3
+                    className="h5 mb-4"
+                    id="Common Challenges in IT Outsourcing"
+                  >
                     Common Challenges in IT Outsourcing
                   </h3>
                   <p>
@@ -487,7 +506,10 @@ const BlogDetails = () => {
                   </ul>
 
                   {/* Section: Why Bangalore */}
-                  <h3 className="h5 mb-4">
+                  <h3
+                    className="h5 mb-4"
+                    id="Why Bangalore is the Ideal Destination for IT Outsourcing"
+                  >
                     Why Bangalore is the Ideal Destination for IT Outsourcing
                   </h3>
                   <p>
@@ -539,7 +561,7 @@ const BlogDetails = () => {
                 </div>
 
                 {/* Conclusion */}
-                <div className="job-details-info mt-5">
+                <div className="job-details-info mt-5" id="Conclusion">
                   <h3 className="h5">Conclusion</h3>
                   <blockquote className="bg-white custom-shadow p-5 mt-4 rounded-custom border-4 border-primary border-top">
                     <p className="text-muted">
@@ -575,6 +597,43 @@ const BlogDetails = () => {
                   { icon: "fab fa-linkedin-in", link: "#" },
                   { icon: "fab fa-instagram", link: "#" },
                   { icon: "fab fa-facebook-f", link: "#" },
+                ]}
+              />
+              <SideBar
+                menu={[
+                  {
+                    id: "#What is IT Outsourcing",
+                    label: "What is IT Outsourcing",
+                  },
+                  {
+                    id: "#Why Outsource IT Services in Bangalore",
+                    label: "Why Outsource IT Services in Bangalore",
+                  },
+                  {
+                    id: "#Types of IT Outsourcing Servicess",
+                    label: "Types of IT Outsourcing Servicess",
+                  },
+                  {
+                    id: "#How to Choose the Right IT Outsourcing Partner",
+                    label: "How to Choose the Right IT Outsourcing Partner",
+                  },
+                  {
+                    id: "#Steps to Get Started with IT Outsourcing",
+                    label: "Steps to Get Started with IT Outsourcing",
+                  },
+                  {
+                    id: "#Common Challenges in IT Outsourcing",
+                    label: "Common Challenges in IT Outsourcing",
+                  },
+                  {
+                    id: "#Why Bangalore is the Ideal Destination for IT Outsourcing",
+                    label:
+                      "Why Bangalore is the Ideal Destination for IT Outsourcing",
+                  },
+                  {
+                    id: "#Conclusion",
+                    label: "Conclusion",
+                  },
                 ]}
               />
             </div>

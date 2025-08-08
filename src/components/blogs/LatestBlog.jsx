@@ -1,186 +1,125 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SectionTitle from "../common/SectionTitle";
 
+const initialBlogData = [
+  {
+    id: 1,
+    title: "A Beginner’s Guide to IT Outsourcing in Bangalore",
+    description:
+      "Bangalore, often referred to as the Silicon Valley of India, is a global hub for technology and innovation. With its thriving IT ecosystem, the city has become a hotspot for businesses looking to outsource their IT needs.",
+    image: "/img/blog/beginnerit.png",
+    category: "Blog",
+    categoryClass: "bg-primary-soft",
+    author: {
+      name: "Jane Martin",
+      avatar: "/img/testimonial/6.jpg",
+      date: "April 24, 2021",
+    },
+    link: "/blog-single",
+  },
+  {
+    id: 2,
+    title: "Talent Acquisition Trends 2025 fit",
+    description:
+      "As we approach 2025, talent acquisition is poised to undergo transformative changes driven by technology, evolving workforce expectations, and global economic shifts.",
+    image: "/img/blog/Talent.png",
+    category: "Blog",
+    categoryClass: "bg-primary-soft",
+    author: {
+      name: "Veronica P. Byrd",
+      avatar: "/img/testimonial/1.jpg",
+      date: "April 24, 2021",
+    },
+    link: "/blog-second",
+  },
+  {
+    id: 3,
+    title: "Shaping India's Future: 12 Big Ideas for 2025",
+    description:
+      "As India continues its upward trajectory, it's imperative for business leaders to stay ahead of the curve and anticipate the trends that will shape the country's future.",
+    image: "/img/blog/big-ideas.png",
+    category: "Blog",
+    categoryClass: "bg-primary-soft",
+    author: {
+      name: "Martin Gilbert",
+      avatar: "/img/testimonial/3.jpg",
+      date: "April 24, 2021",
+    },
+    link: "/blog-ShapingIndia",
+  },
+];
+
 const LatestBlog = () => {
+  const [blogs, setBlogs] = useState(initialBlogData);
+
+  useEffect(() => {}, []);
+
   return (
-    <>
-      <section className="related-blog-list ptb-120 bg-light">
-        <div className="container">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-lg-4 col-md-12">
-              <SectionTitle
-                subtitle="Blog"
-                title="Check our Latest News and Update"
-              />
-            </div>
-            <div className="col-lg-7 col-md-12">
-              <div className="text-start text-lg-end mb-4 mb-lg-0 mb-xl-0">
-                <Link to="/blogs" className="btn btn-primary">
-                  View All Article
-                </Link>
-              </div>
-            </div>
+    <section className="related-blog-list ptb-120 bg-light">
+      <div className="container">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-lg-4 col-md-12">
+            <SectionTitle
+              subtitle="Blog"
+              title="Check our Latest News and Update"
+            />
           </div>
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="single-article rounded-custom mb-4 mb-lg-0">
-                <Link to="/blog-single" className="article-img">
-                  <img
-                    src="/img/blog/blog-1.jpg"
-                    alt="article"
-                    className="img-fluid"
-                  />
-                </Link>
-                <div className="article-content p-4">
-                  <div className="article-category mb-4 d-block">
-                    <Link
-                      to="#"
-                      className="d-inline-block text-dark badge bg-warning-soft"
-                    >
-                      Design
-                    </Link>
-                  </div>
-                  <Link to="blog-single">
-                    <h2 className="h5 article-title limit-2-line-text">
-                      Do you really understand the concept of product value?
-                    </h2>
-                  </Link>
-                  <p className="limit-2-line-text">
-                    Society is fragmenting into two parallel realities. In one
-                    reality, you have infinite upside and opportunity. In the
-                    other reality, you’ll continue to see the gap between your
-                    standard of living and those at the top grow more and more.
-                  </p>
-
-                  <Link to="#">
-                    <div className="d-flex align-items-center pt-4">
-                      <div className="avatar">
-                        <img
-                          src="/img/testimonial/6.jpg"
-                          alt="avatar"
-                          width="40"
-                          className="img-fluid rounded-circle me-3"
-                        />
-                      </div>
-                      <div className="avatar-info">
-                        <h6 className="mb-0 avatar-name">Jane Martin</h6>
-                        <span className="small fw-medium text-muted">
-                          April 24, 2021
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-article rounded-custom mb-4 mb-lg-0">
-                <Link to="/blog-single" className="article-img">
-                  <img
-                    src="/img/blog/blog-2.jpg"
-                    alt="article"
-                    className="img-fluid"
-                  />
-                </Link>
-                <div className="article-content p-4">
-                  <div className="article-category mb-4 d-block">
-                    <Link
-                      to="#"
-                      className="d-inline-block text-dark badge bg-primary-soft"
-                    >
-                      Customer
-                    </Link>
-                  </div>
-                  <Link to="/blog-single">
-                    <h2 className="h5 article-title limit-2-line-text">
-                      Why communities help you build better products for your
-                      business
-                    </h2>
-                  </Link>
-                  <p className="limit-2-line-text">
-                    Society is fragmenting into two parallel realities. In one
-                    reality, you have infinite upside and opportunity. In the
-                    other reality, you’ll continue to see the gap between your
-                    standard of living and those at the top grow more and more.
-                  </p>
-
-                  <Link to="#">
-                    <div className="d-flex align-items-center pt-4">
-                      <div className="avatar">
-                        <img
-                          src="/img/testimonial/1.jpg"
-                          alt="avatar"
-                          width="40"
-                          className="img-fluid rounded-circle me-3"
-                        />
-                      </div>
-                      <div className="avatar-info">
-                        <h6 className="mb-0 avatar-name">Veronica P. Byrd</h6>
-                        <span className="small fw-medium text-muted">
-                          April 24, 2021
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="single-article rounded-custom mb-4 mb-lg-0 mb-md-0">
-                <Link to="/blog-single" className="article-img">
-                  <img
-                    src="/img/blog/blog-3.jpg"
-                    alt="article"
-                    className="img-fluid"
-                  />
-                </Link>
-                <div className="article-content p-4">
-                  <div className="article-category mb-4 d-block">
-                    <Link
-                      to="#"
-                      className="d-inline-block text-dark badge bg-danger-soft"
-                    >
-                      Development
-                    </Link>
-                  </div>
-                  <Link to="/blog-single">
-                    <h2 className="h5 article-title limit-2-line-text">
-                      Why communities help you build better products
-                    </h2>
-                  </Link>
-                  <p className="limit-2-line-text">
-                    Society is fragmenting into two parallel realities. In one
-                    reality, you have infinite upside and opportunity. In the
-                    other reality, you’ll continue to see the gap between your
-                    standard of living and those at the top grow more and more.
-                  </p>
-
-                  <Link to="#">
-                    <div className="d-flex align-items-center pt-4">
-                      <div className="avatar">
-                        <img
-                          src="/img/testimonial/3.jpg"
-                          alt="avatar"
-                          width="40"
-                          className="img-fluid rounded-circle me-3"
-                        />
-                      </div>
-                      <div className="avatar-info">
-                        <h6 className="mb-0 avatar-name">Martin Gilbert</h6>
-                        <span className="small fw-medium text-muted">
-                          April 24, 2021
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
+          <div className="col-lg-7 col-md-12">
+            <div className="text-start text-lg-end mb-4 mb-lg-0 mb-xl-0">
+              <Link to="/blogs" className="btn btn-primary">
+                View All Article
+              </Link>
             </div>
           </div>
         </div>
-      </section>
-    </>
+        <div className="row">
+          {blogs.map((blog) => (
+            <div key={blog.id} className="col-lg-4 col-md-6">
+              <div className="single-article rounded-custom mb-4 mb-lg-0">
+                <Link to={blog.link} className="article-img">
+                  <img src={blog.image} alt="article" className="img-fluid" />
+                </Link>
+                <div className="article-content p-4">
+                  <div className="article-category mb-4 d-block">
+                    <Link
+                      to="#"
+                      className={`d-inline-block text-dark badge ${blog.categoryClass}`}
+                    >
+                      {blog.category}
+                    </Link>
+                  </div>
+                  <Link to={blog.link}>
+                    <h2 className="h5 article-title limit-2-line-text">
+                      {blog.title}
+                    </h2>
+                  </Link>
+                  <p className="limit-2-line-text">{blog.description}</p>
+                  <Link to="#">
+                    <div className="d-flex align-items-center pt-4">
+                      <div className="avatar">
+                        <img
+                          src={blog.author.avatar}
+                          alt="avatar"
+                          width="40"
+                          className="img-fluid rounded-circle me-3"
+                        />
+                      </div>
+                      <div className="avatar-info">
+                        <h6 className="mb-0 avatar-name">{blog.author.name}</h6>
+                        <span className="small fw-medium text-muted">
+                          {blog.author.date}
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

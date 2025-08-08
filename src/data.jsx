@@ -50,7 +50,7 @@ const navServiceLinks = [
 const navInsightsLinks = [
   {
     title: "Blog",
-    href: "/BlogPage",
+    href: "/blogs",
     icon: <i className="fas fa-blog"></i>,
   },
   {

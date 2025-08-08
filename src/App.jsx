@@ -18,6 +18,15 @@ import AppliedAIServices from "./components/services/AppliedAI/AppliedAIService"
 import SecurityTestingService from "./components/services/SecurityTesting/SecurityTestingService";
 import ManagedServices from "./components/services/ManagedServices/ManagedServices";
 import Contact from "./components/pages/services/Contact";
+import Blogs from "./components/pages/blog/Blogs";
+import SingleBlog from "./components/pages/blog/SingleBlog";
+import SecondBlog from "./components/pages/blog/SecondBlog";
+import ShapingIndiaBlog from "./components/pages/blog/ShapingIndiaBlog";
+import TheWarForTalentBlog from "./components/pages/blog/TheWarForTalentBlog";
+import GenerativeAiBlog from "./components/pages/blog/GenerativeAiBlog";
+import EmergenceOfGenAiBlog from "./components/pages/blog/EmergenceOfGenAiBlog";
+import GenAiRevolutionizesBlog from "./components/pages/blog/GenAiRevolutionizesBlog";
+import EcommerceBlog from "./components/pages/blog/EcommerceBlog";
 
 function App() {
   return (
@@ -43,6 +52,25 @@ function App() {
             path="/services/managed-services"
             element={<ManagedServices />}
           />
+
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog-single" element={<SingleBlog />} />
+          <Route path="/blog-second" element={<SecondBlog />} />
+          <Route path="/blog-ShapingIndia" element={<ShapingIndiaBlog />} />
+          <Route
+            path="/blog-theWarfortalent"
+            element={<TheWarForTalentBlog />}
+          />
+          <Route path="/blog-generativeai" element={<GenerativeAiBlog />} />
+          <Route
+            path="/blog-emergenceofgenai"
+            element={<EmergenceOfGenAiBlog />}
+          />
+          <Route
+            path="/blog-genairevolutionizes"
+            element={<GenAiRevolutionizesBlog />}
+          />
+          <Route path="/blog-ecommerce" element={<EcommerceBlog />} />
 
           <Route path="/contact-us" element={<Contact />} />
         </Routes>

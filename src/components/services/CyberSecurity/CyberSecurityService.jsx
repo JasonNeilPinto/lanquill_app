@@ -4,10 +4,10 @@ import Navbar from "../../../layout/Header/Navbar";
 import Feature from "./Feature";
 import TestimonialTwo from "../../testimonials/TestimonialTwo";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import FeatureTop from "./FeatureTop";
 import PageHeader from "../../common/PageHeader";
-import BlogItems from "../../blogs/BlogItem";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
+import LatestBlog from "../../blogs/LatestBlog";
 
 const CyberSecurityService = () => {
   return (
@@ -19,10 +19,10 @@ const CyberSecurityService = () => {
       />
       <FeatureTop />
       <Feature />
-      <BlogItems />
+      <LatestBlog />
       <TestimonialTwo bgWhite />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

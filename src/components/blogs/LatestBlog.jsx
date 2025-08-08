@@ -51,7 +51,7 @@ const initialBlogData = [
 ];
 
 const LatestBlog = () => {
-  const [blogs, setBlogs] = useState(initialBlogData);
+  const [blogs] = useState(initialBlogData);
 
   useEffect(() => {}, []);
 

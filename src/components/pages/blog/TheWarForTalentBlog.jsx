@@ -5,8 +5,8 @@ import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import TheWarForTalent from "../../blogs/TheWarForTalent";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const TheWarForTalentBlog = () => {
   return (
@@ -18,7 +18,7 @@ const TheWarForTalentBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

@@ -5,8 +5,8 @@ import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import Ecommerce from "../../blogs/Ecommerce";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const EcommerceBlog = () => {
   return (
@@ -18,7 +18,7 @@ const EcommerceBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

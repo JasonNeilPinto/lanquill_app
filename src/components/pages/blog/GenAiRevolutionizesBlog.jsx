@@ -5,8 +5,8 @@ import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import GenAiRevolutionizes from "../../blogs/GenAiRevolutionizes";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const GenAiRevolutionizesBlog = () => {
   return (
@@ -18,7 +18,7 @@ const GenAiRevolutionizesBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

@@ -11,7 +11,7 @@ const SectionTitle = ({ subtitle, dark, title, centerAlign, description }) => {
           }`}
           data-aos="fade-up"
         >
-          <h4 className={`h5 ${dark ? "text-warning" : "text-primary"}`}>
+          <h4 className={`h5 ${dark ? "text-primary" : "text-primary"}`}>
             {subtitle}
           </h4>
           <h2>{title}</h2>

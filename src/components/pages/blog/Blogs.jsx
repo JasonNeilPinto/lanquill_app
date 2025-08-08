@@ -3,8 +3,8 @@ import Layout from "../../../layout/Layout";
 import PageMeta from "../../common/PageMeta";
 import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import BlogGrid from "../../blogs/BlogGrid";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const Blogs = () => {
   return (
@@ -17,11 +17,7 @@ const Blogs = () => {
         blogtags
       />
       <BlogGrid />
-      <FooterOne
-        style={{
-          background: "url('/img/page-header-bg.svg')no-repeat bottom right",
-        }}
-      />
+      <FooterTwo />
     </Layout>
   );
 };

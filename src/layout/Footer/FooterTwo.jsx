@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const FooterTwo = () => {
   return (
     <footer className="cyber-footer bg-gradient">
-      <div className="cyber-footer-top ptb-100">
+      <div className="cyber-footer-top ptb-80">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-4 mb-md-4 mb-lg-0">
@@ -34,12 +34,12 @@ const FooterTwo = () => {
                   </li>
                   <li className="list-inline-item">
                     <a href="/#">
-                      <i className="fab fa-dribbble"></i>
+                      <i className="fab fa-youtube"></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
                     <a href="/#">
-                      <i className="fab fa-github"></i>
+                      <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
                 </ul>
@@ -47,28 +47,28 @@ const FooterTwo = () => {
             </div>
             <div className="col-md-12 col-lg-8 mt-4 mt-md-0 mt-lg-0">
               <div className="row">
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-3 col-md-6">
                   <div className="">
-                    <h3 className="h5 mb-4 text-white">Company Services</h3>
+                    <h3 className="h5 mb-4 text-white">Services</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
                         <Link to="/" className="text-decoration-none">
-                          Threat Hunter
+                          Data & Analytics
                         </Link>
                       </li>
                       <li>
                         <Link to="/about-us" className="text-decoration-none">
-                          Incident Responder
+                          Cyber Security
                         </Link>
                       </li>
                       <li>
                         <Link to="/services" className="text-decoration-none">
-                          Secure Managed IT
+                          Cloud Services
                         </Link>
                       </li>
                       <li>
                         <Link to="/career" className="text-decoration-none">
-                          Compliance
+                          Applied AI
                         </Link>
                       </li>
                       <li>
@@ -76,7 +76,7 @@ const FooterTwo = () => {
                           to="/integrations"
                           className="text-decoration-none"
                         >
-                          Cyber Security
+                          Security testing
                         </Link>
                       </li>
                       <li>
@@ -84,34 +84,34 @@ const FooterTwo = () => {
                           to="/integration-single"
                           className="text-decoration-none"
                         >
-                          Disaster Planning
+                          Managed Services
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-3 col-md-6">
                   <div className="">
-                    <h3 className="h5 mb-4 text-white">Quick Links</h3>
+                    <h3 className="h5 mb-4 text-white">Products</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
                         <Link to="/contact-us" className="text-decoration-none">
-                          Contact Us
+                          PramitiHR
                         </Link>
                       </li>
                       <li>
                         <Link to="/about-us" className="text-decoration-none">
-                          FAQ
+                          Lanquill
                         </Link>
                       </li>
                       <li>
                         <Link to="/services" className="text-decoration-none">
-                          Privacy Policy
+                          Gen AI Sandbox
                         </Link>
                       </li>
                       <li>
                         <Link to="/career" className="text-decoration-none">
-                          Terms & Conditions
+                          Reverse Auction e-commerce
                         </Link>
                       </li>
                       <li>
@@ -119,29 +119,51 @@ const FooterTwo = () => {
                           to="/integrations"
                           className="text-decoration-none"
                         >
-                          Team
+                          OnDemand Entertainment
                         </Link>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-3 col-md-6">
                   <div className="">
-                    <h3 className="h5 mb-4 text-white">Contact Info</h3>
+                    <h3 className="h5 mb-4 text-white">Quick Links</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
                         <Link to="/" className="text-decoration-none">
-                          Phone: +61-821-456
+                          Contact Us
                         </Link>
                       </li>
                       <li>
                         <Link to="/about-us" className="text-decoration-none">
-                          Email: hello@vaximo.com
+                          About Us
                         </Link>
                       </li>
                       <li>
                         <Link to="/" className="text-decoration-none">
-                          Address: 123, Western Road, Melbourne Australia
+                          Resources
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                  <div className="">
+                    <h3 className="h5 mb-4 text-white">Contact Info</h3>
+                    <ul className="list-unstyled footer-nav-list mb-lg-0">
+                      <li>
+                        <Link to="/contact-us" className="text-decoration-none">
+                          +91 9620555571
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/contact-us" className="text-decoration-none">
+                          support@netanalytiks.com
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/" className="text-decoration-none">
+                          91Springboard, MG Road, Bangalore, India
                         </Link>
                       </li>
                     </ul>
@@ -155,13 +177,7 @@ const FooterTwo = () => {
       <div className="cyber-footer-bottom">
         <div className="container">
           <p className="mb-0 py-4 text-center">
-            Copyright @2022 All Rights Reserved by
-            <a
-              href="https://www.themetags.com"
-              className="text-decoration-none ms-2"
-            >
-              ThemeTags
-            </a>
+            Copyright ©2024 NetAnalytiks Technologies Ltd. All rights reserved.
           </p>
         </div>
       </div>

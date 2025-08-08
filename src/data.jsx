@@ -416,9 +416,28 @@ const TestimonialData = [
 
 const blogContent = [
   {
-    title: "",
-    subtitle: "",
+    title: "Continually reinterme diate seamless manufactured products.",
+    subtitle:
+      "Globally evolve user-centric channels rather than reliable solutions. Globally strategize.Globally evolve user-centric channels rather than reliable solutions. Globally strategize.Globally evolve user-centric channels rather than reliable solutions. Globally strategize.Globally evolve user-centric channels rather than reliable solutions. Globally strategize.Globally evolve user-centric channels rather than reliable solutions. Globally strategize.",
+    blogType: "Case Study",
     image: "/img/blog/blog-1.jpg",
+    blogPath: "/blog-single",
+  },
+  {
+    title: "5 SEO Factors to Consider for your Website to rank Better",
+    subtitle:
+      "Globally evolve user-centric channels rather than reliable solutions. Globally strategize.",
+    blogType: "Digital Marketing",
+    image: "/img/blog/blog-2.jpg",
+    blogPath: "/blog-single",
+  },
+  {
+    title: "Quickly generate low risk high yield deliverables.",
+    subtitle:
+      "Globally evolve user-centric channels rather than reliable solutions. Globally strategize.",
+    blogType: "Business Planning",
+    image: "/img/blog/blog-3.jpg",
+    blogPath: "/blog-single",
   },
 ];
 export {

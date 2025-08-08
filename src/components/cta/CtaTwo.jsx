@@ -31,7 +31,7 @@ const CtaTwo = () => {
               rounded-circle
               circle-shape-3
               position-absolute
-              bg-dark-light
+              bg-blue
               left-5
             "
           ></div>
@@ -41,7 +41,7 @@ const CtaTwo = () => {
               rounded-circle
               circle-shape-1
               position-absolute
-              bg-warning
+              bg-green
               right-5
             "
           ></div>

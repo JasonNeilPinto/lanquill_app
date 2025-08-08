@@ -6,7 +6,7 @@ import PageHeader from "../../common/PageHeader";
 import BlogDetailsSecond from "../../blogs/BlogDetailsSecond";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const SecondBlog = () => {
   return (
@@ -18,7 +18,7 @@ const SecondBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

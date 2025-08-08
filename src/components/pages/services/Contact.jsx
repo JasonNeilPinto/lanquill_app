@@ -2,10 +2,10 @@ import React from "react";
 import PageMeta from "../../common/PageMeta";
 import ContactBox from "../../contact/ContactBox";
 import ContactFormTwo from "../../contact/ContactFormTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import PageHeader from "../../common/PageHeader";
 import Navbar from "../../../layout/Header/Navbar";
 import Layout from "../../../layout/Layout";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const Contact = () => {
   return (
@@ -18,11 +18,7 @@ const Contact = () => {
       />
       <ContactBox />
       <ContactFormTwo />
-      <FooterOne
-        style={{
-          background: "url('/img/page-header-bg.svg')no-repeat bottom right",
-        }}
-      />
+      <FooterTwo />
     </Layout>
   );
 };

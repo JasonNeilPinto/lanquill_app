@@ -9,33 +9,45 @@ import { Link } from "react-router-dom";
 const slides = [
   {
     title: "Data & Analytics Solution",
-    desc: "We build, transform, and scale data systems to turn your information into impact. ",
-    macImg: "/img/screen/mac-screen.png",
-    phoneImg: "/img/screen/phone-screen.png",
+    desc: "We build, transform, and scale data systems to turn your information into impact.",
+    macImg: "/img/screen/mac-screen/DataAnalytics.png",
+    phoneImg: "/img/screen/phone-screen/dataAnalytics.png",
   },
   {
     title: "Cyber Security Solution",
     desc: "Delivering smart security solutions that scale with your business. ",
-    macImg: "/img/screen/mac-screen.png",
-    phoneImg: "/img/screen/phone-screen.png",
-  },
-  {
-    title: "Applied AI Solution",
-    desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
-    macImg: "/img/screen/mac-screen.png",
-    phoneImg: "/img/screen/phone-screen.png",
+    macImg: "/img/screen/mac-screen/Cybersecurity.png",
+    phoneImg: "/img/screen/phone-screen/cybersecurity.png",
   },
   {
     title: "Cloud Services Solution",
     desc: "Reimagine your apps for a smarter, leaner cloud future.",
-    macImg: "/img/screen/mac-screen.png",
-    phoneImg: "/img/screen/phone-screen.png",
+    macImg: "/img/screen/mac-screen/CloudServices.png",
+    phoneImg: "/img/screen/phone-screen/cloudServices.png",
+  },
+  {
+    title: "Applied AI Solution",
+    desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
+    macImg: "/img/screen/mac-screen/AppliedAI.png",
+    phoneImg: "/img/screen/phone-screen/appliedAI.png",
+  },
+  {
+    title: "Security testing",
+    desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
+    macImg: "/img/screen/mac-screen/SecurityTesting.png",
+    phoneImg: "/img/screen/phone-screen/securityTesting.png",
+  },
+  {
+    title: "Managed Services",
+    desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
+    macImg: "/img/screen/mac-screen/ManagedServices.png",
+    phoneImg: "/img/screen/phone-screen/managedServices.png",
   },
   {
     title: "PramitiHR.AI",
-    desc: "Hire Smarter with Generative AI Interviews. ",
-    macImg: "/img/screen/mac-screen.png",
-    phoneImg: "/img/screen/phone-screen.png",
+    desc: "Hire Smarter with Generative AI Interviews.",
+    macImg: "/img/screen/mac-screen/PramitiHR.png",
+    phoneImg: "/img/screen/phone-screen/pramitiHR.png",
   },
 ];
 
@@ -44,7 +56,7 @@ const DesktopHome = () => {
     <>
       <Swiper
         modules={[Autoplay, Pagination]}
-        autoplay={{ delay: 2000 }}
+        // autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         loop={true}
         className="w-full"

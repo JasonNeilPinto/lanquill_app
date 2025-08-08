@@ -6,8 +6,8 @@ import Feature from "./Feature";
 import TestimonialTwo from "../../testimonials/TestimonialTwo";
 import FeatureTop from "./FeatureTop";
 import PageHeader from "../../common/PageHeader";
-import BlogItems from "../../blogs/BlogItem";
 import FooterTwo from "../../../layout/Footer/FooterTwo";
+import LatestBlog from "../../blogs/LatestBlog";
 
 const DataAnalytics = () => {
   return (
@@ -19,7 +19,7 @@ const DataAnalytics = () => {
       />
       <FeatureTop />
       <Feature />
-      <BlogItems />
+      <LatestBlog />
       <TestimonialTwo bgWhite />
       <CtaTwo />
       <FooterTwo />

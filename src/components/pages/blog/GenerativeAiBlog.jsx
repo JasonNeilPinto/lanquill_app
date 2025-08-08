@@ -5,8 +5,8 @@ import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import GenerativeAi from "../../blogs/GenerativeAi";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const GenerativeAiBlog = () => {
   return (
@@ -18,7 +18,7 @@ const GenerativeAiBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

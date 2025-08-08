@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { blogContent } from "../../data";
 
-const BlogItems = () => {
+const Blogtest = () => {
   return (
     <>
       <section className="dg-blog-section bg-design-agency-about ptb-80">
@@ -60,4 +60,4 @@ const BlogItems = () => {
   );
 };
 
-export default BlogItems;
+export default Blogtest;

@@ -6,7 +6,7 @@ import PageHeader from "../../common/PageHeader";
 import EmergenceOfGenAi from "../../blogs/EmergenceOfGenAi";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const EmergenceOfGenAiBlog = () => {
   return (
@@ -18,7 +18,7 @@ const EmergenceOfGenAiBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

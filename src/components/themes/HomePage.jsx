@@ -12,10 +12,9 @@ import TestimonialFour from "../testimonials/TestimonialFour";
 import FooterTwo from "../../layout/Footer/FooterTwo";
 import DesktopHome from "../../desktopApp/DesktopHome";
 import Products from "../products/Products";
-import BlogItems from "../blogs/BlogItem";
+import LatestBlog from "../blogs/LatestBlog";
 
 const HomePage = () => {
-  
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -46,7 +45,7 @@ const HomePage = () => {
       {/* <CyberStore /> */}
       <TestimonialFour />
       {/* <CyberFaq /> */}
-      <BlogItems />
+      <LatestBlog />
       <FooterTwo />
     </Layout>
   );

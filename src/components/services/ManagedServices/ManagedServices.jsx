@@ -1,13 +1,13 @@
 import React from "react";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import Navbar from "../../../layout/Header/Navbar";
 import Layout from "../../../layout/Layout";
 import Feature from "./Feature";
 import TestimonialTwo from "../../testimonials/TestimonialTwo";
 import FeatureTop from "./FeatureTop";
 import PageHeader from "../../common/PageHeader";
-import BlogItems from "../../blogs/BlogItem";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
+import LatestBlog from "../../blogs/LatestBlog";
 
 const ManagedServices = () => {
   return (
@@ -19,10 +19,10 @@ const ManagedServices = () => {
       />
       <FeatureTop />
       <Feature />
-      <BlogItems />
+      <LatestBlog />
       <TestimonialTwo bgWhite />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

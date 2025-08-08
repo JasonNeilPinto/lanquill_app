@@ -1,14 +1,14 @@
 import React from "react";
 import AboutPageHero from "../../about/AboutPageHero";
 import OurStory from "../../about/OurStory";
-import FeatureImgThree from "../../features/FeatureImgThree";
-import Team from "../../team/Team";
 import TestimonialTwo from "../../testimonials/TestimonialTwo";
 import PageMeta from "../../common/PageMeta";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import Navbar from "../../../layout/Header/Navbar";
 import Layout from "../../../layout/Layout";
+import Values from "../../about/AboutValues";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
+import Journey from "../../others/Journey";
 
 const About = () => {
   return (
@@ -16,12 +16,12 @@ const About = () => {
       <PageMeta title="About us - Software &amp; IT Solutions HTML Template" />
       <Navbar classOption="navbar-light" />
       <AboutPageHero />
+      <Journey />
       <OurStory />
-      <FeatureImgThree />
-      <Team />
+      <Values />
       <TestimonialTwo />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

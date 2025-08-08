@@ -5,8 +5,8 @@ import Navbar from "../../../layout/Header/Navbar";
 import PageHeader from "../../common/PageHeader";
 import LatestBlog from "../../blogs/LatestBlog";
 import CtaTwo from "../../cta/CtaTwo";
-import FooterOne from "../../../layout/Footer/FooterOne";
 import ShapingIndia from "../../blogs/ShapingIndia";
+import FooterTwo from "../../../layout/Footer/FooterTwo";
 
 const ShapingIndiaBlog = () => {
   return (
@@ -18,7 +18,7 @@ const ShapingIndiaBlog = () => {
       {/* <NewsLetter /> */}
       <LatestBlog />
       <CtaTwo />
-      <FooterOne footerLight />
+      <FooterTwo />
     </Layout>
   );
 };

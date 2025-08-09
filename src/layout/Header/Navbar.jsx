@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import OffCanvasMenu from "./OffCanvasMenu";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import {
@@ -31,6 +31,39 @@ const Navbar = ({
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
+
+  // helper: does current location match any child or base paths?
+  function useMenuActive(childHrefs = [], basePaths = []) {
+    const { pathname, hash } = useLocation();
+
+    const inBase = basePaths.some(
+      (p) => pathname === p || pathname.startsWith(`${p}/`)
+    );
+
+    const inChildren = childHrefs.some((h) => {
+      if (!h) return false;
+
+      // hash links (e.g., "#pramitihr")
+      if (h.startsWith("#")) return hash === h;
+
+      // normal routes, allow descendants; ignore child hashes if any
+      const [pathOnly] = h.split("#");
+      return pathname === pathOnly || pathname.startsWith(`${pathOnly}/`);
+    });
+
+    return inBase || inChildren;
+  }
+
+  const servicesActive = useMenuActive(
+    navServiceLinks.map((l) => l.href),
+    ["/services"]
+  );
+
+  const resourcesActive = useMenuActive(
+    navInsightsLinks.map((l) => l.href),
+    ["/resources", "/blog"]
+  );
+
   return (
     <>
       <header
@@ -86,9 +119,14 @@ const Navbar = ({
             <div className="collapse navbar-collapse justify-content-center">
               <ul className="nav col-12 col-md-auto justify-content-center main-menu">
                 <li>
-                  <Link to="/" className="nav-link">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      `nav-link ${isActive ? "active" : ""}`
+                    }
+                  >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item dropdown">
                   <a
@@ -106,9 +144,11 @@ const Navbar = ({
                         <h6 className="drop-heading">Our Products</h6>
                         {navProductsLinks.map((navLink, i) => (
                           <div key={i + 1}>
-                            <Link
+                            <NavLink
                               to={navLink.href}
-                              className="dropdown-link px-0"
+                              className={({ isActive }) =>
+                                `dropdown-link px-0 ${isActive ? "active" : ""}`
+                              }
                               onClick={(e) => {
                                 if (window.location.pathname === "/") {
                                   e.preventDefault();
@@ -142,7 +182,7 @@ const Navbar = ({
                               <span className="drop-title mb-0">
                                 {navLink.title}
                               </span>
-                            </Link>
+                            </NavLink>
                           </div>
                         ))}
                       </div>
@@ -152,7 +192,9 @@ const Navbar = ({
 
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className={`nav-link dropdown-toggle ${
+                      servicesActive ? "active" : ""
+                    }`}
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -166,15 +208,17 @@ const Navbar = ({
                         <h6 className="drop-heading">Our Services</h6>
                         {navServiceLinks.map((navLink, i) => (
                           <div key={i + 1}>
-                            <Link
+                            <NavLink
                               to={navLink.href}
-                              className="dropdown-link px-0"
+                              className={({ isActive }) =>
+                                `dropdown-link px-0 ${isActive ? "active" : ""}`
+                              }
                             >
                               <span className="me-2">{navLink.icon}</span>
                               <span className="drop-title mb-0">
                                 {navLink.title}
                               </span>
-                            </Link>
+                            </NavLink>
                           </div>
                         ))}
                       </div>
@@ -183,7 +227,9 @@ const Navbar = ({
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
+                    className={`nav-link dropdown-toggle ${
+                      resourcesActive ? "active" : ""
+                    }`}
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -197,15 +243,17 @@ const Navbar = ({
                         <h6 className="drop-heading">Resources</h6>
                         {navInsightsLinks.map((navLink, i) => (
                           <div key={i + 1}>
-                            <Link
+                            <NavLink
                               to={navLink.href}
-                              className="dropdown-link px-0"
+                              className={({ isActive }) =>
+                                `dropdown-link px-0 ${isActive ? "active" : ""}`
+                              }
                             >
                               <span className="me-2">{navLink.icon}</span>
                               <span className="drop-title mb-0">
                                 {navLink.title}
                               </span>
-                            </Link>
+                            </NavLink>
                           </div>
                         ))}
                       </div>
@@ -213,9 +261,14 @@ const Navbar = ({
                   </div>
                 </li>
                 <li>
-                  <Link to="/about-us" className="nav-link">
+                  <NavLink
+                    to="/about-us"
+                    className={({ isActive }) =>
+                      `nav-link ${isActive ? "active" : ""}`
+                    }
+                  >
                     About
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>

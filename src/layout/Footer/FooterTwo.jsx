@@ -106,29 +106,152 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Products</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
-                        <Link to="/contact-us" className="text-decoration-none">
+                        <Link
+                          className="text-decoration-none"
+                          to="/#pramitihr"
+                          onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                              e.preventDefault();
+
+                              // Scroll to section
+                              const section =
+                                document.querySelector("#div-products");
+                              if (section) {
+                                section.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+
+                              // Activate the tab
+                              const tabBtn = document.querySelector(
+                                `a[href="#pramitihr"]`
+                              );
+                              if (tabBtn instanceof HTMLElement) tabBtn.click();
+
+                              window.history.pushState(null, "", "#pramitihr");
+                            }
+                          }}
+                        >
                           PramitiHR
                         </Link>
                       </li>
                       <li>
-                        <Link to="/about-us" className="text-decoration-none">
+                        <Link
+                          to="/#lanquill"
+                          className="text-decoration-none"
+                          onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                              e.preventDefault();
+
+                              // Scroll to section
+                              const section =
+                                document.querySelector("#div-products");
+                              if (section) {
+                                section.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+
+                              // Activate the tab
+                              const tabBtn = document.querySelector(
+                                `a[href="#lanquill"]`
+                              );
+                              if (tabBtn instanceof HTMLElement) tabBtn.click();
+
+                              // Update URL hash
+                              window.history.pushState(null, "", "#lanquill");
+                            }
+                          }}
+                        >
                           Lanquill
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services" className="text-decoration-none">
+                        <Link
+                          to="/#genAI"
+                          className="text-decoration-none"
+                          onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                              e.preventDefault();
+
+                              // Scroll to section
+                              const section =
+                                document.querySelector("#div-products");
+                              if (section) {
+                                section.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+
+                              // Activate the tab
+                              const tabBtn = document.querySelector(
+                                `a[href="#genAI"]`
+                              );
+                              if (tabBtn instanceof HTMLElement) tabBtn.click();
+
+                              window.history.pushState(null, "", "#genAI");
+                            }
+                          }}
+                        >
                           Gen AI Sandbox
                         </Link>
                       </li>
                       <li>
-                        <Link to="/career" className="text-decoration-none">
+                        <Link
+                          to="/#ecommerce"
+                          className="text-decoration-none"
+                          onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                              e.preventDefault();
+
+                              // Scroll to section
+                              const section =
+                                document.querySelector("#div-products");
+                              if (section) {
+                                section.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+
+                              // Activate the tab
+                              const tabBtn = document.querySelector(
+                                `a[href="#ecommerce"]`
+                              );
+                              if (tabBtn instanceof HTMLElement) tabBtn.click();
+
+                              window.history.pushState(null, "", "#ecommerce");
+                            }
+                          }}
+                        >
                           Reverse Auction e-commerce
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/integrations"
+                          to="/#entertainment"
                           className="text-decoration-none"
+                          onClick={(e) => {
+                            if (window.location.pathname === "/") {
+                              e.preventDefault();
+
+                              // Scroll to section
+                              const section =
+                                document.querySelector("#div-products");
+                              if (section) {
+                                section.scrollIntoView({
+                                  behavior: "smooth",
+                                });
+                              }
+
+                              // Activate the tab
+                              const tabBtn = document.querySelector(
+                                `a[href="#entertainment"]`
+                              );
+                              if (tabBtn instanceof HTMLElement) tabBtn.click();
+
+                              window.history.pushState(null, "", "#entertainment");
+                            }
+                          }}
                         >
                           OnDemand Entertainment
                         </Link>
@@ -141,7 +264,7 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Quick Links</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
-                        <Link to="/" className="text-decoration-none">
+                        <Link to="/contact-us" className="text-decoration-none">
                           Contact Us
                         </Link>
                       </li>
@@ -163,17 +286,23 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Contact Info</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
-                        <Link to="/contact-us" className="text-decoration-none">
+                        <Link
+                          to="tel:+91 9620555571"
+                          className="text-decoration-none"
+                        >
                           +91 9620555571
                         </Link>
                       </li>
                       <li>
-                        <Link to="/contact-us" className="text-decoration-none">
+                        <Link
+                          to="mailto:Support@netanalytiks.com"
+                          className="text-decoration-none"
+                        >
                           support@netanalytiks.com
                         </Link>
                       </li>
                       <li>
-                        <Link to="/contact-us" className="text-decoration-none">
+                        <Link to="#" className="text-decoration-none">
                           91Springboard, MG Road, Bangalore, India
                         </Link>
                       </li>

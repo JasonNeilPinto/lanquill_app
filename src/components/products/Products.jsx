@@ -11,8 +11,8 @@ const Products = () => {
             <div className="row justify-content-center">
               <div className="col-md-10 col-xl-8">
                 <h3 className="heading-3 clr-text font-weight-semibold text-center mb-0">
-                  We Have Extensive Experience in Social{" "}
-                  <span className="clr-blue">Media Marketing</span>
+                  Our Cutting-Edge {" "}
+                  <span className="clr-blue">Products and Platforms</span>
                 </h3>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Products = () => {
                 <a
                   className="social-media-btn"
                   data-bs-toggle="list"
-                  href="#seoMarketing"
+                  href="#ecommerce"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-16">
                     <i
@@ -76,7 +76,7 @@ const Products = () => {
                 <a
                   className="social-media-btn"
                   data-bs-toggle="list"
-                  href="#adMarketing"
+                  href="#entertainment"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-16">
                     <i
@@ -268,7 +268,7 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane fade" id="seoMarketing">
+                <div className="tab-pane fade" id="ecommerce">
                   <div className="border border-blue-clr rounded-4 padding-4">
                     <div className="bgc-white rounded-4 section-space padding-x-2 padding-x-xsm-4 padding-x-sm-8 padding-x-md-12 padding-end-xxl-25">
                       <div className="row">
@@ -326,7 +326,7 @@ const Products = () => {
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane fade" id="adMarketing">
+                <div className="tab-pane fade" id="entertainment">
                   <div className="border border-blue-clr rounded-4 padding-4">
                     <div className="bgc-white rounded-4 section-space padding-x-2 padding-x-xsm-4 padding-x-sm-8 padding-x-md-12 padding-end-xxl-25">
                       <div className="row">

@@ -9,84 +9,69 @@ const Journey = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-10">
               <SectionTitle
-                subtitle="Process"
-                title="We Follow Our Work Process"
-                description="Enthusiastically engage cross-media leadership skills for
-                  alternative experiences. Proactively drive vertical systems
-                  than intuitive architectures."
+                subtitle="Our Journey"
+                title="A Timeline of Growth and Innovation"
+                description="From startup to global IT consulting leader"
                 centerAlign
               />
             </div>
           </div>
           <div className="row align-items-center justify-content-between">
-            <div className="col-lg-5 col-md-12 order-1 order-lg-0">
-              <div className="img-wrap">
-                <img
-                  src="/img/office-img-1.jpg"
-                  alt="work process"
-                  className="img-fluid rounded-custom"
-                />
+            <div className="col-lg-12 col-md-12 order-0 order-lg-1">
+              <div className="timeline-wrapper position-relative mt-5">
+                {[
+                  {
+                    step: "2015",
+                    icon: "far fa-lightbulb",
+                    title: "THE START",
+                    desc: "Started with digitization and retail analytics products. Gained expertise in SMAC technologies and started IT Consulting Services in Cyber Security.",
+                  },
+                  {
+                    step: "2018",
+                    icon: "far fa-rocket",
+                    title: "PRODUCT LAUNCH",
+                    desc: "Launched products in digitization/infotainment, started building AI/ML product, and began managed services in IT Infrastructure Management and Cyber Security.",
+                  },
+                  {
+                    step: "2020",
+                    icon: "far fa-globe-americas",
+                    title: "EXPANSION",
+                    desc: "Started operations in Australia and diversified into custom application development, DevOps and cloud automation services. Enabled remote work capabilities.",
+                  },
+                  {
+                    step: "2023",
+                    icon: "far fa-chart-line",
+                    title: "GROWTH",
+                    desc: "Building CoE, Tools and Accelerators in Custom Application Development, Application Security, VAPT, DevSecOps and Cloud Automation. Positioned to reach 100+ consultants globally.",
+                  },
+                ].map((item, idx) => (
+                  <div
+                    key={idx}
+                    className={`timeline-step ${
+                      idx % 2 === 0 ? "left" : "right"
+                    }`}
+                  >
+                    <div className="content bg-white rounded-custom custom-shadow p-3">
+                      <div className="d-flex align-items-center mb-2">
+                        <h5 className="text-primary me-4">
+                          {item.step}
+                        </h5>
+                        <span className="badge bg-secondary mb-2">
+                          {item.title}
+                        </span>
+                      </div>
+                      <p>{item.desc}</p>
+                    </div>
+                    <div
+                      className={`${
+                        idx === 3 ? "process-icon-1" : "process-icon-2"
+                      } border border-2 rounded-custom bg-white me-4 mt-2 icon`}
+                    >
+                      <i className={`${item.icon} fa-2x text-primary`}></i>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-            <div className="col-lg-6 col-md-12 order-0 order-lg-1">
-              <ul className="work-process-list list-unstyled">
-                <li className="d-flex align-items-start mb-4">
-                  <div className="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                    <i className="far fa-folder-tree fa-2x"></i>
-                  </div>
-                  <div className="icon-content">
-                    <span className="text-primary h6">Step 1</span>
-                    <h3 className="h5 mb-2">Research and Content Planing</h3>
-                    <p>
-                      Progressively foster enterprise-wide systems whereas
-                      equity invested web-readiness harness installed base
-                      bandwidth.
-                    </p>
-                  </div>
-                </li>
-                <li className="d-flex align-items-start mb-4">
-                  <div className="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                    <i className="far fa-bezier-curve fa-2x"></i>
-                  </div>
-                  <div className="icon-content">
-                    <span className="text-primary h6">Step 2</span>
-                    <h3 className="h5 mb-2">Publishing and Execution</h3>
-                    <p>
-                      Dramatically administrate progressive metrics without
-                      error-free globally simplify standardized alignments
-                      plagiarize distributed.
-                    </p>
-                  </div>
-                </li>
-                <li className="d-flex align-items-start mb-4">
-                  <div className="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                    <i className="far fa-layer-group fa-2x"></i>
-                  </div>
-                  <div className="icon-content">
-                    <span className="text-primary h6">Step 3</span>
-                    <h3 className="h5 mb-2">Product Prototyping</h3>
-                    <p>
-                      Interactively whiteboard transparent testing procedures
-                      before bricks-and-clicks initiatives administrate
-                      competencies.
-                    </p>
-                  </div>
-                </li>
-                <li className="d-flex align-items-start mb-4 mb-lg-0">
-                  <div className="process-icon-2 border border-2 rounded-custom bg-white me-4 mt-2">
-                    <i className="far fa-truck fa-2x"></i>
-                  </div>
-                  <div className="icon-content">
-                    <span className="text-primary h6">Step 4</span>
-                    <h3 className="h5 mb-2">Deliver the Final Product</h3>
-                    <p>
-                      Dramatically plagiarize distributed progressive metrics
-                      without error-free globally simplify standardized
-                      alignments.
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

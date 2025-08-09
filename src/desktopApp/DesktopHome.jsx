@@ -66,6 +66,22 @@ const slides = [
 ];
 
 const DesktopHome = () => {
+
+  const handleScroll = (id) => {
+    if (id) {
+      const scrollAndActivate = () => {
+        const section = document.querySelector("#div-products");
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+
+        const tabBtn = document.querySelector(`a[href="${id}"]`);
+        if (tabBtn instanceof HTMLElement) tabBtn.click();
+      };
+
+      // Small timeout to wait for DOM to load
+      setTimeout(scrollAndActivate, 200);
+    }
+  };
+
   return (
     <>
       <Swiper
@@ -98,9 +114,18 @@ const DesktopHome = () => {
                       />
 
                       <div className="pt-4 text-center text-xl-start text-lg-start">
-                        <Link to={slide.link} className="btn btn-primary">
-                          View More
-                        </Link>
+                        {slide.title === "PramitiHR.AI" ? (
+                          <Link
+                            className="btn btn-primary"
+                            onClick={() => handleScroll(slide.link)}
+                          >
+                            View More
+                          </Link>
+                        ) : (
+                          <Link to={slide.link} className="btn btn-primary">
+                            View More
+                          </Link>
+                        )}
                       </div>
                     </div>
                   </div>

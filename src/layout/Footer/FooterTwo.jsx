@@ -51,28 +51,40 @@ const FooterTwo = () => {
                     <h3 className="h5 mb-4 text-white">Services</h3>
                     <ul className="list-unstyled footer-nav-list mb-lg-0">
                       <li>
-                        <Link to="/" className="text-decoration-none">
+                        <Link
+                          to="/services/data-analytics"
+                          className="text-decoration-none"
+                        >
                           Data & Analytics
                         </Link>
                       </li>
                       <li>
-                        <Link to="/about-us" className="text-decoration-none">
+                        <Link
+                          to="/services/cyber-security"
+                          className="text-decoration-none"
+                        >
                           Cyber Security
                         </Link>
                       </li>
                       <li>
-                        <Link to="/services" className="text-decoration-none">
+                        <Link
+                          to="/services/cloud-services"
+                          className="text-decoration-none"
+                        >
                           Cloud Services
                         </Link>
                       </li>
                       <li>
-                        <Link to="/career" className="text-decoration-none">
+                        <Link
+                          to="/services/applied-ai"
+                          className="text-decoration-none"
+                        >
                           Applied AI
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/integrations"
+                          to="/services/security-testing"
                           className="text-decoration-none"
                         >
                           Security testing
@@ -80,7 +92,7 @@ const FooterTwo = () => {
                       </li>
                       <li>
                         <Link
-                          to="/integration-single"
+                          to="/services/managed-services"
                           className="text-decoration-none"
                         >
                           Managed Services
@@ -161,7 +173,7 @@ const FooterTwo = () => {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/" className="text-decoration-none">
+                        <Link to="/contact-us" className="text-decoration-none">
                           91Springboard, MG Road, Bangalore, India
                         </Link>
                       </li>

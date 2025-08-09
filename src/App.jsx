@@ -27,6 +27,7 @@ import GenerativeAiBlog from "./components/pages/blog/GenerativeAiBlog";
 import EmergenceOfGenAiBlog from "./components/pages/blog/EmergenceOfGenAiBlog";
 import GenAiRevolutionizesBlog from "./components/pages/blog/GenAiRevolutionizesBlog";
 import EcommerceBlog from "./components/pages/blog/EcommerceBlog";
+import RequestDemo from "./components/pages/services/RequestDemo";
 
 function App() {
   return (
@@ -71,6 +72,8 @@ function App() {
             element={<GenAiRevolutionizesBlog />}
           />
           <Route path="/blog-ecommerce" element={<EcommerceBlog />} />
+
+          <Route path="/request-demo" element={<RequestDemo />} />
 
           <Route path="/contact-us" element={<Contact />} />
         </Routes>

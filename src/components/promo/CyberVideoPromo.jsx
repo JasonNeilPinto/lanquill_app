@@ -1,10 +1,6 @@
-import React, { useState } from "react";
-
-import { Link } from "react-router-dom";
-import VideoModal from "../common/VideoModal";
+import React from "react";
 
 const CyberVideoPromo = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <section className="counter-with-video pt-60 pb-120">
       <div className="container">
@@ -14,50 +10,41 @@ const CyberVideoPromo = () => {
               className="cyber-video-img"
               style={{
                 background:
-                  "url('/img/video_bg.png')no-repeat center top/cover",
+                  "url('/img/promo-bg.png')no-repeat center top/cover",
               }}
-            >
-              <VideoModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
-              <Link
-                to="#"
-                className="video-icon popup-youtube popup-video-btn text-decoration-none"
-                onClick={() => setIsOpen(true)}
-              >
-                <i className="fas fa-play"></i>
-              </Link>
-            </div>
+            ></div>
           </div>
           <div className="col-lg-6">
             <div className="mt-5 mt-lg-0">
               <div className="section-heading mb-5">
-                <h5 className="h6 text-primary">Protect to your life</h5>
+                <h5 className="h6 text-primary">Partner with Us</h5>
                 <h2>
-                  Partner With One of the Premier as Cyber security Provider
+                  Your Trusted IT, Gen AI, Cybersecurity and IT Consulting
+                  Provider
                 </h2>
                 <p>
-                  If you use this site regularly and would like to help keep the
-                  site on the Internet, please consider donating a small sum to
-                  help pay for the hosting and bandwidth bill
+                  We deliver end-to-end solutions that help you innovate faster,
+                  make smarter decisions, and scale with confidence.
                 </p>
               </div>
               <div className="row">
                 <div className="col-lg-6 col-md-6">
                   <div className="bg-white p-4 cyber-count-box mb-30 mb-lg-0">
-                    <h2 className="text-primary">50k+</h2>
+                    <h2 className="text-primary">38+</h2>
                     <h5 className="h-6">Happy Clients</h5>
                     <p>
-                      If you use this is regularly keephosting bandwidth bill
-                      nostrud amet.
+                      Driving measurable business impact through future-ready
+                      IT, analytics, and security solutions.
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6">
                   <div className="bg-white p-4 cyber-count-box">
-                    <h2 className="text-primary">7 k+</h2>
-                    <h5 className="h-6">Success Project</h5>
+                    <h2 className="text-primary">170+</h2>
+                    <h5 className="h-6">Success Projects</h5>
                     <p>
-                      If you use this si regularly keephosting bandwidth bill
-                      nostrud amet.
+                      Delivering tailored strategies and transformative outcomes
+                      for diverse industries worldwide.
                     </p>
                   </div>
                 </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const AboutPageHero = () => {
   return (
@@ -16,19 +15,12 @@ const AboutPageHero = () => {
               <div className="section-heading-wrap d-flex justify-content-between z-5 position-relative">
                 <div className="about-content-left">
                   <div className="about-info mb-5">
-                    <h1 className="fw-bold display-5">
-                      Grow your Business & Customer Satisfaction with Quiety
-                    </h1>
+                    <h1 className="fw-bold display-5">About Us</h1>
                     <p className="lead">
-                      Dynamically disintermediate technically sound technologies
-                      with compelling quality vectors error-free communities.{" "}
+                      We are passionate about shaping the future of technology
+                      and driving measurable business growth through innovative
+                      IT solutions..{" "}
                     </p>
-                    <Link to="/career" className="btn btn-primary mt-4 me-3">
-                      Open Positions
-                    </Link>
-                    <Link to="/about-us" className="btn btn-soft-primary mt-4">
-                      Meet Our Team
-                    </Link>
                   </div>
                   <img
                     src="/img/about-img-1.jpg"

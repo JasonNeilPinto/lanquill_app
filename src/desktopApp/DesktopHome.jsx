@@ -9,45 +9,59 @@ import { Link } from "react-router-dom";
 const slides = [
   {
     title: "Data & Analytics Solution",
+    subtitle: "Build, Transform, Scale - Your Data, Our Expertise",
     desc: "We build, transform, and scale data systems to turn your information into impact.",
     macImg: "/img/screen/mac-screen/DataAnalytics.png",
     phoneImg: "/img/screen/phone-screen/dataAnalytics.png",
+    link: "/services/data-analytics",
   },
   {
     title: "Cyber Security Solution",
+    subtitle: "Future-Ready Security for Cloud and AI Systems",
     desc: "Delivering smart security solutions that scale with your business. ",
     macImg: "/img/screen/mac-screen/Cybersecurity.png",
     phoneImg: "/img/screen/phone-screen/cybersecurity.png",
+    link: "/services/cyber-security",
   },
   {
     title: "Cloud Services Solution",
+    subtitle: "From Legacy Limits to Cloud Possibilities",
     desc: "Reimagine your apps for a smarter, leaner cloud future.",
     macImg: "/img/screen/mac-screen/CloudServices.png",
     phoneImg: "/img/screen/phone-screen/cloudServices.png",
+    link: "/services/cloud-services",
   },
   {
     title: "Applied AI Solution",
+    subtitle: "Gen AI Solutions for Real Business Needs",
     desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
     macImg: "/img/screen/mac-screen/AppliedAI.png",
     phoneImg: "/img/screen/phone-screen/appliedAI.png",
+    link: "/services/applied-ai",
   },
   {
     title: "Security testing",
+    subtitle: "Ensuring your AI solutions are safe, resilient, and compliant",
     desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
     macImg: "/img/screen/mac-screen/SecurityTesting.png",
     phoneImg: "/img/screen/phone-screen/securityTesting.png",
+    link: "/services/security-testing",
   },
   {
     title: "Managed Services",
+    subtitle: "Reliable oversight for smarter AI solutions",
     desc: "We turn business needs into Gen AI-powered solutions - efficient, smart, and business-ready.",
     macImg: "/img/screen/mac-screen/ManagedServices.png",
     phoneImg: "/img/screen/phone-screen/managedServices.png",
+    link: "/services/managed-services",
   },
   {
     title: "PramitiHR.AI",
-    desc: "Hire Smarter with Generative AI Interviews.",
+    subtitle: "Hire Smarter with Generative AI Interviews",
+    desc: "Revolutionizing Recruitment with AI-Driven Interviews",
     macImg: "/img/screen/mac-screen/PramitiHR.png",
     phoneImg: "/img/screen/phone-screen/pramitiHR.png",
+    link: "#pramitihr",
   },
 ];
 
@@ -77,10 +91,14 @@ const DesktopHome = () => {
                       className="hero-content-wrap text-center text-xl-start text-lg-start"
                       data-aos="fade-right"
                     >
-                      <HeroTitle title={slide.title} desc={slide.desc} />
+                      <HeroTitle
+                        title={slide.title}
+                        desc={slide.desc}
+                        subtitle={slide.subtitle}
+                      />
 
                       <div className="pt-4 text-center text-xl-start text-lg-start">
-                        <Link to="/about" className="btn btn-primary">
+                        <Link to={slide.link} className="btn btn-primary">
                           View More
                         </Link>
                       </div>
@@ -100,13 +118,6 @@ const DesktopHome = () => {
                             className="img-fluid position-absolute color-shape-1"
                           />
                         </li>
-                        {/* <li className="layer" data-depth="0.02">
-                          <img
-                            src="/img/color-shape/feature-2.svg"
-                            alt="shape"
-                            className="img-fluid position-absolute color-shape-2 z-5"
-                          />
-                        </li> */}
                         <li className="layer" data-depth="0.03">
                           <img
                             src="/img/color-shape/feature-3.svg"

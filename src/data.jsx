@@ -55,12 +55,12 @@ const navInsightsLinks = [
   },
   {
     title: "Newsletter",
-    href: "/insights/newsletter",
+    href: "/blogs",
     icon: <i className="fas fa-envelope"></i>,
   },
   {
     title: "Case Study",
-    href: "/insights/case-study",
+    href: "/blogs",
     icon: <i className="fas fa-book"></i>,
   },
 ];

@@ -56,7 +56,7 @@ const DesktopHome = () => {
     <>
       <Swiper
         modules={[Autoplay, Pagination]}
-        // autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         loop={true}
         className="w-full"

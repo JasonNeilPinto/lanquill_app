@@ -15592,6 +15592,39 @@ img.mfp-img {
   cursor: pointer;
 }
 
+.lanquill-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("/img/icons/lanquill.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.pramiti-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("/img/icons/pramitiHR.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.openAi-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("/img/icons/openAi.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 800px) and (orientation: landscape),
   screen and (max-height: 300px) {
   /**
@@ -43703,7 +43736,8 @@ span.mk-subtitle {
   background-color: #fff;
 }
 .social-media-btn.active .bgc-text-1 {
-  background: linear-gradient(287.85deg, #007daf 0%, #63afce 95.32%);
+  background: #f6f4f1;
+  {{/* background: linear-gradient(287.85deg, #007daf 0%, #63afce 95.32%); */}}
 }
 .social-media-btn.active .clr-paragraph {
   color: #fff;

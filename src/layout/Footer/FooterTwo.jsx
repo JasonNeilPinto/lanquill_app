@@ -17,9 +17,8 @@ const FooterTwo = () => {
                   />
                 </div>
                 <p className="text-white">
-                  Our latest news, articles, and resources, we will sent to your
-                  inbox weekly. Our latest news, articles, and resources, we
-                  will sent to your inbox weekly.
+                  Global IT Consulting and Product Development Company
+                  specializing in new-age technologies.
                 </p>
                 <ul className="list-unstyled list-inline cyber-footer-social-list mb-0">
                   <li className="list-inline-item">
@@ -177,7 +176,7 @@ const FooterTwo = () => {
       <div className="cyber-footer-bottom">
         <div className="container">
           <p className="mb-0 py-4 text-center">
-            Copyright ©2024 NetAnalytiks Technologies Ltd. All rights reserved.
+            Copyright ©2025 NetAnalytiks Technologies Ltd. All rights reserved.
           </p>
         </div>
       </div>

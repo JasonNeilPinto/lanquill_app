@@ -45,7 +45,7 @@ const CyberAbout = () => {
                 </p>
               </div>
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-flex">
                   <div className="bg-white cyber-about-box mb-30 mb-lg-0">
                     <div className="cyber-about-icon">
                       <i className="fal fa-hand-receiving"></i>
@@ -64,7 +64,7 @@ const CyberAbout = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-lg-6 d-flex">
                   <div className="bg-white cyber-about-box">
                     <div className="cyber-about-icon">
                       <i className="fal fa-users"></i>
@@ -77,7 +77,7 @@ const CyberAbout = () => {
                     </p>
                     <Link
                       to="/about-us"
-                      className="text-decoration-none text-dark"
+                      className="mt-auto text-decoration-none text-dark"
                     >
                       Explore more
                     </Link>

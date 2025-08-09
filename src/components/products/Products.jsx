@@ -28,7 +28,7 @@ const Products = () => {
                   href="#pramitihr"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-20">
-                    <i className="fas fa-cog"></i>
+                    <i className="pramiti-icon"></i>
                   </span>
                   <span className="d-inline-block font-weight-bold fs-20 clr-paragraph">
                     PramitiHR
@@ -40,7 +40,7 @@ const Products = () => {
                   href="#lanquill"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-20">
-                    <i className="far fa-bell"></i>
+                    <i className="lanquill-icon"></i>
                   </span>
                   <span className="d-inline-block font-weight-bold fs-20 clr-paragraph">
                     Lanquill
@@ -52,10 +52,10 @@ const Products = () => {
                   href="#genAI"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-20">
-                    <i className="far fa-envelope"></i>
+                    <i className="openAi-icon"></i>
                   </span>
                   <span className="d-inline-block font-weight-bold fs-20 clr-paragraph">
-                    Gen AI
+                    Gen AI Sandbox
                   </span>
                 </a>
                 <a
@@ -64,10 +64,13 @@ const Products = () => {
                   href="#seoMarketing"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-20">
-                    <i className="far fa-chart-bar"></i>
+                    <i
+                      className="far fa-cart-shopping"
+                      style={{ color: "#46a4ec" }}
+                    ></i>
                   </span>
                   <span className="d-inline-block font-weight-bold fs-20 clr-paragraph">
-                    SEO Marketing
+                    Reverse Auction e-commerce
                   </span>
                 </a>
                 <a
@@ -76,10 +79,13 @@ const Products = () => {
                   href="#adMarketing"
                 >
                   <span className="d-grid place-content-center width-12 height-12 rounded-circle bgc-text-1 clr-paragraph flex-shrink-0 fs-20">
-                    <i className="far fa-chart-bar"></i>
+                    <i
+                      className="fa-solid fa-clapperboard"
+                      style={{ color: "#7a83c2" }}
+                    ></i>
                   </span>
                   <span className="d-inline-block font-weight-bold fs-20 clr-paragraph">
-                    Ad Marketing
+                    OnDemand Entertainment
                   </span>
                 </a>
               </div>
@@ -105,7 +111,8 @@ const Products = () => {
                                   <i className="fas fa-check-circle"></i>
                                 </div>
                                 <p className="mb-0 flex-grow-1">
-                                  <b>Efficiency:</b> Faster shortlisting and decision making
+                                  <b>Efficiency:</b> Faster shortlisting and
+                                  decision making
                                 </p>
                               </div>
                             </li>
@@ -115,7 +122,8 @@ const Products = () => {
                                   <i className="fas fa-check-circle"></i>
                                 </div>
                                 <p className="mb-0 flex-grow-1">
-                                  <b>Bias Reduction:</b> Promote diversity and fairer assessments
+                                  <b>Bias Reduction:</b> Promote diversity and
+                                  fairer assessments
                                 </p>
                               </div>
                             </li>
@@ -125,7 +133,8 @@ const Products = () => {
                                   <i className="fas fa-check-circle"></i>
                                 </div>
                                 <p className="mb-0 flex-grow-1">
-                                  <b>Scalability:</b> Handle large volumes of interviews simultaneously
+                                  <b>Scalability:</b> Handle large volumes of
+                                  interviews simultaneously
                                 </p>
                               </div>
                             </li>

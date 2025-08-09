@@ -103,7 +103,7 @@ const Navbar = ({
                   <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                     <div className="dropdown-grid rounded-custom width-full">
                       <div className="dropdown-grid-item">
-                        <h6 className="drop-heading">Our Services</h6>
+                        <h6 className="drop-heading">Our Products</h6>
                         {navProductsLinks.map((navLink, i) => (
                           <div key={i + 1}>
                             <Link

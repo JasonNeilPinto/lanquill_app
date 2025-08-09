@@ -75,7 +75,7 @@ const LatestBlog = () => {
         </div>
         <div className="row">
           {blogs.map((blog) => (
-            <div key={blog.id} className="col-lg-4 col-md-6">
+            <div key={blog.id} className="col-lg-4 col-md-6 d-flex">
               <div className="single-article rounded-custom mb-4 mb-lg-0">
                 <Link to={blog.link} className="article-img">
                   <img src={blog.image} alt="article" className="img-fluid" />
@@ -95,7 +95,7 @@ const LatestBlog = () => {
                     </h2>
                   </Link>
                   <p className="limit-2-line-text">{blog.description}</p>
-                  <Link to="#">
+                  <Link to="#" className="mt-auto">
                     <div className="d-flex align-items-center pt-4">
                       <div className="avatar">
                         <img

@@ -1,6 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactFormTwo = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    mobile: "",
+    email: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError("");
+    setSuccess("");
+
+    const payload = {
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      mobile: formData.mobile,
+      email: formData.email,
+      message: formData.message,
+    };
+
+    try {
+      const response = await fetch("https://lanquill.com/auth/contact-us-na", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
+
+      setSuccess("Message sent successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        mobile: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      console.log("Error", err);
+      setError("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <section
@@ -20,7 +82,7 @@ const ContactFormTwo = () => {
                   customer directed alignments via standardized infrastructures.
                 </p>
               </div>
-              <form action="#" className="register-form">
+              <form onSubmit={handleSubmit} className="register-form">
                 <div className="row">
                   <div className="col-sm-6">
                     <label htmlFor="firstName" className="mb-1">
@@ -33,11 +95,12 @@ const ContactFormTwo = () => {
                         id="firstName"
                         required
                         placeholder="First name"
-                        aria-label="First name"
+                        value={formData.firstName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
-                  <div className="col-sm-6 ">
+                  <div className="col-sm-6">
                     <label htmlFor="lastName" className="mb-1">
                       Last name
                     </label>
@@ -47,28 +110,30 @@ const ContactFormTwo = () => {
                         className="form-control"
                         id="lastName"
                         placeholder="Last name"
-                        aria-label="Last name"
+                        value={formData.lastName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
                   <div className="col-sm-6">
-                    <label htmlFor="phone" className="mb-1">
+                    <label htmlFor="mobile" className="mb-1">
                       Phone <span className="text-danger">*</span>
                     </label>
                     <div className="input-group mb-3">
                       <input
                         type="text"
                         className="form-control"
-                        id="phone"
+                        id="mobile"
                         required
                         placeholder="Phone"
-                        aria-label="Phone"
+                        value={formData.mobile}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <label htmlFor="email" className="mb-1">
-                      Email<span className="text-danger">*</span>
+                      Email <span className="text-danger">*</span>
                     </label>
                     <div className="input-group mb-3">
                       <input
@@ -77,28 +142,38 @@ const ContactFormTwo = () => {
                         id="email"
                         required
                         placeholder="Email"
-                        aria-label="Email"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
                   <div className="col-12">
-                    <label htmlFor="yourMessage" className="mb-1">
+                    <label htmlFor="message" className="mb-1">
                       Message <span className="text-danger">*</span>
                     </label>
                     <div className="input-group mb-3">
                       <textarea
                         className="form-control"
-                        id="yourMessage"
+                        id="message"
                         required
                         placeholder="How can we help you?"
+                        value={formData.message}
+                        onChange={handleChange}
                         style={{ height: "120px" }}
                       ></textarea>
                     </div>
                   </div>
                 </div>
-                <button type="submit" className="btn btn-primary mt-4">
-                  Get in Touch
+                <button
+                  type="submit"
+                  className="btn btn-primary mt-4"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Get in Touch"}
                 </button>
+
+                {error && <p className="text-danger mt-2">{error}</p>}
+                {success && <p className="text-success mt-2">{success}</p>}
               </form>
             </div>
             <div className="col-lg-5 col-md-10">

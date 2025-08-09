@@ -16232,9 +16232,11 @@ h4 {
 .action-btns a.btn-link:hover,
 .navbar-dark.sticky-header.affix .main-menu li a.nav-link:hover,
 .navbar-dark.sticky-header.affix .action-btns a.btn-link:hover {
-  color: #175cff;
+  color: #007daf;
 }
-
+a.nav-link.active {
+    color: #007daf !important;
+}
 .dropdown-grid-item a {
   display: flex;
   align-items: center;
@@ -20952,6 +20954,51 @@ select.form-select {
 }
 
 .work-process-list li:hover .process-icon-2 i {
+  color: var(--bs-primary);
+  opacity: 1;
+}
+
+.process-icon-1 i {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.process-icon-1 {
+  position: relative;
+}
+
+.process-icon-1:after {
+  position: absolute;
+  top: -20px;
+  width: 0;
+  right: 47%;
+  transform: translate(-50%, 50%);
+  height: 150px;
+  z-index: -1;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(17, 24, 39, 0.12);
+  background-color: transparent;
+}
+
+
+.work-process-list li:last-child .process-icon-1:after {
+  display: none;
+}
+
+.work-process-list li,
+.process-icon-1 i {
+  transition: all 0.3s ease-in-out;
+}
+
+.process-icon-1 i {
+  opacity: 0.6;
+}
+
+.work-process-list li:hover .process-icon-1 i {
   color: var(--bs-primary);
   opacity: 1;
 }
@@ -50545,4 +50592,55 @@ span.mk-subtitle {
 }
 [data-bs-theme="dark"] .ma-logo .scroller-x li img {
   filter: invert(1);
+}
+
+.timeline-step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-step .icon {
+  position: absolute;
+  left: 50%;
+}
+
+.timeline-step.right .content {
+  width: 45%;
+  margin-left: 60%;
+  text-align: left;
+}
+
+.timeline-step.left .content {
+  width: 45%;
+  margin-right: 55%;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .timeline-step {
+    flex-direction: column;
+  }
+
+  .timeline-step .content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .timeline-step.left .content,
+  .timeline-step.right .content {
+    margin: 0;
+    text-align: center;
+  }
+
+  .timeline-step .icon {
+    position: static;
+    margin: 1rem auto;
+    transform: none;
+  }
+
+  .timeline-wrapper::before {
+    left: 50%;
+  }
 }

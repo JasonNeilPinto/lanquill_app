@@ -23,19 +23,19 @@ const AboutPageHero = () => {
                     </p>
                   </div>
                   <img
-                    src="/img/about-img-1.jpg"
+                    src="/img/about-4.jpg"
                     alt="about"
                     className="img-fluid about-img-first mt-5 rounded-custom shadow"
                   />
                 </div>
                 <div className="about-content-right">
                   <img
-                    src="/img/about-img-2.jpg"
+                    src="/img/about-2.webp"
                     alt="about"
                     className="img-fluid mb-5 rounded-custom shadow"
                   />
                   <img
-                    src="/img/about-img-3.jpg"
+                    src="/img/about-1.webp"
                     alt="about"
                     className="rounded-custom about-img-last shadow"
                   />

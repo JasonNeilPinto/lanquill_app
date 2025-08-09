@@ -53,7 +53,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="far fa-database icon-sm text-white"></i>
+                    <i className="far fa-headset icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Managed Global Service Desk</h3>
@@ -81,7 +81,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-lightbulb icon-sm text-white"></i>
+                    <i className="fal fa-laptop-code icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Managed Application Support Services</h3>
@@ -110,7 +110,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-network-wired icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">
@@ -140,7 +140,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-file-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-shield-alt icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Managed Security Services</h3>

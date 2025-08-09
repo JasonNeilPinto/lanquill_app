@@ -53,7 +53,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="far fa-database icon-sm text-white"></i>
+                    <i className="far fa-globe icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Web Application VAPT</h3>
@@ -82,7 +82,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-lightbulb icon-sm text-white"></i>
+                    <i className="fal fa-mobile-alt icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Mobile App VAPT</h3>
@@ -111,7 +111,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-network-wired icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Infrastructure VAPT</h3>
@@ -140,7 +140,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-file-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-code icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Security Code Reviews</h3>
@@ -169,7 +169,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-exchange-alt icon-sm text-white"></i>
+                    <i className="fal fa-cogs icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">DevSecOps Integration</h3>
@@ -198,7 +198,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-compass icon-sm text-white"></i>
+                    <i className="fal fa-user-secret icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Red Teaming</h3>

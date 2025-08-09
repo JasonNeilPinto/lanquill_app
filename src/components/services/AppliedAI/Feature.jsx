@@ -53,7 +53,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="far fa-database icon-sm text-white"></i>
+                    <i className="far fa-cogs icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Generate</h3>
@@ -83,7 +83,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-lightbulb icon-sm text-white"></i>
+                    <i className="fal fa-bolt icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Action</h3>
@@ -112,7 +112,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-language icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Linguistics</h3>
@@ -142,7 +142,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-file-chart-line icon-sm text-white"></i>
+                    <i className="fal fa-eye icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Optics</h3>
@@ -171,7 +171,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-exchange-alt icon-sm text-white"></i>
+                    <i className="fal fa-th icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Pattern</h3>
@@ -200,7 +200,7 @@ const Feature = ({ cardDark }) => {
                       mb-32
                     "
                   >
-                    <i className="fal fa-compass icon-sm text-white"></i>
+                    <i className="fal fa-volume-up icon-sm text-white"></i>
                   </div>
                   <div className="feature-content">
                     <h3 className="h5">Sonics</h3>

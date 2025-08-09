@@ -37,7 +37,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/data-analytics"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>
@@ -63,7 +63,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/cyber-security"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>
@@ -89,7 +89,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/cloud-services"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>
@@ -114,7 +114,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/applied-ai"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>
@@ -140,7 +140,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/security-testing"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>
@@ -165,7 +165,7 @@ const CyberService = () => {
                 </p>
               </div>
               <Link
-                to="/single-service"
+                to="/services/managed-services"
                 className="link-with-icon text-decoration-none"
               >
                 Explore More <i className="far fa-arrow-right"></i>

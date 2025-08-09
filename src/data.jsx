@@ -43,7 +43,7 @@ const navServiceLinks = [
   {
     title: "Managed Services",
     href: "/services/managed-services",
-    icon: <i className="fas fa-shield-alt"></i>,
+    icon: <i className="fas fa-cogs"></i>,
   },
 ];
 

@@ -17,24 +17,13 @@ const OurStory = () => {
               <div className="section-heading sticky-sidebar">
                 <SectionTitle
                   subtitle="Our Story"
-                  title="A Great Story Starts with a Friendly Team"
-                  description="Globally e-enable principle-centered e-business before dynamic
-                  quality vectors cross-media materials before proactive
-                  outsourcing leverage others vertical technology leadership."
+                  title="Who We Are"
+                  description="NetAnalytiks is a multinational IT consulting and delivery services organization, crafting innovative solutions with new-age technologies. Our flexible engagement models—consulting, fixed-scope delivery, and SLA-based managed services—help businesses adapt and thrive."
                 />
-                <div className="mt-4">
-                  <h6 className="mb-3">We Are Awarded By-</h6>
-                  <img
-                    src="/img/awards-01.svg"
-                    alt="awards"
-                    className="me-4 img-fluid"
-                  />
-                  <img
-                    src="/img/awards-02.svg"
-                    alt="awards"
-                    className="img-fluid"
-                  />
-                </div>
+                <SectionTitle
+                  title="What We Do"
+                  description="We bring agility, precision, and deep expertise to every project—driving digital transformation, Generative AI adoption, cybersecurity, and analytics success. With proven products, skilled teams, and a commitment to rapid value creation, we deliver high-quality solutions that ensure measurable impact and long-term growth."
+                />
               </div>
             </div>
             <div className="col-lg-6 col-md-12 order-lg-0">
@@ -58,35 +47,25 @@ const OurStory = () => {
                 </ul>
                 {/* <!--animated shape end--> */}
                 <div className="story-grid rounded-custom bg-dark overflow-hidden position-relative">
-                  <div className="story-item bg-light border">
-                    <h3 className="display-5 fw-bold mb-1 text-success">
-                      550K+
-                    </h3>
-                    <h6 className="mb-0">Active Users</h6>
-                  </div>
                   <div className="story-item bg-white border">
                     <h3 className="display-5 fw-bold mb-1 text-primary">
-                      250+
+                      120+
                     </h3>
-                    <h6 className="mb-0">Team Members</h6>
-                  </div>
-                  <div className="story-item bg-white border">
-                    <h3 className="display-5 fw-bold mb-1 text-dark">$20M+</h3>
-                    <h6 className="mb-0">Revenue Per/Year</h6>
+                    <h6 className="mb-0">Skilled Experts</h6>
                   </div>
                   <div className="story-item bg-light border">
                     <h3 className="display-5 fw-bold mb-1 text-warning">
-                      8 Years
+                      10+ Years
                     </h3>
                     <h6 className="mb-0">In Business</h6>
                   </div>
                   <div className="story-item bg-light border">
-                    <h3 className="display-5 fw-bold mb-1 text-danger">425+</h3>
+                    <h3 className="display-5 fw-bold mb-1 text-danger">38+</h3>
                     <h6 className="mb-0">Clients Worldwide</h6>
                   </div>
                   <div className="story-item bg-white border">
                     <h3 className="display-5 fw-bold mb-1 text-primary">
-                      855+
+                      170+
                     </h3>
                     <h6 className="mb-0">Projects Completed</h6>
                   </div>

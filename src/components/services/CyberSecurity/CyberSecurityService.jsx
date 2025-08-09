@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../../layout/Layout";
 import Navbar from "../../../layout/Header/Navbar";
 import Feature from "./Feature";
-import TestimonialTwo from "../../testimonials/TestimonialTwo";
 import CtaTwo from "../../cta/CtaTwo";
 import FeatureTop from "./FeatureTop";
 import PageHeader from "../../common/PageHeader";
@@ -20,7 +19,6 @@ const CyberSecurityService = () => {
       <FeatureTop />
       <Feature />
       <LatestBlog />
-      <TestimonialTwo bgWhite />
       <CtaTwo />
       <FooterTwo />
     </Layout>

@@ -56,7 +56,7 @@ const LatestBlog = () => {
   useEffect(() => {}, []);
 
   return (
-    <section className="related-blog-list ptb-120 bg-light">
+    <section className="related-blog-list ptb-80 bg-light">
       <div className="container">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-4 col-md-12">

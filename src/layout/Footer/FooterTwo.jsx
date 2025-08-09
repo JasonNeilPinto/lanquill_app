@@ -41,6 +41,15 @@ const FooterTwo = () => {
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
+                  <li className="list-inline-item">
+                    <a href="/#">
+                      <img
+                        className="pb-1"
+                        style={{ height: "auto", width: "20px" }}
+                        src="/img/icons/x-twitter.svg"
+                      />
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -123,9 +132,8 @@ const FooterTwo = () => {
                               }
 
                               // Activate the tab
-                              const tabBtn = document.querySelector(
-                                `a[href="#pramitihr"]`
-                              );
+                              const tabBtn =
+                                document.querySelector(`a[href="#pramitihr"]`);
                               if (tabBtn instanceof HTMLElement) tabBtn.click();
 
                               window.history.pushState(null, "", "#pramitihr");
@@ -153,9 +161,8 @@ const FooterTwo = () => {
                               }
 
                               // Activate the tab
-                              const tabBtn = document.querySelector(
-                                `a[href="#lanquill"]`
-                              );
+                              const tabBtn =
+                                document.querySelector(`a[href="#lanquill"]`);
                               if (tabBtn instanceof HTMLElement) tabBtn.click();
 
                               // Update URL hash
@@ -184,9 +191,8 @@ const FooterTwo = () => {
                               }
 
                               // Activate the tab
-                              const tabBtn = document.querySelector(
-                                `a[href="#genAI"]`
-                              );
+                              const tabBtn =
+                                document.querySelector(`a[href="#genAI"]`);
                               if (tabBtn instanceof HTMLElement) tabBtn.click();
 
                               window.history.pushState(null, "", "#genAI");
@@ -214,9 +220,8 @@ const FooterTwo = () => {
                               }
 
                               // Activate the tab
-                              const tabBtn = document.querySelector(
-                                `a[href="#ecommerce"]`
-                              );
+                              const tabBtn =
+                                document.querySelector(`a[href="#ecommerce"]`);
                               if (tabBtn instanceof HTMLElement) tabBtn.click();
 
                               window.history.pushState(null, "", "#ecommerce");
@@ -249,7 +254,11 @@ const FooterTwo = () => {
                               );
                               if (tabBtn instanceof HTMLElement) tabBtn.click();
 
-                              window.history.pushState(null, "", "#entertainment");
+                              window.history.pushState(
+                                null,
+                                "",
+                                "#entertainment"
+                              );
                             }
                           }}
                         >
@@ -298,7 +307,7 @@ const FooterTwo = () => {
                           to="mailto:Support@netanalytiks.com"
                           className="text-decoration-none"
                         >
-                          support@netanalytiks.com
+                          sales@netanalytiks.com
                         </Link>
                       </li>
                       <li>

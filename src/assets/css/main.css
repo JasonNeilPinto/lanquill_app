@@ -16158,7 +16158,7 @@ h4 {
   opacity: 1;
 }
 .main-menu li a.nav-link {
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 2rem;
   font-size: 0.9375rem;
   font-weight: 500;
   position: relative;
@@ -18020,7 +18020,7 @@ a:hover,
 
 .about-content-right .about-img-last {
   max-width: 126%;
-  margin-top: auto;
+  margin-top: 0;
   align-self: flex-end;
 }
 
@@ -25252,7 +25252,7 @@ span.mk-subtitle {
 }
 
 .crm-subtitle {
-  color: #ef3d3d !important;
+  color: #007daf !important;
 }
 
 .crm-hero-form {

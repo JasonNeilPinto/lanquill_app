@@ -19,16 +19,17 @@ const CyberCta = () => {
                   <h2 className="text-white">
                     Are You Ready? Book Appoinment Now!
                   </h2>
-                  <p className="lead text-white mb-0">
-                    Get Your Quite or Call : (080) 5388-273-284
-                  </p>
+                  <p className="lead text-white mb-0">Call : +91 9620555571</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-3">
               <div className="cyber-cta-btn">
-                <Link to="/contact-us" className="mt-3 btn btn-primary me-auto">
-                  Making Appoinment <i className="far fa-arrow-right"></i>
+                <Link
+                  to="/request-demo"
+                  className="mt-3 btn btn-primary me-auto"
+                >
+                  Book a Demo <i className="far fa-arrow-right"></i>
                 </Link>
               </div>
             </div>

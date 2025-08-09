@@ -8,11 +8,8 @@ const Values = () => {
           <div className="row justify-content-center">
             <div className="col-xl-5 col-lg-6">
               <div className="crm-title text-center">
-                <span className="crm-subtitle">
-                  Why Choose Us{" "}
-                  <img src="/img/shape/arrow-red.png" alt="arrow" />
-                </span>
-                <h2 className="mt-1 clr-text">Why Us Quiety CRM</h2>
+                <span className="crm-subtitle">Why Choose Us</span>
+                <h2 className="mt-1 clr-text">Our Values</h2>
               </div>
             </div>
           </div>
